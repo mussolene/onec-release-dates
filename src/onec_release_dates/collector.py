@@ -884,7 +884,7 @@ def main() -> int:
     parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="year baseline window, default: 365")
     parser.add_argument("--json-out", default="reports/1c-release-dates.json")
     parser.add_argument("--md-out", default="reports/1c-release-dates.md")
-    parser.add_argument("--site-out", default="docs")
+    parser.add_argument("--site-out", default="site")
     parser.add_argument("--incremental", action="store_true", help="update existing JSON with current ITS months only")
     parser.add_argument("--month", action="append", help="YYYYMM month for incremental update; can be repeated")
     args = parser.parse_args()

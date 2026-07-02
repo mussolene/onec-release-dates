@@ -1,5 +1,6 @@
 # 1C Release Dates
 
+[![Deploy Pages](../../actions/workflows/deploy-pages.yml/badge.svg)](../../actions/workflows/deploy-pages.yml)
 [![Update Data](../../actions/workflows/update-data.yml/badge.svg)](../../actions/workflows/update-data.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
@@ -27,9 +28,9 @@ source pages.
 
 - `reports/1c-release-dates.json` - full database with `summary` and `releases`
 - `reports/1c-release-dates.md` - readable Markdown summary
-- `docs/index.html` - GitHub Pages entry point
-- `docs/configs/*.html` - per-configuration release histories
-- `docs/data/*.json` - JSON files exposed for scripts
+- `site/index.html` - GitHub Pages entry point
+- `site/configs/*.html` - per-configuration release histories
+- `site/data/*.json` - JSON files exposed for scripts
 
 ## Run Locally
 
@@ -45,25 +46,26 @@ refreshes the current and previous month automatically.
 
 ## GitHub Pages
 
-GitHub Pages is served directly from the committed `docs/` directory on `main`.
-The update workflow does not call the Pages deployment API.
+The Pages deploy and data refresh are intentionally split:
 
-`.github/workflows/update-data.yml` runs daily or manually. It performs an
-incremental refresh from the current ITS news months only, using the committed
-database as the baseline.
+- `.github/workflows/deploy-pages.yml` publishes the already committed `site/`
+  directory to GitHub Pages. It does not scrape or rebuild data.
+- `.github/workflows/update-data.yml` runs daily or manually. It performs an
+  incremental refresh from the current ITS news months only, using the committed
+  database as the baseline.
 
 The data update workflow:
 
 1. installs the package;
 2. runs the collector in incremental mode;
 3. runs tests;
-4. commits changed generated reports/docs files back to the repository.
+4. commits changed generated reports/site files back to the repository.
 
+That commit then triggers the fast Pages deploy workflow.
 If GitHub-hosted runners receive a DDoS-Guard challenge from ITS, the update
 job fails before writing files, so the published database is not degraded.
 
-Enable Pages in repository settings with **Deploy from a branch**:
-`main` / `docs`.
+Enable Pages in repository settings with **GitHub Actions** as the source.
 
 ## Development
 

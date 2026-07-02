@@ -2,6 +2,8 @@ name: Update Data
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
 
 permissions:
   contents: write
@@ -31,7 +33,7 @@ jobs:
             its-news-cache-
 
       - name: Build release database and site
-        run: onec-release-dates
+        run: onec-release-dates --incremental
 
       - name: Test
         run: python -m pytest -q

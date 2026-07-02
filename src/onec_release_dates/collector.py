@@ -484,6 +484,41 @@ def collect_all(days: int) -> dict:
     }
 
 
+def source_catalog() -> list[dict]:
+    return [
+        {"id": "its", "name": "1C ITS news", "url": ITS_NEWS_URL},
+        {"id": "rarus", "name": "Rarus release pages and forum", "url": "https://rarus.ru/"},
+    ]
+
+
+def rebuild_database_from_releases(releases: list[dict], days: int, mode: str) -> dict:
+    releases = unique_releases(releases)
+    grouped = group_releases(releases)
+    return {
+        "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
+        "period": {"mode": mode, "days": days},
+        "sources": source_catalog(),
+        "summary": build_summary(grouped, days),
+        "releases": releases,
+    }
+
+
+def update_existing_database(path: Path, days: int, months: list[str] | None = None) -> dict:
+    with path.open(encoding="utf-8") as fp:
+        existing = json.load(fp)
+    months = months or [TODAY.strftime("%Y%m"), previous_month()]
+    fresh_rows = []
+    for ym in dict.fromkeys(months):
+        fresh_rows.extend(parse_its_news_month(ym))
+    if not fresh_rows:
+        raise SystemExit(f"No ITS rows parsed for incremental months: {', '.join(dict.fromkeys(months))}")
+    return rebuild_database_from_releases(
+        [*existing.get("releases", []), *fresh_rows],
+        days,
+        "incremental_current_months",
+    )
+
+
 def validate_public_database(data: dict) -> None:
     config_count = len(data["summary"])
     release_count = len(data["releases"])
@@ -723,9 +758,14 @@ def main() -> int:
     parser.add_argument("--json-out", default="reports/1c-release-dates.json")
     parser.add_argument("--md-out", default="reports/1c-release-dates.md")
     parser.add_argument("--site-out", default="site")
+    parser.add_argument("--incremental", action="store_true", help="update existing JSON with current ITS months only")
+    parser.add_argument("--month", action="append", help="YYYYMM month for incremental update; can be repeated")
     args = parser.parse_args()
 
-    data = collect_all(args.days)
+    if args.incremental:
+        data = update_existing_database(Path(args.json_out), args.days, args.month)
+    else:
+        data = collect_all(args.days)
     validate_public_database(data)
     write_json(Path(args.json_out), data)
     write_text(Path(args.md_out), render_markdown(data))

@@ -32,9 +32,6 @@ jobs:
           months = [
               today.strftime("%Y%m"),
               collector.previous_month(today),
-              "202606",
-              "202506",
-              "201701",
           ]
           results = []
           for ym in dict.fromkeys(months):
@@ -90,9 +87,11 @@ jobs:
           print(json.dumps(results, ensure_ascii=False, indent=2))
           PY
 
-      - name: Run full collector in temporary output
+      - name: Run incremental collector in temporary output
         run: |
+          cp reports/1c-release-dates.json /tmp/onec-release-dates.json
           onec-release-dates \
+            --incremental \
             --json-out /tmp/onec-release-dates.json \
             --md-out /tmp/onec-release-dates.md \
             --site-out /tmp/onec-release-dates-site

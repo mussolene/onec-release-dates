@@ -50,18 +50,20 @@ The Pages deploy and data refresh are intentionally split:
 
 - `.github/workflows/deploy-pages.yml` publishes the already committed `site/`
   directory to GitHub Pages. It does not scrape or rebuild data.
-- `.github/workflows/update-data.yml` can be run manually to refresh the public
-  release database. It is intentionally not scheduled while ITS news access from
-  GitHub-hosted runners is unreliable.
+- `.github/workflows/update-data.yml` runs daily or manually. It performs an
+  incremental refresh from the current ITS news months only, using the committed
+  database as the baseline.
 
 The data update workflow:
 
 1. installs the package;
-2. runs the collector;
+2. runs the collector in incremental mode;
 3. runs tests;
 4. commits changed generated reports/site files back to the repository.
 
 That commit then triggers the fast Pages deploy workflow.
+If GitHub-hosted runners receive a DDoS-Guard challenge from ITS, the update
+job fails before writing files, so the published database is not degraded.
 
 Enable Pages in repository settings with **GitHub Actions** as the source.
 

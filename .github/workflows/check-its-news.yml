@@ -59,6 +59,37 @@ jobs:
               raise SystemExit("ITS news probe returned zero rows for all tested months")
           PY
 
+      - name: Probe alternative domains
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from onec_release_dates import collector
+
+          urls = [
+              "https://its.1c.ru/news/?ym=202606&type=",
+              "https://its.1c.ua/news/?ym=202606&type=",
+              "https://its.1c.com/news/?ym=202606&type=",
+              "https://news.webits.1c.ru/news/Version_Changes/html/?config=AccountingCorp,03.00.165.0019",
+              "https://news.webits.1c.ua/news/Version_Changes/html/?config=AccountingCorp,03.00.165.0019",
+              "https://news.webits.1c.com/news/Version_Changes/html/?config=AccountingCorp,03.00.165.0019",
+          ]
+          results = []
+          for url in urls:
+              status, raw = collector.fetch(url)
+              results.append({
+                  "url": url,
+                  "status": status,
+                  "html_length": len(raw),
+                  "version_files_links": len(re.findall(r"version_files\?nick=", raw)),
+                  "panel_markers": raw.count('<div class="panel">'),
+                  "ddos_guard": "DDoS-Guard" in raw,
+                  "sample": re.sub(r"\s+", " ", raw[:700]),
+              })
+          print(json.dumps(results, ensure_ascii=False, indent=2))
+          PY
+
       - name: Run full collector in temporary output
         run: |
           onec-release-dates \

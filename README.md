@@ -9,7 +9,7 @@ The tool builds two outputs:
 
 The current collector uses:
 
-- `releases.1c.ru/project/<nick>?allUpdates=true#updates` for standard 1C configurations;
+- public `its.1c.ru/news/?ym=YYYYMM&type=` release news for standard 1C configurations;
 - Rarus release pages for Alfa-Auto 6.x;
 - Rarus forum pages for Alfa-Auto 5.1.
 
@@ -21,13 +21,9 @@ python3 -m venv .venv
 python -m pip install -e .
 ```
 
-For `releases.1c.ru`, create a local `.env`:
-
-```bash
-cp .env.example .env
-```
-
-Then fill in local credentials. Do not commit `.env`.
+The ITS news source is public and does not require a login.
+Fetched ITS months are cached in local `.cache/its-news.json`; every run
+refreshes the current and previous month automatically.
 
 ## Usage
 

@@ -8,12 +8,9 @@ skipped item, while successful sources still produce JSON and Markdown output.
 from __future__ import annotations
 
 import argparse
-import base64
 import datetime as dt
 import html
-import http.cookiejar
 import json
-import os
 import re
 import ssl
 import sys
@@ -21,16 +18,43 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Iterable
 
 
 TODAY = dt.date.today()
 DEFAULT_DAYS = 365
 UA = "Mozilla/5.0 1c-release-date-collector/0.1"
-LOGIN_URL = "https://login.1c.ru/login"
-RELEASES_URL = "https://releases.1c.ru"
-COOKIE_OPENER = None
-LOGIN_ATTEMPTED = False
+ITS_NEWS_URL = "https://its.1c.ru/news/"
+ITS_START_YEAR = 2018
+ITS_CACHE_PATH = Path(".cache/its-news.json")
+ITS_NEWS_CACHE = None
+
+MONTH_ALIASES = {
+    "янв": 1,
+    "фев": 2,
+    "мар": 3,
+    "апр": 4,
+    "май": 5,
+    "июн": 6,
+    "июл": 7,
+    "авг": 8,
+    "сен": 9,
+    "окт": 10,
+    "ноя": 11,
+    "дек": 12,
+}
+
+ITS_NICK_ALIASES = {
+    "AccountingCorp20": ["AccountingCorp"],
+    "Enterprise24": ["EnterpriseERP20"],
+    "Enterprise25": ["EnterpriseERP20"],
+    "ERPUH32": ["ERP_UH32"],
+    "ERPUH31": ["ERP_UH31"],
+    "Trade115": ["Trade110"],
+    "DocMgrCorp21": ["DocMngCorp"],
+    "DocMgrCorp30": ["DocMngCorp30"],
+}
 
 
 @dataclass(frozen=True)
@@ -45,39 +69,39 @@ class Target:
 
 
 TARGETS = [
-    Target("AccountingCorp30_latest", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.183.24", "УФ latest", "releases", "AccountingCorp30"),
-    Target("Enterprise24_latest", "1С:ERP Управление предприятием 2, редакция 2.4", "2.4.14.181", "УФ latest", "releases", "Enterprise24"),
-    Target("Enterprise25_latest", "1С:ERP Управление предприятием 2, редакция 2.5", "2.5.24.52", "УФ latest", "releases", "Enterprise25"),
-    Target("ERPUH32_latest", "1С:ERP Управление холдингом, редакция 3.2", "3.2.8.11", "УФ latest", "releases", "ERPUH32"),
-    Target("SmallBusiness16_latest", "Управление нашей фирмой, редакция 1.6", "1.6.27.295", "УФ latest", "releases", "SmallBusiness16"),
-    Target("SmallBusiness30_latest", "Управление нашей фирмой, редакция 3.0", "3.0.12.170", "УФ latest", "releases", "SmallBusiness30"),
-    Target("StateAccounting20_latest", "Бухгалтерия государственного учреждения, редакция 2.0", "2.0.105.76", "УФ latest", "releases", "StateAccounting20"),
-    Target("Arenda3_latest", "Аренда и управление недвижимостью для 1С:Бухгалтерия 8, редакция 3.0", "3.0.182.33/3.3.3.326", "УФ latest", "releases", "Arenda3"),
+    Target("AccountingCorp30_latest", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.183.24", "УФ latest", "its", "AccountingCorp30"),
+    Target("Enterprise24_latest", "1С:ERP Управление предприятием 2, редакция 2.4", "2.4.14.181", "УФ latest", "its", "Enterprise24"),
+    Target("Enterprise25_latest", "1С:ERP Управление предприятием 2, редакция 2.5", "2.5.24.52", "УФ latest", "its", "Enterprise25"),
+    Target("ERPUH32_latest", "1С:ERP Управление холдингом, редакция 3.2", "3.2.8.11", "УФ latest", "its", "ERPUH32"),
+    Target("SmallBusiness16_latest", "Управление нашей фирмой, редакция 1.6", "1.6.27.295", "УФ latest", "its", "SmallBusiness16"),
+    Target("SmallBusiness30_latest", "Управление нашей фирмой, редакция 3.0", "3.0.12.170", "УФ latest", "its", "SmallBusiness30"),
+    Target("StateAccounting20_latest", "Бухгалтерия государственного учреждения, редакция 2.0", "2.0.105.76", "УФ latest", "its", "StateAccounting20"),
+    Target("Arenda3_latest", "Аренда и управление недвижимостью для 1С:Бухгалтерия 8, редакция 3.0", "3.0.182.33/3.3.3.326", "УФ latest", "its", "Arenda3"),
     Target("AutoSalon60_latest", "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6", "6.0.41.02", "УФ latest", "rarus6", version_prefix="6.0"),
     Target("AutoSalon61_latest", "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.1", "6.1.20.02", "УФ latest", "rarus6", version_prefix="6.1"),
-    Target("Retail23_latest", "Розница, редакция 2.3", "2.3.23.50", "УФ latest", "releases", "Retail23"),
-    Target("Retail30_latest", "Розница, редакция 3.0", "3.0.12.170", "УФ latest", "releases", "Retail30"),
-    Target("DocMgrCorp21_latest", "Документооборот КОРП, редакция 2.1", "2.1.36.3", "УФ latest", "releases", "DocMgrCorp21"),
-    Target("DocMgrCorp30_latest", "Документооборот КОРП, редакция 3.0", "3.0.18.19", "УФ latest", "releases", "DocMgrCorp30"),
-    Target("Trade115_latest", "Управление торговлей 11.5", "11.5.24.52", "УФ latest", "releases", "Trade115"),
-    Target("CorporatePerformanceManagement32_latest", "Управление холдингом, редакция 3.2", "3.2.10.40", "УФ latest", "releases", "CorporatePerformanceManagement32"),
+    Target("Retail23_latest", "Розница, редакция 2.3", "2.3.23.50", "УФ latest", "its", "Retail23"),
+    Target("Retail30_latest", "Розница, редакция 3.0", "3.0.12.170", "УФ latest", "its", "Retail30"),
+    Target("DocMgrCorp21_latest", "Документооборот КОРП, редакция 2.1", "2.1.36.3", "УФ latest", "its", "DocMgrCorp21"),
+    Target("DocMgrCorp30_latest", "Документооборот КОРП, редакция 3.0", "3.0.18.19", "УФ latest", "its", "DocMgrCorp30"),
+    Target("Trade115_latest", "Управление торговлей 11.5", "11.5.24.52", "УФ latest", "its", "Trade115"),
+    Target("CorporatePerformanceManagement32_latest", "Управление холдингом, редакция 3.2", "3.2.10.40", "УФ latest", "its", "CorporatePerformanceManagement32"),
     Target("AlfaAuto51_latest", "Альфа-Авто 5.1", "5.1.47.04", "ОФ latest", "rarus5", version_prefix="5.1"),
-    Target("AccountingCorp20_latest", "Бухгалтерия предприятия КОРП 2.0", "2.0.67.75", "ОФ latest", "releases", "AccountingCorp20"),
-    Target("ARAutomation11_latest", "Комплексная автоматизация 1.1", "1.1.115.1", "ОФ latest", "releases", "ARAutomation11"),
-    Target("Enterprise13_latest", "Управление производственным предприятием 1.3", "1.3.274.2", "ОФ latest", "releases", "Enterprise13"),
-    Target("Trade103_latest", "Управление торговлей 10.3", "10.3.88.3", "ОФ latest", "releases", "Trade103"),
-    Target("AccountingCorp30_oldest", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.137.39", "УФ oldest", "releases", "AccountingCorp30"),
-    Target("Arenda3_oldest", "Аренда и управление недвижимостью для 1С:Бухгалтерия 8, редакция 3.0", "3.0.135.22/3.3.3.264", "УФ oldest", "releases", "Arenda3"),
-    Target("Enterprise24_oldest", "1С:ERP Управление предприятием 2, редакция 2.4", "2.4.13.282", "УФ oldest", "releases", "Enterprise24"),
-    Target("Enterprise25_oldest", "1С:ERP Управление предприятием 2, редакция 2.5", "2.5.12.147", "УФ oldest", "releases", "Enterprise25"),
-    Target("ERPUH31_oldest", "1С:ERP Управление холдингом, редакция 3.1", "3.1.13.20", "УФ oldest", "releases", "ERPUH31"),
-    Target("SmallBusiness16_oldest", "Управление нашей фирмой, редакция 1.6", "1.6.26.229", "УФ oldest", "releases", "SmallBusiness16"),
-    Target("ARAutomation11_100", "КА 1.1 (1.1.100.2)", "1.1.100.2", "ОФ oldest", "releases", "ARAutomation11"),
-    Target("Vanessa_Pro_BP", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.137.39", "Технические ИБ", "releases", "AccountingCorp30"),
-    Target("AccountingCorp20_demo", "Бухгалтерия предприятия КОРП 2.0", "2.0.67.75", "ОФ demo", "releases", "AccountingCorp20"),
-    Target("ARAutomation11_demo", "Комплексная автоматизация 1.1", "1.1.115.1", "ОФ demo", "releases", "ARAutomation11"),
-    Target("Enterprise13_demo", "Управление производственным предприятием 1.3", "1.3.255.1", "ОФ demo", "releases", "Enterprise13"),
-    Target("Trade103_demo", "Управление торговлей 10.3", "10.3.88.3", "ОФ demo", "releases", "Trade103"),
+    Target("AccountingCorp20_latest", "Бухгалтерия предприятия КОРП 2.0", "2.0.67.75", "ОФ latest", "its", "AccountingCorp20"),
+    Target("ARAutomation11_latest", "Комплексная автоматизация 1.1", "1.1.115.1", "ОФ latest", "its", "ARAutomation11"),
+    Target("Enterprise13_latest", "Управление производственным предприятием 1.3", "1.3.274.2", "ОФ latest", "its", "Enterprise13"),
+    Target("Trade103_latest", "Управление торговлей 10.3", "10.3.88.3", "ОФ latest", "its", "Trade103"),
+    Target("AccountingCorp30_oldest", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.137.39", "УФ oldest", "its", "AccountingCorp30"),
+    Target("Arenda3_oldest", "Аренда и управление недвижимостью для 1С:Бухгалтерия 8, редакция 3.0", "3.0.135.22/3.3.3.264", "УФ oldest", "its", "Arenda3"),
+    Target("Enterprise24_oldest", "1С:ERP Управление предприятием 2, редакция 2.4", "2.4.13.282", "УФ oldest", "its", "Enterprise24"),
+    Target("Enterprise25_oldest", "1С:ERP Управление предприятием 2, редакция 2.5", "2.5.12.147", "УФ oldest", "its", "Enterprise25"),
+    Target("ERPUH31_oldest", "1С:ERP Управление холдингом, редакция 3.1", "3.1.13.20", "УФ oldest", "its", "ERPUH31"),
+    Target("SmallBusiness16_oldest", "Управление нашей фирмой, редакция 1.6", "1.6.26.229", "УФ oldest", "its", "SmallBusiness16"),
+    Target("ARAutomation11_100", "КА 1.1 (1.1.100.2)", "1.1.100.2", "ОФ oldest", "its", "ARAutomation11"),
+    Target("Vanessa_Pro_BP", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.137.39", "Технические ИБ", "its", "AccountingCorp30"),
+    Target("AccountingCorp20_demo", "Бухгалтерия предприятия КОРП 2.0", "2.0.67.75", "ОФ demo", "its", "AccountingCorp20"),
+    Target("ARAutomation11_demo", "Комплексная автоматизация 1.1", "1.1.115.1", "ОФ demo", "its", "ARAutomation11"),
+    Target("Enterprise13_demo", "Управление производственным предприятием 1.3", "1.3.255.1", "ОФ demo", "its", "Enterprise13"),
+    Target("Trade103_demo", "Управление торговлей 10.3", "10.3.88.3", "ОФ demo", "its", "Trade103"),
 ]
 
 
@@ -90,115 +114,8 @@ RARUS5_PAGES = [
 ]
 
 
-def load_dotenv(path: str = ".env") -> None:
-    if not os.path.exists(path):
-        return
-    with open(path, encoding="utf-8") as fp:
-        for line in fp:
-            line = line.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            key, value = line.split("=", 1)
-            key = key.removeprefix("export ").strip()
-            if key in os.environ:
-                continue
-            value = value.strip().strip('"').strip("'")
-            os.environ[key] = value
-
-
-def auth_header() -> str | None:
-    user = os.getenv("RELEASES_1C_USER") or os.getenv("ITS_USER") or os.getenv("ITS_LOGIN")
-    password = os.getenv("RELEASES_1C_PASSWORD") or os.getenv("ITS_PASSWORD") or os.getenv("ITS_PASS")
-    if not user or not password:
-        return None
-    token = base64.b64encode(f"{user}:{password}".encode()).decode()
-    return f"Basic {token}"
-
-
-def credentials() -> tuple[str | None, str | None]:
-    return (
-        os.getenv("RELEASES_1C_USER") or os.getenv("ITS_USER") or os.getenv("ITS_LOGIN"),
-        os.getenv("RELEASES_1C_PASSWORD") or os.getenv("ITS_PASSWORD") or os.getenv("ITS_PASS"),
-    )
-
-
-def extract_input_value(page: str, name: str, default: str = "") -> str:
-    patterns = [
-        rf'<input[^>]+name=["\']{re.escape(name)}["\'][^>]*value=["\']([^"\']*)',
-        rf'<input[^>]+value=["\']([^"\']*)["\'][^>]*name=["\']{re.escape(name)}["\']',
-    ]
-    for pattern in patterns:
-        match = re.search(pattern, page, re.I)
-        if match:
-            return html.unescape(match.group(1) or default)
-    return default
-
-
-def fetch_with_opener(opener, url: str, data: bytes | None = None, timeout: int = 30) -> tuple[int, str, str]:
+def fetch(url: str, timeout: int = 30) -> tuple[int, str]:
     headers = {"User-Agent": UA}
-    if data is not None:
-        headers["Content-Type"] = "application/x-www-form-urlencoded"
-    req = urllib.request.Request(url, data=data, headers=headers)
-    try:
-        with opener.open(req, timeout=timeout) as resp:
-            charset = resp.headers.get_content_charset() or "utf-8"
-            return resp.status, resp.read().decode(charset, "replace"), resp.geturl()
-    except urllib.error.HTTPError as exc:
-        return exc.code, exc.read().decode("utf-8", "replace"), exc.geturl()
-
-
-def releases_opener():
-    global COOKIE_OPENER, LOGIN_ATTEMPTED
-    if COOKIE_OPENER is not None:
-        return COOKIE_OPENER
-    if LOGIN_ATTEMPTED:
-        return None
-    LOGIN_ATTEMPTED = True
-
-    user, password = credentials()
-    if not user or not password:
-        return None
-
-    context = ssl._create_unverified_context()
-    jar = http.cookiejar.CookieJar()
-    opener = urllib.request.build_opener(
-        urllib.request.HTTPCookieProcessor(jar),
-        urllib.request.HTTPSHandler(context=context),
-    )
-    status, login_page, _ = fetch_with_opener(opener, LOGIN_URL)
-    if status != 200:
-        return None
-    execution = extract_input_value(login_page, "execution")
-    if not execution:
-        return None
-
-    data = urllib.parse.urlencode({
-        "inviteCode": "",
-        "execution": execution,
-        "_eventId": "submit",
-        "rememberMe": "false",
-        "username": user,
-        "password": password,
-    }).encode()
-    fetch_with_opener(opener, LOGIN_URL, data=data)
-    profile_status, _, profile_url = fetch_with_opener(opener, "https://login.1c.ru/user/profile")
-    if profile_status == 200 and profile_url.rstrip("/").endswith("/user/profile"):
-        COOKIE_OPENER = opener
-        return COOKIE_OPENER
-    return None
-
-
-def fetch(url: str, auth: bool = False, timeout: int = 30) -> tuple[int, str]:
-    if auth:
-        opener = releases_opener()
-        if opener is not None:
-            status, body, _ = fetch_with_opener(opener, url, timeout=timeout)
-            return status, body
-    headers = {"User-Agent": UA}
-    if auth:
-        value = auth_header()
-        if value:
-            headers["Authorization"] = value
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -281,21 +198,134 @@ def unique_releases(rows: Iterable[dict]) -> list[dict]:
     return sorted(best.values(), key=lambda row: version_key(row["version"]), reverse=True)
 
 
-def parse_releases_page(target: Target) -> tuple[list[dict], str | None]:
-    assert target.nick
-    url = f"https://releases.1c.ru/project/{urllib.parse.quote(target.nick)}?allUpdates=true#updates"
-    status, raw = fetch(url, auth=True)
+
+def iter_its_months(start_year: int = ITS_START_YEAR, end: dt.date = TODAY) -> Iterable[str]:
+    for year in range(end.year, start_year - 1, -1):
+        last_month = end.month if year == end.year else 12
+        for month in range(last_month, 0, -1):
+            yield f"{year}{month:02d}"
+
+
+def previous_month(value: dt.date = TODAY) -> str:
+    year = value.year
+    month = value.month - 1
+    if month == 0:
+        year -= 1
+        month = 12
+    return f"{year}{month:02d}"
+
+
+def parse_news_date(panel: str) -> dt.date | None:
+    match = re.search(
+        r'journal-date__day">(\d{1,2}).*?journal-date__month">([^<]+).*?journal-date__year">\'(\d{2})',
+        panel,
+        re.S,
+    )
+    if not match:
+        return None
+    month_name = match.group(2).strip().lower()[:3]
+    month = MONTH_ALIASES.get(month_name)
+    if not month:
+        return None
+    return dt.date(2000 + int(match.group(3)), month, int(match.group(1)))
+
+
+def parse_news_id(panel: str) -> str | None:
+    match = re.search(r'data-news-id="(\d+)"', panel) or re.search(r'id="news_(\d+)"', panel)
+    return match.group(1) if match else None
+
+
+def parse_news_title(panel: str) -> str:
+    match = re.search(r'(?is)<div class="link-item news-item[^>]*"[^>]*>(.*?)(?:<div class="link-item__state">|</div>)', panel)
+    return clean_text(match.group(1)).strip() if match else ""
+
+
+def parse_its_news_month(ym: str) -> list[dict]:
+    url = f"{ITS_NEWS_URL}?ym={ym}&type="
+    status, raw = fetch(url)
     if status != 200:
-        return [], f"releases.1c.ru status {status}"
-    text = clean_text(raw)
+        return []
+    panels = re.findall(r'(?is)<div class="panel">(.*?)(?=<div class="panel">|<div id="footer"|</body>|\Z)', raw)
     rows = []
-    pattern = re.compile(r"\b(\d+(?:\.\d+){2,3})\b\s+(\d{2}\.\d{2}\.\d{2,4})\b")
-    for version, date_text in pattern.findall(text):
-        date = parse_date(date_text)
-        if date and keep_version(target, version):
-            rows.append(release(version, date, "releases.1c.ru", url))
+    for panel in panels:
+        date = parse_news_date(panel)
+        if not date:
+            continue
+        news_id = parse_news_id(panel)
+        title = parse_news_title(panel)
+        for nick, version in re.findall(r'version_files\?nick=([^"&]+)(?:&amp;|&)ver=([^"&]+)', panel):
+            news_url = f"https://its.1c.ru/news/{news_id}" if news_id else url
+            rows.append(release(
+                urllib.parse.unquote(version),
+                date,
+                "its.1c.ru news",
+                news_url,
+                {
+                    "nick": urllib.parse.unquote(nick),
+                    "news_id": news_id,
+                    "news_title": title,
+                    "month": ym,
+                },
+            ))
+    return rows
+
+
+def its_news_rows() -> list[dict]:
+    global ITS_NEWS_CACHE
+    if ITS_NEWS_CACHE is None:
+        cache = load_its_cache()
+        refresh_months = {TODAY.strftime("%Y%m"), previous_month()}
+        rows = []
+        changed = False
+        for ym in iter_its_months():
+            if ym in cache and ym not in refresh_months:
+                rows.extend(cache[ym])
+                continue
+            month_rows = parse_its_news_month(ym)
+            rows.extend(month_rows)
+            if cache.get(ym) != month_rows:
+                cache[ym] = month_rows
+                changed = True
+        if changed:
+            save_its_cache(cache)
+        ITS_NEWS_CACHE = rows
+    return ITS_NEWS_CACHE
+
+
+def load_its_cache() -> dict[str, list[dict]]:
+    try:
+        with ITS_CACHE_PATH.open(encoding="utf-8") as fp:
+            raw = json.load(fp)
+    except (OSError, json.JSONDecodeError):
+        return {}
+    months = raw.get("months", {})
+    if not isinstance(months, dict):
+        return {}
+    return {str(month): rows for month, rows in months.items() if isinstance(rows, list)}
+
+
+def save_its_cache(months: dict[str, list[dict]]) -> None:
+    ITS_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
+        "source": ITS_NEWS_URL,
+        "months": dict(sorted(months.items(), reverse=True)),
+    }
+    with ITS_CACHE_PATH.open("w", encoding="utf-8") as fp:
+        json.dump(payload, fp, ensure_ascii=False, indent=2)
+        fp.write("\n")
+
+
+def its_nicks_for(target: Target) -> set[str]:
+    assert target.nick
+    return set(ITS_NICK_ALIASES.get(target.nick, [target.nick]))
+
+
+def parse_its_news(target: Target) -> tuple[list[dict], str | None]:
+    nicks = its_nicks_for(target)
+    rows = [row for row in its_news_rows() if row.get("nick") in nicks and keep_version(target, row["version"])]
     rows = unique_releases(rows)
-    return rows, None if rows else "no release rows parsed"
+    return rows, None if rows else "no ITS news rows parsed"
 
 
 def parse_rarus6(target: Target) -> tuple[list[dict], str | None]:
@@ -340,8 +370,8 @@ def parse_rarus5(target: Target) -> tuple[list[dict], str | None]:
 
 
 def collect_target(target: Target) -> tuple[list[dict], str | None]:
-    if target.source == "releases":
-        return parse_releases_page(target)
+    if target.source == "its":
+        return parse_its_news(target)
     if target.source == "rarus6":
         return parse_rarus6(target)
     if target.source == "rarus5":
@@ -446,7 +476,6 @@ def render_markdown(data: dict) -> str:
 
 
 def main() -> int:
-    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="lookback window, default: 365")
     parser.add_argument("--json-out", default="release_dates.json")

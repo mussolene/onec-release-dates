@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "onec-release-dates"
 version = "0.1.0"
-description = "Collect 1C configuration release dates from releases.1c.ru and vendor fallback sources."
+description = "Collect 1C configuration release dates from public ITS news and vendor fallback sources."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Proprietary" }

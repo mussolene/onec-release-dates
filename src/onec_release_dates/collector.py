@@ -547,7 +547,7 @@ def select_year_ago_release(rows: list[dict], latest: dict, days: int) -> tuple[
     for row in rows:
         if row_date(row) <= cutoff:
             return cutoff, row
-    return cutoff, None
+    return cutoff, latest
 
 
 def period_rows(rows: list[dict], cutoff: dt.date, baseline: dict | None) -> list[dict]:

@@ -543,6 +543,10 @@ def display_name(config_id: str, rows: list[dict]) -> str:
 
 
 def select_year_ago_release(rows: list[dict], latest: dict, days: int) -> tuple[dt.date, dict | None]:
+    stale_cutoff = TODAY - dt.timedelta(days=days)
+    if row_date(latest) <= stale_cutoff:
+        return row_date(latest), latest
+
     cutoff = row_date(latest) - dt.timedelta(days=days)
     for row in rows:
         if row_date(row) <= cutoff:

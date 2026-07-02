@@ -30,6 +30,20 @@ def test_select_year_ago_release_falls_back_to_latest_without_old_enough_row():
     assert period_rows(rows, cutoff, baseline) == rows
 
 
+def test_select_year_ago_release_returns_latest_when_latest_is_stale(monkeypatch):
+    monkeypatch.setattr(collector, "TODAY", dt.date(2026, 7, 2))
+    rows = [
+        {"version": "2.0.44.40", "date": "2024-06-04"},
+        {"version": "2.0.44.28", "date": "2023-04-03"},
+    ]
+
+    cutoff, baseline = select_year_ago_release(rows, rows[0], 365)
+
+    assert cutoff == dt.date(2024, 6, 4)
+    assert baseline == rows[0]
+    assert period_rows(rows, cutoff, baseline) == [rows[0]]
+
+
 def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
     html = """
     <div class="panel">

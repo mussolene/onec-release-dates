@@ -11,6 +11,11 @@ requires-python = ">=3.11"
 license = { file = "LICENSE" }
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+]
+
 [project.scripts]
 onec-release-dates = "onec_release_dates.collector:main"
 

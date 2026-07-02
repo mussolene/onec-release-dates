@@ -1,4 +1,4 @@
-name: Update Pages
+name: Update Data
 
 on:
   workflow_dispatch:
@@ -7,11 +7,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: update-data
   cancel-in-progress: false
 
 jobs:
@@ -51,11 +49,3 @@ jobs:
             git commit -m "Update release database"
             git push
           fi
-
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-      - uses: actions/deploy-pages@v4

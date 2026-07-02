@@ -1,6 +1,7 @@
 # 1C Release Dates
 
-[![Update Pages](../../actions/workflows/update-pages.yml/badge.svg)](../../actions/workflows/update-pages.yml)
+[![Deploy Pages](../../actions/workflows/deploy-pages.yml/badge.svg)](../../actions/workflows/deploy-pages.yml)
+[![Update Data](../../actions/workflows/update-data.yml/badge.svg)](../../actions/workflows/update-data.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
@@ -45,14 +46,21 @@ refreshes the current and previous month automatically.
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/update-pages.yml` runs daily and on manual
-dispatch. It:
+The Pages deploy and data refresh are intentionally split:
+
+- `.github/workflows/deploy-pages.yml` publishes the already committed `site/`
+  directory to GitHub Pages. It does not scrape or rebuild data.
+- `.github/workflows/update-data.yml` runs daily or manually to refresh the
+  public release database.
+
+The data update workflow:
 
 1. installs the package;
 2. runs the collector;
 3. runs tests;
-4. commits changed generated reports/site files back to the repository;
-5. deploys the `site/` directory to GitHub Pages.
+4. commits changed generated reports/site files back to the repository.
+
+That commit then triggers the fast Pages deploy workflow.
 
 Enable Pages in repository settings with **GitHub Actions** as the source.
 

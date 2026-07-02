@@ -21,7 +21,14 @@ from typing import Iterable
 
 
 TODAY = dt.date.today()
+PROJECT_TITLE = "1C Release Dates"
 DEFAULT_DAYS = 365
+DEFAULT_JSON_OUT = "reports/1c-release-dates.json"
+DEFAULT_MD_OUT = "reports/1c-release-dates.md"
+DEFAULT_SITE_OUT = "site"
+FETCH_TIMEOUT_SECONDS = 30
+MIN_PUBLIC_CONFIGS = 50
+MIN_PUBLIC_RELEASES = 1000
 UA = "Mozilla/5.0 onec-release-dates/0.2"
 LOGIN_URL = "https://login.1c.ru/login"
 ITS_LOGIN_CALLBACK = "https://its.1c.ru/login/?action=aftercheck&provider=login"
@@ -31,6 +38,10 @@ ITS_CACHE_PATH = Path(".cache/its-news.json")
 AUTH_OPENER = None
 AUTH_ATTEMPTED = False
 RARUS6_YEARS = range(2021, TODAY.year + 1)
+RARUS_URL = "https://rarus.ru/"
+RARUS6_RELEASE_URL_TEMPLATE = (
+    "https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-{year}/"
+)
 RARUS5_PAGES = [
     "https://rarus.ru/forum/forum7/topic2826/",
     "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=2",
@@ -75,6 +86,11 @@ CONFIG_ID_ALIASES_BY_BRANCH = {
     ("ERP_UH32", "3.1"): "ERP_UH31",
 }
 
+SOURCE_CATALOG = [
+    {"id": "its", "name": "1C ITS news", "url": ITS_NEWS_URL},
+    {"id": "rarus", "name": "Rarus release pages and forum", "url": RARUS_URL},
+]
+
 
 def load_dotenv(path: str = ".env") -> None:
     dotenv = Path(path)
@@ -107,7 +123,12 @@ def extract_input_value(page: str, name: str) -> str:
     return ""
 
 
-def fetch_with_opener(opener, url: str, data: bytes | None = None, timeout: int = 30) -> tuple[int, str, str]:
+def fetch_with_opener(
+    opener,
+    url: str,
+    data: bytes | None = None,
+    timeout: int = FETCH_TIMEOUT_SECONDS,
+) -> tuple[int, str, str]:
     headers = {"User-Agent": UA}
     if data is not None:
         headers["Content-Type"] = "application/x-www-form-urlencoded"
@@ -146,26 +167,24 @@ def authenticated_opener():
     if not execution:
         return None
 
-    data = urllib.parse.urlencode({
-        "inviteCode": "",
-        "execution": execution,
-        "_eventId": "submit",
-        "rememberMe": "false",
-        "username": user,
-        "password": password,
-    }).encode()
+    data = urllib.parse.urlencode(
+        {
+            "inviteCode": "",
+            "execution": execution,
+            "_eventId": "submit",
+            "rememberMe": "false",
+            "username": user,
+            "password": password,
+        }
+    ).encode()
     callback_status, callback_body, callback_url = fetch_with_opener(opener, login_url, data=data)
-    if (
-        callback_status == 200
-        and callback_url.startswith(ITS_LOGIN_CALLBACK)
-        and "DDoS-Guard" not in callback_body
-    ):
+    if callback_status == 200 and callback_url.startswith(ITS_LOGIN_CALLBACK) and "DDoS-Guard" not in callback_body:
         AUTH_OPENER = opener
         return AUTH_OPENER
     return None
 
 
-def fetch(url: str, timeout: int = 30, auth: bool = False) -> tuple[int, str]:
+def fetch(url: str, timeout: int = FETCH_TIMEOUT_SECONDS, auth: bool = False) -> tuple[int, str]:
     if auth:
         opener = authenticated_opener()
         if opener is not None:
@@ -299,7 +318,9 @@ def parse_news_id(panel: str) -> str | None:
 
 
 def parse_news_title(panel: str) -> str:
-    match = re.search(r'(?is)<div class="link-item news-item[^>]*"[^>]*>(.*?)(?:<div class="link-item__state">|</div>)', panel)
+    match = re.search(
+        r'(?is)<div class="link-item news-item[^>]*"[^>]*>(.*?)(?:<div class="link-item__state">|</div>)', panel
+    )
     return clean_text(match.group(1)).strip() if match else clean_text(panel)[:500]
 
 
@@ -365,18 +386,20 @@ def parse_its_news_month(ym: str) -> list[dict]:
         for nick, version in re.findall(r'version_files\?nick=([^"&]+)(?:&amp;|&)ver=([^"&]+)', panel):
             nick = urllib.parse.unquote(nick)
             version = urllib.parse.unquote(version)
-            rows.append(release_row(
-                config_id=nick,
-                config_name=pop_name(name_candidates, version),
-                version=version,
-                date=date,
-                source="its.1c.ru news",
-                url=news_url,
-                extra={
-                    "month": ym,
-                    "source_kind": "its",
-                },
-            ))
+            rows.append(
+                release_row(
+                    config_id=nick,
+                    config_name=pop_name(name_candidates, version),
+                    version=version,
+                    date=date,
+                    source="its.1c.ru news",
+                    url=news_url,
+                    extra={
+                        "month": ym,
+                        "source_kind": "its",
+                    },
+                )
+            )
     return rows
 
 
@@ -402,18 +425,20 @@ def normalize_cached_rows(rows: list[dict]) -> list[dict]:
             continue
         title = row.get("news_title", "")
         name = row.get("config_name") or (names_by_version(title).get(version) or [config_id])[0]
-        normalized.append(release_row(
-            config_id=config_id,
-            config_name=name,
-            version=version,
-            date=dt.date.fromisoformat(date),
-            source=row.get("source", "its.1c.ru news"),
-            url=row.get("url", ITS_NEWS_URL),
-            extra={
-                "month": row.get("month"),
-                "source_kind": "its",
-            },
-        ))
+        normalized.append(
+            release_row(
+                config_id=config_id,
+                config_name=name,
+                version=version,
+                date=dt.date.fromisoformat(date),
+                source=row.get("source", "its.1c.ru news"),
+                url=row.get("url", ITS_NEWS_URL),
+                extra={
+                    "month": row.get("month"),
+                    "source_kind": "its",
+                },
+            )
+        )
     return normalized
 
 
@@ -451,7 +476,7 @@ def collect_its_releases() -> list[dict]:
 def collect_rarus6_releases() -> list[dict]:
     rows = []
     for year in RARUS6_YEARS:
-        url = f"https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-{year}/"
+        url = RARUS6_RELEASE_URL_TEMPLATE.format(year=year)
         status, raw = fetch(url)
         if status != 200:
             continue
@@ -463,15 +488,17 @@ def collect_rarus6_releases() -> list[dict]:
             for config_id in ("AutoSalon60", "AutoSalon61"):
                 cfg = RARUS_CONFIGS[config_id]
                 if version.startswith(cfg["version_prefix"]):
-                    rows.append(release_row(
-                        config_id=config_id,
-                        config_name=cfg["name"],
-                        version=version,
-                        date=date,
-                        source=cfg["source"],
-                        url=url,
-                        extra={"source_kind": "rarus"},
-                    ))
+                    rows.append(
+                        release_row(
+                            config_id=config_id,
+                            config_name=cfg["name"],
+                            version=version,
+                            date=date,
+                            source=cfg["source"],
+                            url=url,
+                            extra={"source_kind": "rarus"},
+                        )
+                    )
     return rows
 
 
@@ -486,25 +513,27 @@ def collect_rarus5_releases() -> list[dict]:
         for index, start in enumerate(starts):
             message_id = start.group(1)
             end = starts[index + 1].start() if index + 1 < len(starts) else len(raw)
-            block = raw[start.start():end]
+            block = raw[start.start() : end]
             full = clean_text(block)
             date_match = re.search(r"(\d{2}\.\d{2}\.\d{4})\s+в\s+(\d{2}:\d{2})", full)
             body_start = re.search(r'(?is)<div[^>]+class=["\'][^"\']*comment__description[^"\']*["\'][^>]*>', block)
-            body = clean_text(block[body_start.end():] if body_start else block)
+            body = clean_text(block[body_start.end() :] if body_start else block)
             versions = sorted(set(re.findall(r"\b5\.\d+\.\d+\.\d+\b", body)), key=version_key, reverse=True)
             if date_match and versions and re.search("релиз", body, re.I):
                 date = parse_date(date_match.group(1))
                 if not date:
                     continue
-                rows.append(release_row(
-                    config_id="AlfaAuto51",
-                    config_name=cfg["name"],
-                    version=versions[0],
-                    date=date,
-                    source=cfg["source"],
-                    url=url,
-                    extra={"time": date_match.group(2), "message": message_id, "source_kind": "rarus"},
-                ))
+                rows.append(
+                    release_row(
+                        config_id="AlfaAuto51",
+                        config_name=cfg["name"],
+                        version=versions[0],
+                        date=date,
+                        source=cfg["source"],
+                        url=url,
+                        extra={"time": date_match.group(2), "message": message_id, "source_kind": "rarus"},
+                    )
+                )
     return rows
 
 
@@ -519,7 +548,11 @@ def unique_releases(rows: Iterable[dict]) -> list[dict]:
         current = best.get(key)
         if current is None or row["date"] > current["date"]:
             best[key] = row
-    return sorted(best.values(), key=lambda row: (row["config_id"].lower(), row_date(row), version_key(row["version"])), reverse=True)
+    return sorted(
+        best.values(),
+        key=lambda row: (row["config_id"].lower(), row_date(row), version_key(row["version"])),
+        reverse=True,
+    )
 
 
 def group_releases(rows: Iterable[dict]) -> dict[str, list[dict]]:
@@ -566,48 +599,46 @@ def build_summary(grouped: dict[str, list[dict]], days: int) -> list[dict]:
     for config_id, rows in grouped.items():
         latest = rows[0]
         cutoff, baseline = select_year_ago_release(rows, latest, days)
-        summary.append({
-            "config_id": config_id,
-            "config_name": display_name(config_id, rows),
-            "slug": slugify(config_id),
-            "latest": latest,
-            "year_ago_release": baseline,
-            "period": {
-                "days": days,
-                "cutoff": cutoff.isoformat(),
-                "count": len(period_rows(rows, cutoff, baseline)),
-            },
-            "release_count": len(rows),
-            "sources": sorted({row["source"] for row in rows}),
-        })
+        summary.append(
+            {
+                "config_id": config_id,
+                "config_name": display_name(config_id, rows),
+                "slug": slugify(config_id),
+                "latest": latest,
+                "year_ago_release": baseline,
+                "period": {
+                    "days": days,
+                    "cutoff": cutoff.isoformat(),
+                    "count": len(period_rows(rows, cutoff, baseline)),
+                },
+                "release_count": len(rows),
+                "sources": sorted({row["source"] for row in rows}),
+            }
+        )
     return sorted(summary, key=lambda item: (item["config_name"].lower(), item["config_id"].lower()))
 
 
 def collect_all(days: int) -> dict:
-    releases = unique_releases([
-        *collect_its_releases(),
-        *collect_rarus6_releases(),
-        *collect_rarus5_releases(),
-    ])
+    releases = unique_releases(
+        [
+            *collect_its_releases(),
+            *collect_rarus6_releases(),
+            *collect_rarus5_releases(),
+        ]
+    )
     grouped = group_releases(releases)
     summary = build_summary(grouped, days)
     return {
         "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
         "period": {"mode": "latest_minus_days_per_configuration", "days": days},
-        "sources": [
-            {"id": "its", "name": "1C ITS news", "url": ITS_NEWS_URL},
-            {"id": "rarus", "name": "Rarus release pages and forum", "url": "https://rarus.ru/"},
-        ],
+        "sources": source_catalog(),
         "summary": summary,
         "releases": releases,
     }
 
 
 def source_catalog() -> list[dict]:
-    return [
-        {"id": "its", "name": "1C ITS news", "url": ITS_NEWS_URL},
-        {"id": "rarus", "name": "Rarus release pages and forum", "url": "https://rarus.ru/"},
-    ]
+    return [dict(source) for source in SOURCE_CATALOG]
 
 
 def rebuild_database_from_releases(releases: list[dict], days: int, mode: str) -> dict:
@@ -642,7 +673,7 @@ def validate_public_database(data: dict) -> None:
     config_count = len(data["summary"])
     release_count = len(data["releases"])
     has_its = any(row.get("source_kind") == "its" for row in data["releases"])
-    if config_count < 50 or release_count < 1000 or not has_its:
+    if config_count < MIN_PUBLIC_CONFIGS or release_count < MIN_PUBLIC_RELEASES or not has_its:
         raise SystemExit(
             "Refusing to write a degraded public database: "
             f"configs={config_count}, releases={release_count}, has_its={has_its}"
@@ -661,18 +692,21 @@ def render_markdown(data: dict) -> str:
     for item in data["summary"]:
         latest = item["latest"]
         year_ago = item.get("year_ago_release") or {}
-        summary_rows.append([
-            item["config_name"],
-            item["config_id"],
-            f"{latest['version']} / {latest['date_ru']}",
-            f"{year_ago.get('version', 'skipped')} / {year_ago.get('date_ru', '')}".strip(),
-            str(item["release_count"]),
-            ", ".join(item["sources"]),
-        ])
+        summary_rows.append(
+            [
+                item["config_name"],
+                item["config_id"],
+                f"{latest['version']} / {latest['date_ru']}",
+                f"{year_ago.get('version', 'skipped')} / {year_ago.get('date_ru', '')}".strip(),
+                str(item["release_count"]),
+                ", ".join(item["sources"]),
+            ]
+        )
     chunks = [
         f"# 1C release dates\n\nGenerated: {data['generated_at']}\n\n"
         f"Configurations: {len(data['summary'])}\n\nReleases: {len(data['releases'])}\n",
-        "## Configuration Summary\n\n" + md_table(
+        "## Configuration Summary\n\n"
+        + md_table(
             ["configuration", "id", "current_release", "year_ago_release", "release_count", "sources"],
             summary_rows,
         ),
@@ -700,7 +734,7 @@ def page_shell(title: str, body: str, prefix: str = "") -> str:
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="{esc(prefix)}index.html">1C Release Dates</a>
+    <a class="brand" href="{esc(prefix)}index.html">{esc(PROJECT_TITLE)}</a>
     <nav><a href="{esc(prefix)}data/summary.json">summary.json</a><a href="{esc(prefix)}data/releases.json">releases.json</a></nav>
   </header>
   <main>{body}</main>
@@ -716,29 +750,29 @@ def render_index(data: dict) -> str:
         year = item.get("year_ago_release") or {}
         rows.append(f"""
         <tr>
-          <td><a href="configs/{esc(item['slug'])}.html">{esc(item['config_name'])}</a><span class="muted code">{esc(item['config_id'])}</span></td>
-          <td><strong>{esc(latest['version'])}</strong><span class="muted">{esc(latest['date_ru'])}</span></td>
-          <td><strong>{esc(year.get('version', 'skipped'))}</strong><span class="muted">{esc(year.get('date_ru', ''))}</span></td>
-          <td>{esc(item['release_count'])}</td>
-          <td>{esc(', '.join(item['sources']))}</td>
+          <td><a href="configs/{esc(item["slug"])}.html">{esc(item["config_name"])}</a><span class="muted code">{esc(item["config_id"])}</span></td>
+          <td><strong>{esc(latest["version"])}</strong><span class="muted">{esc(latest["date_ru"])}</span></td>
+          <td><strong>{esc(year.get("version", "skipped"))}</strong><span class="muted">{esc(year.get("date_ru", ""))}</span></td>
+          <td>{esc(item["release_count"])}</td>
+          <td>{esc(", ".join(item["sources"]))}</td>
         </tr>""")
     body = f"""
     <section class="hero">
       <div>
-        <h1>1C Release Dates</h1>
+        <h1>{esc(PROJECT_TITLE)}</h1>
         <p>Публичная база дат релизов конфигураций 1С из новостей ITS и страниц Rarus.</p>
       </div>
       <dl class="stats">
-        <div><dt>Конфигураций</dt><dd>{len(data['summary'])}</dd></div>
-        <div><dt>Релизов</dt><dd>{len(data['releases'])}</dd></div>
-        <div><dt>Обновлено</dt><dd>{esc(data['generated_at'])}</dd></div>
+        <div><dt>Конфигураций</dt><dd>{len(data["summary"])}</dd></div>
+        <div><dt>Релизов</dt><dd>{len(data["releases"])}</dd></div>
+        <div><dt>Обновлено</dt><dd>{esc(data["generated_at"])}</dd></div>
       </dl>
     </section>
     <section class="toolbar"><input id="filter" type="search" placeholder="Фильтр по конфигурации, версии или источнику" aria-label="Фильтр"></section>
     <section class="table-wrap">
       <table id="configs">
         <thead><tr><th>Конфигурация</th><th>Текущий релиз</th><th>Релиз годовой давности</th><th>Всего</th><th>Источник</th></tr></thead>
-        <tbody>{''.join(rows)}</tbody>
+        <tbody>{"".join(rows)}</tbody>
       </table>
     </section>
     <script>
@@ -750,7 +784,7 @@ def render_index(data: dict) -> str:
       }});
     </script>
     """
-    return page_shell("1C Release Dates", body)
+    return page_shell(PROJECT_TITLE, body)
 
 
 def render_config_page(item: dict, rows: list[dict]) -> str:
@@ -758,8 +792,8 @@ def render_config_page(item: dict, rows: list[dict]) -> str:
     for row in rows:
         release_rows.append(f"""
         <tr>
-          <td><strong>{esc(row['version'])}</strong></td>
-          <td>{esc(row['date_ru'])}</td>
+          <td><strong>{esc(row["version"])}</strong></td>
+          <td>{esc(row["date_ru"])}</td>
           <td>{source_text(row)}</td>
         </tr>""")
     latest = item["latest"]
@@ -768,23 +802,23 @@ def render_config_page(item: dict, rows: list[dict]) -> str:
     <section class="detail-head">
       <div class="detail-title">
         <a class="back" href="../index.html">← Все конфигурации</a>
-        <h1>{esc(item['config_name'])}</h1>
-        <p class="code">{esc(item['config_id'])}</p>
+        <h1>{esc(item["config_name"])}</h1>
+        <p class="code">{esc(item["config_id"])}</p>
       </div>
       <div class="release-cards">
-        <article><span>Текущий релиз</span><strong>{esc(latest['version'])}</strong><em>{esc(latest['date_ru'])}</em></article>
-        <article><span>Релиз годовой давности</span><strong>{esc(year.get('version', 'skipped'))}</strong><em>{esc(year.get('date_ru', ''))}</em></article>
-        <article><span>Всего релизов</span><strong>{esc(item['release_count'])}</strong><em>{esc(', '.join(item['sources']))}</em></article>
+        <article><span>Текущий релиз</span><strong>{esc(latest["version"])}</strong><em>{esc(latest["date_ru"])}</em></article>
+        <article><span>Релиз годовой давности</span><strong>{esc(year.get("version", "skipped"))}</strong><em>{esc(year.get("date_ru", ""))}</em></article>
+        <article><span>Всего релизов</span><strong>{esc(item["release_count"])}</strong><em>{esc(", ".join(item["sources"]))}</em></article>
       </div>
     </section>
     <section class="table-wrap">
       <table>
         <thead><tr><th>Версия</th><th>Дата</th><th>Источник</th></tr></thead>
-        <tbody>{''.join(release_rows)}</tbody>
+        <tbody>{"".join(release_rows)}</tbody>
       </table>
     </section>
     """
-    return page_shell(f"{item['config_name']} - 1C Release Dates", body, prefix="../")
+    return page_shell(f"{item['config_name']} - {PROJECT_TITLE}", body, prefix="../")
 
 
 def write_json(path: Path, data: object) -> None:
@@ -813,7 +847,8 @@ def render_site(data: dict, out_dir: Path) -> None:
     write_json(out_dir / "data" / "releases.json", data["releases"])
 
 
-CSS = """
+CSS = (
+    """
 :root {
   color-scheme: light dark;
   --bg: #f7f7f4;
@@ -875,16 +910,18 @@ tbody tr:last-child td { border-bottom: 0; }
   main { width: min(100% - 20px, 1180px); padding-top: 18px; }
   .detail-head h1 { font-size: clamp(22px, 7vw, 30px); }
 }
-""".strip() + "\n"
+""".strip()
+    + "\n"
+)
 
 
 def main() -> int:
     load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="year baseline window, default: 365")
-    parser.add_argument("--json-out", default="reports/1c-release-dates.json")
-    parser.add_argument("--md-out", default="reports/1c-release-dates.md")
-    parser.add_argument("--site-out", default="site")
+    parser.add_argument("--json-out", default=DEFAULT_JSON_OUT)
+    parser.add_argument("--md-out", default=DEFAULT_MD_OUT)
+    parser.add_argument("--site-out", default=DEFAULT_SITE_OUT)
     parser.add_argument("--incremental", action="store_true", help="update existing JSON with current ITS months only")
     parser.add_argument("--month", action="append", help="YYYYMM month for incremental update; can be repeated")
     args = parser.parse_args()

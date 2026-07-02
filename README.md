@@ -1,82 +1,103 @@
-# 1C Release Dates
+# Даты релизов 1С
 
 [![Deploy Pages](../../actions/workflows/deploy-pages.yml/badge.svg)](../../actions/workflows/deploy-pages.yml)
 [![Update Data](../../actions/workflows/update-data.yml/badge.svg)](../../actions/workflows/update-data.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-Public release-date database for 1C configurations.
+Публичная база дат релизов конфигураций 1С и статический сайт для быстрого
+поиска актуального релиза и опорного релиза годовой давности.
 
-The project collects public release announcements, builds machine-readable JSON,
-and renders a static GitHub Pages site with:
+Проект собирает только публичные источники. Логины, пароли, локальные `.env`,
+закрытые списки конфигураций и приватные выгрузки в репозитории не нужны и не
+коммитятся.
 
-- a searchable configuration summary;
-- current release and the release closest to one year before it;
-- a dedicated release-history page for every discovered configuration;
-- light/dark theme via the browser `prefers-color-scheme` setting.
+## Что публикуется
 
-## Sources
+- сводная таблица по найденным конфигурациям;
+- текущий релиз и дата текущего релиза;
+- релиз годовой давности по расчетной логике проекта;
+- отдельная страница истории релизов для каждой конфигурации;
+- JSON-файлы для использования в скриптах;
+- светлая/темная тема по системной настройке браузера.
 
-- Public 1C ITS news: `https://its.1c.ru/news/?ym=YYYYMM&type=`
-- Rarus release pages and forum threads for Alfa-Auto releases
+## Источники
 
-No ITS login, password, local environment file, or private release-access list is
-required. The collector indexes every configuration link it finds in public
-source pages.
+- новости 1С:ИТС: `https://its.1c.ru/news/?ym=YYYYMM&type=`;
+- страницы и форумные темы Rarus для релизов Альфа-Авто.
 
-## Outputs
+Если источник временно недоступен или отдает защитную страницу, обновление
+останавливается до записи файлов, чтобы не испортить уже опубликованную базу.
 
-- `reports/1c-release-dates.json` - full database with `summary` and `releases`
-- `reports/1c-release-dates.md` - readable Markdown summary
-- `site/index.html` - GitHub Pages entry point
-- `site/configs/*.html` - per-configuration release histories
-- `site/data/*.json` - JSON files exposed for scripts
+## Расчет релиза годовой давности
 
-## Run Locally
+Для каждой конфигурации релизы сортируются по дате и версии.
+
+1. Берется последний известный релиз.
+2. Если последний релиз уже старше `365` дней относительно даты сборки, он же
+   считается опорным релизом годовой давности.
+3. Иначе ищется ближайший релиз с датой `<= дата последнего релиза - 365 дней`.
+4. Если такого релиза нет, используется последний релиз.
+
+Так таблица не проваливается в `skipped` для конфигураций с короткой историей
+или давно остановившимися релизами.
+
+## Артефакты
+
+- `reports/1c-release-dates.json` - полная база: `summary`, `releases`,
+  источники и параметры периода;
+- `reports/1c-release-dates.md` - читаемая Markdown-сводка;
+- `site/index.html` - главная страница GitHub Pages;
+- `site/configs/*.html` - страницы конфигураций;
+- `site/data/summary.json` - машинно-читаемая сводка;
+- `site/data/releases.json` - полный список релизов.
+
+## Локальный запуск
 
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
-python -m pip install -e .
+python -m pip install -e ".[dev]"
 onec-release-dates
+python -m pytest -q
 ```
 
-Fetched ITS months are cached locally in `.cache/its-news.json`. Every run
-refreshes the current and previous month automatically.
+Кеш новостей ИТС хранится локально в `.cache/its-news.json`. При каждом запуске
+обновляются текущий и предыдущий месяц.
 
 ## GitHub Pages
 
-The Pages deploy and data refresh are intentionally split:
+Публикация и сбор данных разделены:
 
-- `.github/workflows/deploy-pages.yml` publishes the already committed `site/`
-  directory to GitHub Pages. It does not scrape or rebuild data.
-- `.github/workflows/update-data.yml` runs daily or manually. It performs an
-  incremental refresh from the current ITS news months only, using the committed
-  database as the baseline.
+- `.github/workflows/update-data.yml` ежедневно запускает инкрементальное
+  обновление, прогоняет тесты и коммитит измененные `reports/` и `site/`;
+- `.github/workflows/deploy-pages.yml` публикует уже собранный `site/` через
+  GitHub Pages workflow.
 
-The data update workflow:
+В настройках репозитория Pages должен быть включен режим **GitHub Actions**.
 
-1. installs the package;
-2. runs the collector in incremental mode;
-3. runs tests;
-4. commits changed generated reports/site files back to the repository.
-
-That commit then triggers the fast Pages deploy workflow.
-If GitHub-hosted runners receive a DDoS-Guard challenge from ITS, the update
-job fails before writing files, so the published database is not degraded.
-
-Enable Pages in repository settings with **GitHub Actions** as the source.
-
-## Development
+## Проверки
 
 ```bash
-python -m pytest
-python - <<'PY'
-from pathlib import Path
-compile(Path("src/onec_release_dates/collector.py").read_text(), "collector.py", "exec")
-PY
+python -m pytest -q
+python -m ruff check .
+python -m ruff format --check .
 ```
 
-The repository intentionally avoids credentials and private environment files.
-Do not commit `.env`, local caches, cookies, downloaded platform archives, or
-private release-access data.
+`check-its-news.yml` - ручной диагностический workflow для проверки доступности
+новостей ИТС на GitHub runner. Он не публикует сайт и не должен запускаться по
+расписанию.
+
+## Безопасность
+
+Не коммитить:
+
+- `.env`, cookies, локальные кеши и дампы;
+- учетные данные ИТС;
+- архивы платформы 1С;
+- приватные списки релизов или конфигураций;
+- локальные пути, лицензии и содержимое `nethasp.ini`.
+
+## Лицензия
+
+Код распространяется по лицензии MIT. См. [LICENSE](LICENSE).

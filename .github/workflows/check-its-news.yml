@@ -1,0 +1,80 @@
+name: Check ITS News Parsing
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package
+        run: python -m pip install -e ".[dev]"
+
+      - name: Probe ITS news months
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import json
+          from collections import Counter
+          from onec_release_dates import collector
+
+          today = dt.date.today()
+          months = [
+              today.strftime("%Y%m"),
+              collector.previous_month(today),
+              "202606",
+              "202506",
+              "201701",
+          ]
+          results = []
+          for ym in dict.fromkeys(months):
+              rows = collector.parse_its_news_month(ym)
+              nicks = Counter(row["source_config_id"] for row in rows)
+              results.append({
+                  "month": ym,
+                  "rows": len(rows),
+                  "configs": len(nicks),
+                  "top_configs": nicks.most_common(10),
+                  "sample": rows[:3],
+              })
+          print(json.dumps(results, ensure_ascii=False, indent=2))
+          if not any(item["rows"] for item in results):
+              raise SystemExit("ITS news probe returned zero rows for all tested months")
+          PY
+
+      - name: Run full collector in temporary output
+        run: |
+          onec-release-dates \
+            --json-out /tmp/onec-release-dates.json \
+            --md-out /tmp/onec-release-dates.md \
+            --site-out /tmp/onec-release-dates-site
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("/tmp/onec-release-dates.json").read_text(encoding="utf-8"))
+          configs = len(data["summary"])
+          releases = len(data["releases"])
+          its_rows = sum(1 for row in data["releases"] if row.get("source_kind") == "its")
+          print(f"configs={configs} releases={releases} its_rows={its_rows}")
+          if configs < 100 or releases < 10_000 or its_rows < 9_000:
+              raise SystemExit("Full collector result looks degraded on GitHub runner")
+          PY
+
+      - name: Upload diagnostic output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: its-news-check-output
+          path: |
+            /tmp/onec-release-dates.json
+            /tmp/onec-release-dates.md

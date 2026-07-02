@@ -48,8 +48,10 @@ def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
 
     assert rows == [
         {
-            "config_id": "AccountingCorp30",
-            "config_name": "Бухгалтерия предприятия КОРП",
+            "config_id": "AccountingCorp30_3_0",
+            "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+            "source_config_id": "AccountingCorp30",
+            "version_branch": "3.0",
             "version": "3.0.177.30",
             "date": "2025-06-25",
             "date_ru": "25.06.2025",

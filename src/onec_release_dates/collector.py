@@ -22,7 +22,7 @@ TODAY = dt.date.today()
 DEFAULT_DAYS = 365
 UA = "Mozilla/5.0 onec-release-dates/0.2"
 ITS_NEWS_URL = "https://its.1c.ru/news/"
-ITS_START_YEAR = 2018
+ITS_START_YEAR = 2015
 ITS_CACHE_PATH = Path(".cache/its-news.json")
 RARUS6_YEARS = range(2021, TODAY.year + 1)
 RARUS5_PAGES = [
@@ -126,6 +126,23 @@ def slugify(value: str) -> str:
     return value or "configuration"
 
 
+def version_branch(version: str) -> str:
+    parts = re.findall(r"\d+", version)
+    return ".".join(parts[:2]) if len(parts) >= 2 else version
+
+
+def branched_config_id(source_config_id: str, version: str) -> str:
+    branch = version_branch(version).replace(".", "_")
+    return f"{source_config_id}_{branch}"
+
+
+def branched_config_name(base_name: str, version: str) -> str:
+    branch = version_branch(version)
+    if branch in base_name:
+        return base_name
+    return f"{base_name} ({branch})"
+
+
 def iter_its_months(start_year: int = ITS_START_YEAR, end: dt.date = TODAY) -> Iterable[str]:
     for year in range(end.year, start_year - 1, -1):
         last_month = end.month if year == end.year else 12
@@ -192,9 +209,14 @@ def release_row(
     config_name: str | None = None,
     extra: dict | None = None,
 ) -> dict:
+    branch = version_branch(version)
+    public_config_id = branched_config_id(config_id, version)
+    public_config_name = branched_config_name(config_name or config_id, version)
     row = {
-        "config_id": config_id,
-        "config_name": config_name or config_id,
+        "config_id": public_config_id,
+        "config_name": public_config_name,
+        "source_config_id": config_id,
+        "version_branch": branch,
         "version": version,
         "date": date.isoformat(),
         "date_ru": date_ru(date),
@@ -256,29 +278,27 @@ def load_its_cache() -> dict[str, list[dict]]:
 def normalize_cached_rows(rows: list[dict]) -> list[dict]:
     normalized = []
     for row in rows:
-        if "config_id" in row:
-            normalized.append(row)
-            continue
-        config_id = row.get("nick")
+        config_id = row.get("source_config_id") or row.get("nick") or row.get("config_id")
         version = row.get("version")
         date = row.get("date")
         if not config_id or not version or not date:
             continue
         title = row.get("news_title", "")
         name = (names_by_version(title).get(version) or [config_id])[0]
-        normalized.append({
-            "config_id": config_id,
-            "config_name": name,
-            "version": version,
-            "date": date,
-            "date_ru": row.get("date_ru") or date_ru(date),
-            "source": row.get("source", "its.1c.ru news"),
-            "url": row.get("url", ITS_NEWS_URL),
-            "news_id": row.get("news_id"),
-            "news_title": title,
-            "month": row.get("month"),
-            "source_kind": "its",
-        })
+        normalized.append(release_row(
+            config_id=config_id,
+            config_name=name,
+            version=version,
+            date=dt.date.fromisoformat(date),
+            source=row.get("source", "its.1c.ru news"),
+            url=row.get("url", ITS_NEWS_URL),
+            extra={
+                "news_id": row.get("news_id"),
+                "news_title": title,
+                "month": row.get("month"),
+                "source_kind": "its",
+            },
+        ))
     return normalized
 
 

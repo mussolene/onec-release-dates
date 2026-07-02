@@ -37,7 +37,7 @@ def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
         <div class="journal-date__day">25</div>
         <div class="journal-date__month">июн</div>
         <div class="journal-date__year">'25</div>
-        <div class="link-item news-item">Вышла новая версия 3.0.177.30</div>
+        <div class="link-item news-item">Вышла новая версия 3.0.177.30 "Бухгалтерия предприятия КОРП"</div>
       </a>
     </div>
     """
@@ -48,14 +48,16 @@ def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
 
     assert rows == [
         {
+            "config_id": "AccountingCorp30",
+            "config_name": "Бухгалтерия предприятия КОРП",
             "version": "3.0.177.30",
             "date": "2025-06-25",
             "date_ru": "25.06.2025",
             "source": "its.1c.ru news",
             "url": "https://its.1c.ru/news/495339",
-            "nick": "AccountingCorp30",
             "news_id": "495339",
-            "news_title": "Вышла новая версия 3.0.177.30",
+            "news_title": 'Вышла новая версия 3.0.177.30 "Бухгалтерия предприятия КОРП"',
             "month": "202506",
+            "source_kind": "its",
         }
     ]

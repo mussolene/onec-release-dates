@@ -1,0 +1,3520 @@
+[
+  {
+    "config_id": "ERPWEENG",
+    "config_name": "1C:ERP WE (English code)",
+    "slug": "ERPWEENG",
+    "latest": {
+      "config_id": "ERPWEENG",
+      "config_name": "1C:ERP WE (English code)",
+      "version": "2.5.27.56",
+      "date": "2026-06-24",
+      "date_ru": "24.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500200",
+      "news_id": "500200",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.56 \"1C:ERP WE (English code)\"\n 2.5.27.56 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.56 \"ERP Управление предприятием\"\n 2.5.27.56 \"Комплексная автоматизация\"\n 11.5.27.56 \"Управление торговлей\"\n 11.5.27.56 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ERPWEENG",
+      "config_name": "1C:ERP WE (English code)",
+      "version": "2.5.22.70",
+      "date": "2025-06-23",
+      "date_ru": "23.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495297",
+      "news_id": "495297",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.22.70 \"1C:ERP WE (English code)\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-24",
+      "count": 40
+    },
+    "release_count": 152,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ERPWERU",
+    "config_name": "1C:ERP WE (с русским кодом)",
+    "slug": "ERPWERU",
+    "latest": {
+      "config_id": "ERPWERU",
+      "config_name": "1C:ERP WE (с русским кодом)",
+      "version": "2.5.27.56",
+      "date": "2026-06-24",
+      "date_ru": "24.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500200",
+      "news_id": "500200",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.56 \"1C:ERP WE (English code)\"\n 2.5.27.56 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.56 \"ERP Управление предприятием\"\n 2.5.27.56 \"Комплексная автоматизация\"\n 11.5.27.56 \"Управление торговлей\"\n 11.5.27.56 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ERPWERU",
+      "config_name": "1C:ERP WE (с русским кодом)",
+      "version": "2.5.22.70",
+      "date": "2025-06-23",
+      "date_ru": "23.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495292",
+      "news_id": "495292",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.22.70 \"1C:ERP WE (с русским кодом)\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-24",
+      "count": 40
+    },
+    "release_count": 155,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ERP_UH31",
+    "config_name": "1С:ERP.Управление холдингом",
+    "slug": "ERP_UH31",
+    "latest": {
+      "config_id": "ERP_UH31",
+      "config_name": "1С:ERP.Управление холдингом",
+      "version": "3.1.13.25",
+      "date": "2025-05-13",
+      "date_ru": "13.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494700",
+      "news_id": "494700",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.13.25 \"1С:ERP.Управление холдингом\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ERP_UH31",
+      "config_name": "1С:ERP.Управление холдингом",
+      "version": "3.1.12.25",
+      "date": "2024-04-26",
+      "date_ru": "26.04.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/489053",
+      "news_id": "489053",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.12.25 \"1С:ERP.Управление холдингом\"",
+      "month": "202404",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-05-13",
+      "count": 16
+    },
+    "release_count": 52,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ERP_UH32",
+    "config_name": "1С:ERP.Управление холдингом",
+    "slug": "ERP_UH32",
+    "latest": {
+      "config_id": "ERP_UH32",
+      "config_name": "ERP.Управление холдингом",
+      "version": "3.2.12.3",
+      "date": "2026-06-18",
+      "date_ru": "18.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500129",
+      "news_id": "500129",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.2.12.3 \"ERP.Управление холдингом\"\n 3.0.199.11 \"Бухгалтерия некоммерческой организации\"\n 3.0.199.11 \"Бухгалтерия некоммерческой организации КОРП\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ERP_UH32",
+      "config_name": "1С:ERP.Управление холдингом",
+      "version": "3.2.8.3",
+      "date": "2025-06-10",
+      "date_ru": "10.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495133",
+      "news_id": "495133",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.2.8.3 \"1С:ERP.Управление холдингом\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-18",
+      "count": 24
+    },
+    "release_count": 50,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CEL30",
+    "config_name": "1С:Библиотека подключаемого оборудования",
+    "slug": "CEL30",
+    "latest": {
+      "config_id": "CEL30",
+      "config_name": "1С:Библиотека подключаемого оборудования",
+      "version": "3.1.10.46",
+      "date": "2023-11-24",
+      "date_ru": "24.11.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/487470",
+      "news_id": "487470",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.10.46 \"1С:Библиотека подключаемого оборудования\"",
+      "month": "202311",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2022-11-24",
+      "count": 2
+    },
+    "release_count": 2,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CEL32",
+    "config_name": "1С:Библиотека подключаемого оборудования",
+    "slug": "CEL32",
+    "latest": {
+      "config_id": "CEL32",
+      "config_name": "1С:Библиотека подключаемого оборудования",
+      "version": "3.2.2.16",
+      "date": "2023-11-24",
+      "date_ru": "24.11.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/487469",
+      "news_id": "487469",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.2.2.16 \"1С:Библиотека подключаемого оборудования\"",
+      "month": "202311",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2022-11-24",
+      "count": 2
+    },
+    "release_count": 2,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "SSL31",
+    "config_name": "1С:Библиотека стандартных подсистем",
+    "slug": "SSL31",
+    "latest": {
+      "config_id": "SSL31",
+      "config_name": "Библиотека стандартных подсистем",
+      "version": "3.1.12.238",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "SSL31",
+      "config_name": "1С:Библиотека стандартных подсистем",
+      "version": "3.1.11.202",
+      "date": "2025-06-06",
+      "date_ru": "06.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495080",
+      "news_id": "495080",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.11.202 \"1С:Библиотека стандартных подсистем\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 29
+    },
+    "release_count": 253,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "LED",
+    "config_name": "1С:Библиотека электронных документов",
+    "slug": "LED",
+    "latest": {
+      "config_id": "LED",
+      "config_name": "Библиотека электронных документов",
+      "version": "1.1.31.12",
+      "date": "2026-03-18",
+      "date_ru": "18.03.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/498880",
+      "news_id": "498880",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.25.112 \"1C:ERP WE (English code)\"\n 2.5.25.112 \"1C:ERP WE (с русским кодом)\"\n 2.5.25.112 \"ERP Управление предприятием\"\n 1.1.31.12 \"Библиотека электронных документов\"\n 3.0.194.4 \"Бухгалтерия некоммерческой организации\"\n 3.0.194.4 \"Бухгалтерия некоммерческой организации КОРП\"\n 2.5.25.112 \"Комплексная автоматизация\"\n 11.5.25.112 \"Управление торговлей\"\n 11.5.25.112 \"Управление торговлей базовая\"",
+      "month": "202603",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "LED",
+      "config_name": "1С:Библиотека электронных документов",
+      "version": "1.1.31.6",
+      "date": "2025-02-21",
+      "date_ru": "21.02.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/493496",
+      "news_id": "493496",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.1.31.6 \"1С:Библиотека электронных документов\"",
+      "month": "202502",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-03-18",
+      "count": 4
+    },
+    "release_count": 30,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "LED17",
+    "config_name": "1С:Библиотека электронных документов",
+    "slug": "LED17",
+    "latest": {
+      "config_id": "LED17",
+      "config_name": "1С:Библиотека электронных документов",
+      "version": "1.7.2.115",
+      "date": "2021-04-02",
+      "date_ru": "02.04.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/474081",
+      "news_id": "474081",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.7.2.115 \"1С:Библиотека электронных документов\"",
+      "month": "202104",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2020-04-02",
+      "count": 11
+    },
+    "release_count": 11,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "LED19",
+    "config_name": "1С:Библиотека электронных документов",
+    "slug": "LED19",
+    "latest": {
+      "config_id": "LED19",
+      "config_name": "Библиотека электронных документов",
+      "version": "1.9.16.55",
+      "date": "2026-06-15",
+      "date_ru": "15.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500062",
+      "news_id": "500062",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 1.9.16.55 \"Библиотека электронных документов\"\n 3.0.13.357 \"Розница\"\n 3.0.13.357 \"Розница базовая\"\n 3.0.13.357 \"Управление нашей фирмой\"\n 3.0.13.357 \"Управление нашей фирмой Базовая\"\n 1.3.276.1 \"Управление производственным предприятием\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "LED19",
+      "config_name": "1С:Библиотека электронных документов",
+      "version": "1.9.14.31",
+      "date": "2025-06-11",
+      "date_ru": "11.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495158",
+      "news_id": "495158",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.9.14.31 \"1С:Библиотека электронных документов\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-15",
+      "count": 19
+    },
+    "release_count": 57,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingCorpIFRS3",
+    "config_name": "1С:Бухгалтерия КОРП МСФО",
+    "slug": "AccountingCorpIFRS3",
+    "latest": {
+      "config_id": "AccountingCorpIFRS3",
+      "config_name": "Бухгалтерия КОРП МСФО",
+      "version": "3.3.3.45",
+      "date": "2026-06-01",
+      "date_ru": "01.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499848",
+      "news_id": "499848",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.47 \"ERP Управление предприятием\"\n 3.3.3.45 \"Бухгалтерия КОРП МСФО\"\n 1.1.52.1 \"Государственные и муниципальные закупки\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingCorpIFRS3",
+      "config_name": "1С:Бухгалтерия КОРП МСФО",
+      "version": "3.2.10.27",
+      "date": "2025-05-15",
+      "date_ru": "15.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494747",
+      "news_id": "494747",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.2.10.27 \"1С:Бухгалтерия КОРП МСФО\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-01",
+      "count": 19
+    },
+    "release_count": 74,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Money",
+    "config_name": "1С:Деньги 8",
+    "slug": "Money",
+    "latest": {
+      "config_id": "Money",
+      "config_name": "1С:Деньги 8",
+      "version": "2.0.44.40",
+      "date": "2024-06-04",
+      "date_ru": "04.06.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/489589",
+      "news_id": "489589",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.44.40 \"1С:Деньги 8\"",
+      "month": "202406",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Money",
+      "config_name": "1С:Деньги 8",
+      "version": "2.0.44.28",
+      "date": "2023-04-03",
+      "date_ru": "03.04.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483720",
+      "news_id": "483720",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.44.28 \"1С:Деньги 8\"",
+      "month": "202304",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2023-06-05",
+      "count": 2
+    },
+    "release_count": 30,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "BudgetDocMng",
+    "config_name": "1С:Документооборот государственного учреждения 8",
+    "slug": "BudgetDocMng",
+    "latest": {
+      "config_id": "BudgetDocMng",
+      "config_name": "Документооборот КОРП",
+      "version": "2.1.37.5",
+      "date": "2025-12-19",
+      "date_ru": "19.12.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/497856",
+      "news_id": "497856",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.25.80 \"1C:ERP WE (English code)\"\n 2.5.25.80 \"1C:ERP WE (с русским кодом)\"\n 2.5.22.134 \"ERP Управление предприятием\"\n 3.0.189.10 \"Бухгалтерия некоммерческой организации\"\n 3.0.189.10 \"Бухгалтерия некоммерческой организации КОРП\"\n 2.1.37.5 \"Документооборот КОРП\"\n 2.1.37.5 \"Документооборот ПРОФ\"\n 2.1.37.5 \"Документооборот государственного учреждения 8\"\n 2.5.22.134 \"Комплексная автоматизация\"\n 11.5.22.134 \"Управление торговлей\"\n 11.5.22.134 \"Управление торговлей базовая\"",
+      "month": "202512",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "BudgetDocMng",
+      "config_name": "1С:Документооборот государственного учреждения 8",
+      "version": "2.1.35.15",
+      "date": "2024-10-04",
+      "date_ru": "04.10.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/491390",
+      "news_id": "491390",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.1.35.15 \"1С:Документооборот государственного учреждения 8\"",
+      "month": "202410",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-12-19",
+      "count": 4
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "BudgetDocMng30",
+    "config_name": "1С:Документооборот государственного учреждения 8",
+    "slug": "BudgetDocMng30",
+    "latest": {
+      "config_id": "BudgetDocMng30",
+      "config_name": "Документооборот КОРП",
+      "version": "3.0.20.21",
+      "date": "2026-04-10",
+      "date_ru": "10.04.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499203",
+      "news_id": "499203",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.20.21 \"Документооборот КОРП\"\n 3.0.20.21 \"Документооборот Холдинга 3.0\"\n 3.0.20.21 \"Документооборот государственного учреждения 8\"\n 1.3.269.1 \"Управление производственным предприятием\"",
+      "month": "202604",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "BudgetDocMng30",
+      "config_name": "1С:Документооборот государственного учреждения 8",
+      "version": "3.0.17.36",
+      "date": "2025-04-04",
+      "date_ru": "04.04.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494200",
+      "news_id": "494200",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.17.36 \"1С:Документооборот государственного учреждения 8\"",
+      "month": "202504",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-04-10",
+      "count": 5
+    },
+    "release_count": 11,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ClientEDOBase",
+    "config_name": "1С:Клиент ЭДО 8 Базовая",
+    "slug": "ClientEDOBase",
+    "latest": {
+      "config_id": "ClientEDOBase",
+      "config_name": "Клиент ЭДО 8 Базовая",
+      "version": "2.9.16.44",
+      "date": "2026-05-14",
+      "date_ru": "14.05.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499630",
+      "news_id": "499630",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.22.182 \"ERP Управление предприятием\"\n 1.9.16.44 \"Библиотека электронных документов\"\n 2.9.16.44 \"Клиент ЭДО 8 Базовая\"\n 2.5.22.182 \"Комплексная автоматизация\"\n 11.5.22.182 \"Управление торговлей\"\n 11.5.22.182 \"Управление торговлей базовая\"",
+      "month": "202605",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ClientEDOBase",
+      "config_name": "1С:Клиент ЭДО 8 Базовая",
+      "version": "2.9.14.20",
+      "date": "2025-04-11",
+      "date_ru": "11.04.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494311",
+      "news_id": "494311",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.9.14.20 \"1С:Клиент ЭДО 8 Базовая\"",
+      "month": "202504",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-05-14",
+      "count": 17
+    },
+    "release_count": 52,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Conversion30",
+    "config_name": "1С:Конвертация данных",
+    "slug": "Conversion30",
+    "latest": {
+      "config_id": "Conversion30",
+      "config_name": "Конвертация данных",
+      "version": "3.1.6.15",
+      "date": "2026-06-03",
+      "date_ru": "03.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499891",
+      "news_id": "499891",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.1.6.15 \"Конвертация данных\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Conversion30",
+      "config_name": "1С:Конвертация данных",
+      "version": "3.1.5.35",
+      "date": "2025-03-13",
+      "date_ru": "13.03.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/493837",
+      "news_id": "493837",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.5.35 \"1С:Конвертация данных\"",
+      "month": "202503",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-03",
+      "count": 6
+    },
+    "release_count": 29,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingGP",
+    "config_name": "1С:Садовод",
+    "slug": "AccountingGP",
+    "latest": {
+      "config_id": "AccountingGP",
+      "config_name": "Садовод",
+      "version": "3.0.200.13",
+      "date": "2026-07-01",
+      "date_ru": "01.07.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500299",
+      "news_id": "500299",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.13 \"Садовод\"\n 3.0.200.13 \"Садовод (базовая версия)\"",
+      "month": "202607",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingGP",
+      "config_name": "1С:Садовод",
+      "version": "3.0.177.4",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495392",
+      "news_id": "495392",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.4 \"1С:Садовод\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-07-01",
+      "count": 29
+    },
+    "release_count": 197,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingGPBase",
+    "config_name": "1С:Садовод (базовая версия)",
+    "slug": "AccountingGPBase",
+    "latest": {
+      "config_id": "AccountingGPBase",
+      "config_name": "Садовод (базовая версия)",
+      "version": "3.0.200.13",
+      "date": "2026-07-01",
+      "date_ru": "01.07.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500299",
+      "news_id": "500299",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.13 \"Садовод\"\n 3.0.200.13 \"Садовод (базовая версия)\"",
+      "month": "202607",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingGPBase",
+      "config_name": "1С:Садовод (базовая версия)",
+      "version": "3.0.177.4",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495393",
+      "news_id": "495393",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.4 \"1С:Садовод (базовая версия)\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-07-01",
+      "count": 29
+    },
+    "release_count": 197,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "STest",
+    "config_name": "1С:Сценарное тестирование 8",
+    "slug": "STest",
+    "latest": {
+      "config_id": "STest",
+      "config_name": "1С:Сценарное тестирование 8",
+      "version": "3.0.37.15",
+      "date": "2025-05-07",
+      "date_ru": "07.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494665",
+      "news_id": "494665",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.37.15 \"1С:Сценарное тестирование 8\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "STest",
+      "config_name": "1С:Сценарное тестирование 8",
+      "version": "3.0.35.2",
+      "date": "2024-04-25",
+      "date_ru": "25.04.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/489021",
+      "news_id": "489021",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.35.2 \"1С:Сценарное тестирование 8\"",
+      "month": "202404",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-05-07",
+      "count": 3
+    },
+    "release_count": 19,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Enterprise13",
+    "config_name": "1С:Управление производственным предприятием",
+    "slug": "Enterprise13",
+    "latest": {
+      "config_id": "Enterprise13",
+      "config_name": "Управление производственным предприятием",
+      "version": "1.3.277.1",
+      "date": "2026-06-26",
+      "date_ru": "26.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500242",
+      "news_id": "500242",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.23 \"Бухгалтерия предприятия\"\n 3.0.200.23 \"Бухгалтерия предприятия КОРП\"\n 3.0.200.23 \"Бухгалтерия предприятия базовая\"\n 1.1.53.1 \"Государственные и муниципальные закупки\"\n 1.3.277.1 \"Управление производственным предприятием\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Enterprise13",
+      "config_name": "1С:Управление производственным предприятием",
+      "version": "1.3.248.1",
+      "date": "2025-06-24",
+      "date_ru": "24.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495331",
+      "news_id": "495331",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.3.248.1 \"1С:Управление производственным предприятием\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-26",
+      "count": 40
+    },
+    "release_count": 296,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CorporatePerformanceManagement30",
+    "config_name": "1С:Управление холдингом 8",
+    "slug": "CorporatePerformanceManagement30",
+    "latest": {
+      "config_id": "CorporatePerformanceManagement30",
+      "config_name": "1С:Управление холдингом 8",
+      "version": "3.0.20.1",
+      "date": "2021-04-13",
+      "date_ru": "13.04.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/473854",
+      "news_id": "473854",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.20.1 \"1С:Управление холдингом 8\"",
+      "month": "202104",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "CorporatePerformanceManagement30",
+      "config_name": "1С:Управление холдингом 8",
+      "version": "3.0.10.15",
+      "date": "2020-03-29",
+      "date_ru": "29.03.2020",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/468351",
+      "news_id": "468351",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.10.15 \"1С:Управление холдингом 8\"",
+      "month": "202003",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2020-04-13",
+      "count": 11
+    },
+    "release_count": 12,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CorporatePerformanceManagement31",
+    "config_name": "1С:Управление холдингом 8",
+    "slug": "CorporatePerformanceManagement31",
+    "latest": {
+      "config_id": "CorporatePerformanceManagement31",
+      "config_name": "1С:Управление холдингом 8",
+      "version": "3.1.17.39",
+      "date": "2023-08-17",
+      "date_ru": "17.08.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/485541",
+      "news_id": "485541",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.17.39 \"1С:Управление холдингом 8\"",
+      "month": "202308",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "CorporatePerformanceManagement31",
+      "config_name": "1С:Управление холдингом 8",
+      "version": "3.1.17.14",
+      "date": "2022-08-05",
+      "date_ru": "05.08.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/480353",
+      "news_id": "480353",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.17.14 \"1С:Управление холдингом 8\"",
+      "month": "202208",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2022-08-17",
+      "count": 13
+    },
+    "release_count": 21,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CorporatePerformanceManagement32",
+    "config_name": "1С:Управление холдингом 8",
+    "slug": "CorporatePerformanceManagement32",
+    "latest": {
+      "config_id": "CorporatePerformanceManagement32",
+      "config_name": "Управление холдингом 8",
+      "version": "3.2.11.20",
+      "date": "2026-04-17",
+      "date_ru": "17.04.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499304",
+      "news_id": "499304",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.26.103 \"1C:ERP WE (English code)\"\n 2.5.26.103 \"1C:ERP WE (с русским кодом)\"\n 3.1.6.14 \"Конвертация данных\"\n 1.3.271.1 \"Управление производственным предприятием\"\n 3.2.11.20 \"Управление холдингом 8\"",
+      "month": "202604",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "CorporatePerformanceManagement32",
+      "config_name": "1С:Управление холдингом 8",
+      "version": "3.2.10.24",
+      "date": "2025-04-14",
+      "date_ru": "14.04.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494330",
+      "news_id": "494330",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.2.10.24 \"1С:Управление холдингом 8\"",
+      "month": "202504",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-04-17",
+      "count": 16
+    },
+    "release_count": 39,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ERP_UH",
+    "config_name": "1С:Управление холдингом. ERP",
+    "slug": "ERP_UH",
+    "latest": {
+      "config_id": "ERP_UH",
+      "config_name": "1С:Управление холдингом. ERP",
+      "version": "3.0.5.12",
+      "date": "2022-04-25",
+      "date_ru": "25.04.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/478900",
+      "news_id": "478900",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.5.12 \"1С:Управление холдингом. ERP\"",
+      "month": "202204",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2021-04-25",
+      "count": 5
+    },
+    "release_count": 5,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "WebCabinet",
+    "config_name": "1С:Электронное обучение. Веб-кабинет преподавателя и студента",
+    "slug": "WebCabinet",
+    "latest": {
+      "config_id": "WebCabinet",
+      "config_name": "1С:Электронное обучение. Веб-кабинет преподавателя и студента",
+      "version": "3.1.4.51",
+      "date": "2025-04-10",
+      "date_ru": "10.04.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494273",
+      "news_id": "494273",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.4.51 \"1С:Электронное обучение. Веб-кабинет преподавателя и студента\"",
+      "month": "202504",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "WebCabinet",
+      "config_name": "1С:Электронное обучение. Веб-кабинет преподавателя и студента",
+      "version": "3.1.2.1",
+      "date": "2024-01-25",
+      "date_ru": "25.01.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/487676",
+      "news_id": "487676",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.2.1 \"1С:Электронное обучение. Веб-кабинет преподавателя и студента\"",
+      "month": "202401",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-04-10",
+      "count": 6
+    },
+    "release_count": 32,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "EduOrganization",
+    "config_name": "1С:Электронное обучение. Образовательная организация",
+    "slug": "EduOrganization",
+    "latest": {
+      "config_id": "EduOrganization",
+      "config_name": "EduOrganization",
+      "version": "3.0.9.155",
+      "date": "2019-05-28",
+      "date_ru": "28.05.2019",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/463078",
+      "news_id": "463078",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.9.155 конфигурации \"Электронное обучение. Образовательная организация\"",
+      "month": "201905",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "EduOrganization",
+      "config_name": "1С:Электронное обучение. Образовательная организация",
+      "version": "3.0.9.67",
+      "date": "2018-03-01",
+      "date_ru": "01.03.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/455466",
+      "news_id": "455466",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.9.67 \"1С:Электронное обучение. Образовательная организация\"",
+      "month": "201803",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2018-05-28",
+      "count": 3
+    },
+    "release_count": 3,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "EnterpriseERP20",
+    "config_name": "ERP Управление предприятием",
+    "slug": "EnterpriseERP20",
+    "latest": {
+      "config_id": "EnterpriseERP20",
+      "config_name": "ERP Управление предприятием",
+      "version": "2.5.27.56",
+      "date": "2026-06-24",
+      "date_ru": "24.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500200",
+      "news_id": "500200",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.56 \"1C:ERP WE (English code)\"\n 2.5.27.56 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.56 \"ERP Управление предприятием\"\n 2.5.27.56 \"Комплексная автоматизация\"\n 11.5.27.56 \"Управление торговлей\"\n 11.5.27.56 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "EnterpriseERP20",
+      "config_name": "ERP Управление предприятием",
+      "version": "2.5.22.70",
+      "date": "2025-06-23",
+      "date_ru": "23.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495286",
+      "news_id": "495286",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.22.70 \"ERP Управление предприятием\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-24",
+      "count": 92
+    },
+    "release_count": 484,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ACC",
+    "config_name": "Автоматизированная проверка конфигураций",
+    "slug": "ACC",
+    "latest": {
+      "config_id": "ACC",
+      "config_name": "Автоматизированная проверка конфигураций",
+      "version": "1.2.9.124",
+      "date": "2026-04-03",
+      "date_ru": "03.04.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499085",
+      "news_id": "499085",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.26.100 \"1C:ERP WE (English code)\"\n 2.5.26.100 \"1C:ERP WE (с русским кодом)\"\n 2.5.26.100 \"ERP Управление предприятием\"\n 3.2.8.23 \"ERP.Управление холдингом\"\n 1.2.9.124 \"Автоматизированная проверка конфигураций\"\n 2.5.26.100 \"Комплексная автоматизация\"\n 11.5.26.100 \"Управление торговлей\"",
+      "month": "202604",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ACC",
+      "config_name": "Автоматизированная проверка конфигураций",
+      "version": "1.2.9.80",
+      "date": "2024-09-27",
+      "date_ru": "27.09.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/491295",
+      "news_id": "491295",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.2.9.80 \"Автоматизированная проверка конфигураций\"",
+      "month": "202409",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-04-03",
+      "count": 3
+    },
+    "release_count": 33,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AlfaAuto51",
+    "config_name": "Альфа-Авто 5.1",
+    "slug": "AlfaAuto51",
+    "latest": {
+      "config_id": "AlfaAuto51",
+      "config_name": "Альфа-Авто 5.1",
+      "version": "5.1.48.03",
+      "date": "2024-09-30",
+      "date_ru": "30.09.2024",
+      "source": "rarus.ru forum",
+      "url": "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=4",
+      "time": "13:28",
+      "message": "message96895",
+      "source_kind": "rarus"
+    },
+    "year_ago_release": {
+      "config_id": "AlfaAuto51",
+      "config_name": "Альфа-Авто 5.1",
+      "version": "5.1.42.08",
+      "date": "2023-07-11",
+      "date_ru": "11.07.2023",
+      "source": "rarus.ru forum",
+      "url": "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=4",
+      "time": "16:33",
+      "message": "message94960",
+      "source_kind": "rarus"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2023-10-01",
+      "count": 7
+    },
+    "release_count": 82,
+    "sources": [
+      "rarus.ru forum"
+    ]
+  },
+  {
+    "config_id": "AutoSalon60",
+    "config_name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.0",
+    "slug": "AutoSalon60",
+    "latest": {
+      "config_id": "AutoSalon60",
+      "config_name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.0",
+      "version": "6.0.41.02",
+      "date": "2023-08-10",
+      "date_ru": "10.08.2023",
+      "source": "rarus.ru release page",
+      "url": "https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-2023/",
+      "source_kind": "rarus"
+    },
+    "year_ago_release": {
+      "config_id": "AutoSalon60",
+      "config_name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.0",
+      "version": "6.0.37.13",
+      "date": "2022-07-18",
+      "date_ru": "18.07.2022",
+      "source": "rarus.ru release page",
+      "url": "https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-2022/",
+      "source_kind": "rarus"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2022-08-10",
+      "count": 5
+    },
+    "release_count": 17,
+    "sources": [
+      "rarus.ru release page"
+    ]
+  },
+  {
+    "config_id": "AutoSalon61",
+    "config_name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.1",
+    "slug": "AutoSalon61",
+    "latest": {
+      "config_id": "AutoSalon61",
+      "config_name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.1",
+      "version": "6.1.24.13",
+      "date": "2026-04-23",
+      "date_ru": "23.04.2026",
+      "source": "rarus.ru release page",
+      "url": "https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-2026/",
+      "source_kind": "rarus"
+    },
+    "year_ago_release": {
+      "config_id": "AutoSalon61",
+      "config_name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.1",
+      "version": "6.1.15.14",
+      "date": "2025-02-24",
+      "date_ru": "24.02.2025",
+      "source": "rarus.ru release page",
+      "url": "https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-2025/",
+      "source_kind": "rarus"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-04-23",
+      "count": 13
+    },
+    "release_count": 37,
+    "sources": [
+      "rarus.ru release page"
+    ]
+  },
+  {
+    "config_id": "AccountingAI",
+    "config_name": "Бухгалтерия автономного учреждения",
+    "slug": "AccountingAI",
+    "latest": {
+      "config_id": "AccountingAI",
+      "config_name": "Бухгалтерия автономного учреждения",
+      "version": "2.0.66.90",
+      "date": "2020-01-10",
+      "date_ru": "10.01.2020",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/466092",
+      "news_id": "466092",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.90 \"Бухгалтерия автономного учреждения\"",
+      "month": "202001",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingAI",
+      "config_name": "Бухгалтерия автономного учреждения",
+      "version": "2.0.66.67",
+      "date": "2018-12-29",
+      "date_ru": "29.12.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/461220",
+      "news_id": "461220",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.67 \"Бухгалтерия автономного учреждения\"",
+      "month": "201812",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2019-01-10",
+      "count": 7
+    },
+    "release_count": 12,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingAIBase",
+    "config_name": "Бухгалтерия автономного учреждения базовая",
+    "slug": "AccountingAIBase",
+    "latest": {
+      "config_id": "AccountingAIBase",
+      "config_name": "Бухгалтерия автономного учреждения базовая",
+      "version": "2.0.66.90",
+      "date": "2020-01-10",
+      "date_ru": "10.01.2020",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/466093",
+      "news_id": "466093",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.90 \"Бухгалтерия автономного учреждения базовая\"",
+      "month": "202001",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingAIBase",
+      "config_name": "Бухгалтерия автономного учреждения базовая",
+      "version": "2.0.66.67",
+      "date": "2018-12-29",
+      "date_ru": "29.12.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/461221",
+      "news_id": "461221",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.67 \"Бухгалтерия автономного учреждения базовая\"",
+      "month": "201812",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2019-01-10",
+      "count": 7
+    },
+    "release_count": 12,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingAICorp",
+    "config_name": "Бухгалтерия автономного учреждения КОРП",
+    "slug": "AccountingAICorp",
+    "latest": {
+      "config_id": "AccountingAICorp",
+      "config_name": "Бухгалтерия автономного учреждения КОРП",
+      "version": "2.0.66.90",
+      "date": "2020-01-10",
+      "date_ru": "10.01.2020",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/466091",
+      "news_id": "466091",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.90 \"Бухгалтерия автономного учреждения КОРП\"",
+      "month": "202001",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingAICorp",
+      "config_name": "Бухгалтерия автономного учреждения КОРП",
+      "version": "2.0.66.67",
+      "date": "2018-12-29",
+      "date_ru": "29.12.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/461219",
+      "news_id": "461219",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.67 \"Бухгалтерия автономного учреждения КОРП\"",
+      "month": "201812",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2019-01-10",
+      "count": 7
+    },
+    "release_count": 12,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateAccounting",
+    "config_name": "Бухгалтерия государственного учреждения",
+    "slug": "StateAccounting",
+    "latest": {
+      "config_id": "StateAccounting",
+      "config_name": "Бухгалтерия государственного учреждения",
+      "version": "1.0.76.9",
+      "date": "2023-03-31",
+      "date_ru": "31.03.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483695",
+      "news_id": "483695",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.0.76.9 \"Бухгалтерия государственного учреждения\"",
+      "month": "202303",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateAccounting",
+      "config_name": "Бухгалтерия государственного учреждения",
+      "version": "1.0.72.2",
+      "date": "2022-03-16",
+      "date_ru": "16.03.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/478256",
+      "news_id": "478256",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.0.72.2 \"Бухгалтерия государственного учреждения\"",
+      "month": "202203",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2022-03-31",
+      "count": 17
+    },
+    "release_count": 106,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateAccounting20",
+    "config_name": "Бухгалтерия государственного учреждения",
+    "slug": "StateAccounting20",
+    "latest": {
+      "config_id": "StateAccounting20",
+      "config_name": "Бухгалтерия государственного учреждения",
+      "version": "2.0.109.68",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateAccounting20",
+      "config_name": "Бухгалтерия государственного учреждения",
+      "version": "2.0.104.22",
+      "date": "2025-06-15",
+      "date_ru": "15.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495163",
+      "news_id": "495163",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.104.22 \"Бухгалтерия государственного учреждения\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 26
+    },
+    "release_count": 231,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateAccountingBase",
+    "config_name": "Бухгалтерия государственного учреждения базовая",
+    "slug": "StateAccountingBase",
+    "latest": {
+      "config_id": "StateAccountingBase",
+      "config_name": "Бухгалтерия государственного учреждения базовая",
+      "version": "1.0.76.9",
+      "date": "2023-03-31",
+      "date_ru": "31.03.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483694",
+      "news_id": "483694",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.0.76.9 \"Бухгалтерия государственного учреждения базовая\"",
+      "month": "202303",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateAccountingBase",
+      "config_name": "Бухгалтерия государственного учреждения базовая",
+      "version": "1.0.72.2",
+      "date": "2022-03-16",
+      "date_ru": "16.03.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/478255",
+      "news_id": "478255",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.0.72.2 \"Бухгалтерия государственного учреждения базовая\"",
+      "month": "202203",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2022-03-31",
+      "count": 17
+    },
+    "release_count": 106,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateAccountingBase20",
+    "config_name": "Бухгалтерия государственного учреждения базовая",
+    "slug": "StateAccountingBase20",
+    "latest": {
+      "config_id": "StateAccountingBase20",
+      "config_name": "Бухгалтерия государственного учреждения базовая",
+      "version": "2.0.109.68",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateAccountingBase20",
+      "config_name": "Бухгалтерия государственного учреждения базовая",
+      "version": "2.0.104.22",
+      "date": "2025-06-15",
+      "date_ru": "15.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495162",
+      "news_id": "495162",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.104.22 \"Бухгалтерия государственного учреждения базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 26
+    },
+    "release_count": 222,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateAccountingCorp",
+    "config_name": "Бухгалтерия государственного учреждения КОРП",
+    "slug": "StateAccountingCorp",
+    "latest": {
+      "config_id": "StateAccountingCorp",
+      "config_name": "Бухгалтерия государственного учреждения КОРП",
+      "version": "2.0.109.68",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateAccountingCorp",
+      "config_name": "Бухгалтерия государственного учреждения КОРП",
+      "version": "2.0.104.22",
+      "date": "2025-06-15",
+      "date_ru": "15.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495161",
+      "news_id": "495161",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.104.22 \"Бухгалтерия государственного учреждения КОРП\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 26
+    },
+    "release_count": 109,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingNPO",
+    "config_name": "Бухгалтерия некоммерческой организации",
+    "slug": "AccountingNPO",
+    "latest": {
+      "config_id": "AccountingNPO",
+      "config_name": "Бухгалтерия некоммерческой организации",
+      "version": "3.0.200.12",
+      "date": "2026-06-30",
+      "date_ru": "30.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500276",
+      "news_id": "500276",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.12 \"Бухгалтерия некоммерческой организации\"\n 3.0.200.12 \"Бухгалтерия некоммерческой организации КОРП\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingNPO",
+      "config_name": "Бухгалтерия некоммерческой организации",
+      "version": "3.0.177.9",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495394",
+      "news_id": "495394",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.9 \"Бухгалтерия некоммерческой организации\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-30",
+      "count": 40
+    },
+    "release_count": 219,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingNPOCorp",
+    "config_name": "Бухгалтерия некоммерческой организации КОРП",
+    "slug": "AccountingNPOCorp",
+    "latest": {
+      "config_id": "AccountingNPOCorp",
+      "config_name": "Бухгалтерия некоммерческой организации КОРП",
+      "version": "3.0.200.12",
+      "date": "2026-06-30",
+      "date_ru": "30.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500276",
+      "news_id": "500276",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.12 \"Бухгалтерия некоммерческой организации\"\n 3.0.200.12 \"Бухгалтерия некоммерческой организации КОРП\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingNPOCorp",
+      "config_name": "Бухгалтерия некоммерческой организации КОРП",
+      "version": "3.0.177.9",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495395",
+      "news_id": "495395",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.9 \"Бухгалтерия некоммерческой организации КОРП\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-30",
+      "count": 40
+    },
+    "release_count": 206,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Accounting20_82",
+    "config_name": "Бухгалтерия предприятия",
+    "slug": "Accounting20_82",
+    "latest": {
+      "config_id": "Accounting20_82",
+      "config_name": "Бухгалтерия предприятия",
+      "version": "2.0.67.25",
+      "date": "2022-03-30",
+      "date_ru": "30.03.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/478505",
+      "news_id": "478505",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.67.25 \"Бухгалтерия предприятия\"",
+      "month": "202203",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Accounting20_82",
+      "config_name": "Бухгалтерия предприятия",
+      "version": "2.0.66.138",
+      "date": "2021-03-26",
+      "date_ru": "26.03.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/473597",
+      "news_id": "473597",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.138 \"Бухгалтерия предприятия\"",
+      "month": "202103",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2021-03-30",
+      "count": 39
+    },
+    "release_count": 123,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Accounting30",
+    "config_name": "Бухгалтерия предприятия",
+    "slug": "Accounting30",
+    "latest": {
+      "config_id": "Accounting30",
+      "config_name": "Бухгалтерия предприятия",
+      "version": "3.0.200.23",
+      "date": "2026-06-26",
+      "date_ru": "26.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500242",
+      "news_id": "500242",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.23 \"Бухгалтерия предприятия\"\n 3.0.200.23 \"Бухгалтерия предприятия КОРП\"\n 3.0.200.23 \"Бухгалтерия предприятия базовая\"\n 1.1.53.1 \"Государственные и муниципальные закупки\"\n 1.3.277.1 \"Управление производственным предприятием\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Accounting30",
+      "config_name": "Бухгалтерия предприятия",
+      "version": "3.0.177.30",
+      "date": "2025-06-25",
+      "date_ru": "25.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495341",
+      "news_id": "495341",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.30 \"Бухгалтерия предприятия\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-26",
+      "count": 40
+    },
+    "release_count": 345,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingBase20_82",
+    "config_name": "Бухгалтерия предприятия базовая",
+    "slug": "AccountingBase20_82",
+    "latest": {
+      "config_id": "AccountingBase20_82",
+      "config_name": "Бухгалтерия предприятия базовая",
+      "version": "2.0.66.138",
+      "date": "2021-03-26",
+      "date_ru": "26.03.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/473599",
+      "news_id": "473599",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.138 \"Бухгалтерия предприятия базовая\"",
+      "month": "202103",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingBase20_82",
+      "config_name": "Бухгалтерия предприятия базовая",
+      "version": "2.0.66.101",
+      "date": "2020-03-18",
+      "date_ru": "18.03.2020",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/468143",
+      "news_id": "468143",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.66.101 \"Бухгалтерия предприятия базовая\"",
+      "month": "202003",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2020-03-26",
+      "count": 32
+    },
+    "release_count": 85,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingBase30",
+    "config_name": "Бухгалтерия предприятия базовая",
+    "slug": "AccountingBase30",
+    "latest": {
+      "config_id": "AccountingBase30",
+      "config_name": "Бухгалтерия предприятия базовая",
+      "version": "3.0.200.23",
+      "date": "2026-06-26",
+      "date_ru": "26.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500242",
+      "news_id": "500242",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.23 \"Бухгалтерия предприятия\"\n 3.0.200.23 \"Бухгалтерия предприятия КОРП\"\n 3.0.200.23 \"Бухгалтерия предприятия базовая\"\n 1.1.53.1 \"Государственные и муниципальные закупки\"\n 1.3.277.1 \"Управление производственным предприятием\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingBase30",
+      "config_name": "Бухгалтерия предприятия базовая",
+      "version": "3.0.177.30",
+      "date": "2025-06-25",
+      "date_ru": "25.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495340",
+      "news_id": "495340",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.30 \"Бухгалтерия предприятия базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-26",
+      "count": 40
+    },
+    "release_count": 345,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingCorp",
+    "config_name": "Бухгалтерия предприятия КОРП",
+    "slug": "AccountingCorp",
+    "latest": {
+      "config_id": "AccountingCorp",
+      "config_name": "Бухгалтерия предприятия КОРП",
+      "version": "2.0.67.75",
+      "date": "2024-03-29",
+      "date_ru": "29.03.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/488638",
+      "news_id": "488638",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.67.75 \"Бухгалтерия предприятия КОРП\"",
+      "month": "202403",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingCorp",
+      "config_name": "Бухгалтерия предприятия КОРП",
+      "version": "2.0.67.56",
+      "date": "2023-03-24",
+      "date_ru": "24.03.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483574",
+      "news_id": "483574",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.67.56 \"Бухгалтерия предприятия КОРП\"",
+      "month": "202303",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2023-03-30",
+      "count": 18
+    },
+    "release_count": 169,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "AccountingCorp30",
+    "config_name": "Бухгалтерия предприятия КОРП",
+    "slug": "AccountingCorp30",
+    "latest": {
+      "config_id": "AccountingCorp30",
+      "config_name": "Бухгалтерия предприятия КОРП",
+      "version": "3.0.200.23",
+      "date": "2026-06-26",
+      "date_ru": "26.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500242",
+      "news_id": "500242",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.23 \"Бухгалтерия предприятия\"\n 3.0.200.23 \"Бухгалтерия предприятия КОРП\"\n 3.0.200.23 \"Бухгалтерия предприятия базовая\"\n 1.1.53.1 \"Государственные и муниципальные закупки\"\n 1.3.277.1 \"Управление производственным предприятием\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "AccountingCorp30",
+      "config_name": "Бухгалтерия предприятия КОРП",
+      "version": "3.0.177.30",
+      "date": "2025-06-25",
+      "date_ru": "25.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495339",
+      "news_id": "495339",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.177.30 \"Бухгалтерия предприятия КОРП\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-26",
+      "count": 40
+    },
+    "release_count": 346,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "BudgetReports",
+    "config_name": "Бюджетная отчетность",
+    "slug": "BudgetReports",
+    "latest": {
+      "config_id": "BudgetReports",
+      "config_name": "Бюджетная отчетность",
+      "version": "1.1.71.1",
+      "date": "2026-05-29",
+      "date_ru": "29.05.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499829",
+      "news_id": "499829",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.46 \"1C:ERP WE (English code)\"\n 2.5.27.46 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.45 \"ERP Управление предприятием\"\n 1.1.71.1 \"Бюджетная отчетность\"\n 2.0.43.2 \"Вещевое довольствие\"\n 2.5.27.45 \"Комплексная автоматизация\"\n 3.4.72.2 \"Свод отчетов ПРОФ\"\n 11.5.27.45 \"Управление торговлей\"\n 11.5.27.45 \"Управление торговлей базовая\"",
+      "month": "202605",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "BudgetReports",
+      "config_name": "Бюджетная отчетность",
+      "version": "1.1.68.1",
+      "date": "2025-05-23",
+      "date_ru": "23.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494885",
+      "news_id": "494885",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.1.68.1 \"Бюджетная отчетность\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-05-29",
+      "count": 5
+    },
+    "release_count": 56,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "UniformAllowances20",
+    "config_name": "Вещевое довольствие",
+    "slug": "UniformAllowances20",
+    "latest": {
+      "config_id": "UniformAllowances20",
+      "config_name": "Вещевое довольствие",
+      "version": "2.0.43.2",
+      "date": "2026-05-29",
+      "date_ru": "29.05.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499829",
+      "news_id": "499829",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.46 \"1C:ERP WE (English code)\"\n 2.5.27.46 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.45 \"ERP Управление предприятием\"\n 1.1.71.1 \"Бюджетная отчетность\"\n 2.0.43.2 \"Вещевое довольствие\"\n 2.5.27.45 \"Комплексная автоматизация\"\n 3.4.72.2 \"Свод отчетов ПРОФ\"\n 11.5.27.45 \"Управление торговлей\"\n 11.5.27.45 \"Управление торговлей базовая\"",
+      "month": "202605",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "UniformAllowances20",
+      "config_name": "Вещевое довольствие",
+      "version": "2.0.41.7",
+      "date": "2025-03-13",
+      "date_ru": "13.03.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/493841",
+      "news_id": "493841",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.41.7 \"Вещевое довольствие\"",
+      "month": "202503",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-05-29",
+      "count": 4
+    },
+    "release_count": 34,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "GMZ",
+    "config_name": "Государственные и муниципальные закупки",
+    "slug": "GMZ",
+    "latest": {
+      "config_id": "GMZ",
+      "config_name": "Государственные и муниципальные закупки",
+      "version": "1.1.53.1",
+      "date": "2026-06-26",
+      "date_ru": "26.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500242",
+      "news_id": "500242",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.200.23 \"Бухгалтерия предприятия\"\n 3.0.200.23 \"Бухгалтерия предприятия КОРП\"\n 3.0.200.23 \"Бухгалтерия предприятия базовая\"\n 1.1.53.1 \"Государственные и муниципальные закупки\"\n 1.3.277.1 \"Управление производственным предприятием\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "GMZ",
+      "config_name": "Государственные и муниципальные закупки",
+      "version": "1.1.48.1",
+      "date": "2025-06-26",
+      "date_ru": "26.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495359",
+      "news_id": "495359",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.1.48.1 \"Государственные и муниципальные закупки\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-26",
+      "count": 8
+    },
+    "release_count": 58,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Contracts",
+    "config_name": "Договоры ПРОФ",
+    "slug": "Contracts",
+    "latest": {
+      "config_id": "Contracts",
+      "config_name": "Договоры ПРОФ",
+      "version": "1.0.7.2",
+      "date": "2025-12-23",
+      "date_ru": "23.12.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/497896",
+      "news_id": "497896",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.2.8.17 \"ERP.Управление холдингом\"\n 1.1.31.10 \"Библиотека электронных документов\"\n 1.0.7.2 \"Договоры ПРОФ\"\n 1.0.7.2 \"Договоры базовая\"\n 3.1.34.173 \"Зарплата и Управление Персоналом\"\n 3.1.36.41 \"Зарплата и Управление Персоналом\"\n 3.1.34.173 \"Зарплата и Управление Персоналом базовая\"\n 3.1.36.41 \"Зарплата и Управление Персоналом базовая\"\n 3.1.34.173 \"Зарплата и кадры государственного учреждения\"\n 3.1.36.41 \"Зарплата и кадры государственного учреждения\"\n 3.1.34.173 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.36.41 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.34.173 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.36.41 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.34.173 \"Зарплата и управление персоналом КОРП\"\n 3.1.36.41 \"Зарплата и управление персоналом КОРП\"\n 2.9.15.95 \"Клиент ЭДО 8 Базовая\"\n 2.1.28.2 \"Корпоративный инструментальный пакет 8\"\n 3.0.189.3 \"Садовод\"\n 3.0.189.3 \"Садовод (базовая версия)\"\n 3.2.11.8 \"Управление холдингом 8\"",
+      "month": "202512",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2024-12-23",
+      "count": 2
+    },
+    "release_count": 2,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ContractsBase",
+    "config_name": "Договоры ПРОФ",
+    "slug": "ContractsBase",
+    "latest": {
+      "config_id": "ContractsBase",
+      "config_name": "Договоры ПРОФ",
+      "version": "1.0.7.2",
+      "date": "2025-12-23",
+      "date_ru": "23.12.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/497896",
+      "news_id": "497896",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.2.8.17 \"ERP.Управление холдингом\"\n 1.1.31.10 \"Библиотека электронных документов\"\n 1.0.7.2 \"Договоры ПРОФ\"\n 1.0.7.2 \"Договоры базовая\"\n 3.1.34.173 \"Зарплата и Управление Персоналом\"\n 3.1.36.41 \"Зарплата и Управление Персоналом\"\n 3.1.34.173 \"Зарплата и Управление Персоналом базовая\"\n 3.1.36.41 \"Зарплата и Управление Персоналом базовая\"\n 3.1.34.173 \"Зарплата и кадры государственного учреждения\"\n 3.1.36.41 \"Зарплата и кадры государственного учреждения\"\n 3.1.34.173 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.36.41 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.34.173 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.36.41 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.34.173 \"Зарплата и управление персоналом КОРП\"\n 3.1.36.41 \"Зарплата и управление персоналом КОРП\"\n 2.9.15.95 \"Клиент ЭДО 8 Базовая\"\n 2.1.28.2 \"Корпоративный инструментальный пакет 8\"\n 3.0.189.3 \"Садовод\"\n 3.0.189.3 \"Садовод (базовая версия)\"\n 3.2.11.8 \"Управление холдингом 8\"",
+      "month": "202512",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2024-12-23",
+      "count": 2
+    },
+    "release_count": 2,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "DocMngCorp",
+    "config_name": "Документооборот КОРП",
+    "slug": "DocMngCorp",
+    "latest": {
+      "config_id": "DocMngCorp",
+      "config_name": "Документооборот КОРП",
+      "version": "2.1.37.5",
+      "date": "2025-12-19",
+      "date_ru": "19.12.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/497856",
+      "news_id": "497856",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.25.80 \"1C:ERP WE (English code)\"\n 2.5.25.80 \"1C:ERP WE (с русским кодом)\"\n 2.5.22.134 \"ERP Управление предприятием\"\n 3.0.189.10 \"Бухгалтерия некоммерческой организации\"\n 3.0.189.10 \"Бухгалтерия некоммерческой организации КОРП\"\n 2.1.37.5 \"Документооборот КОРП\"\n 2.1.37.5 \"Документооборот ПРОФ\"\n 2.1.37.5 \"Документооборот государственного учреждения 8\"\n 2.5.22.134 \"Комплексная автоматизация\"\n 11.5.22.134 \"Управление торговлей\"\n 11.5.22.134 \"Управление торговлей базовая\"",
+      "month": "202512",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "DocMngCorp",
+      "config_name": "Документооборот КОРП",
+      "version": "2.1.35.15",
+      "date": "2024-10-04",
+      "date_ru": "04.10.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/491388",
+      "news_id": "491388",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.1.35.15 \"Документооборот КОРП\"",
+      "month": "202410",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-12-19",
+      "count": 4
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "DocMngCorp30",
+    "config_name": "Документооборот КОРП",
+    "slug": "DocMngCorp30",
+    "latest": {
+      "config_id": "DocMngCorp30",
+      "config_name": "Документооборот КОРП",
+      "version": "3.0.20.21",
+      "date": "2026-04-10",
+      "date_ru": "10.04.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499203",
+      "news_id": "499203",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.20.21 \"Документооборот КОРП\"\n 3.0.20.21 \"Документооборот Холдинга 3.0\"\n 3.0.20.21 \"Документооборот государственного учреждения 8\"\n 1.3.269.1 \"Управление производственным предприятием\"",
+      "month": "202604",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "DocMngCorp30",
+      "config_name": "Документооборот КОРП",
+      "version": "3.0.17.36",
+      "date": "2025-04-04",
+      "date_ru": "04.04.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494201",
+      "news_id": "494201",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.17.36 \"Документооборот КОРП\"",
+      "month": "202504",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-04-10",
+      "count": 5
+    },
+    "release_count": 11,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "DocMng",
+    "config_name": "Документооборот ПРОФ",
+    "slug": "DocMng",
+    "latest": {
+      "config_id": "DocMng",
+      "config_name": "Документооборот КОРП",
+      "version": "2.1.37.5",
+      "date": "2025-12-19",
+      "date_ru": "19.12.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/497856",
+      "news_id": "497856",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.25.80 \"1C:ERP WE (English code)\"\n 2.5.25.80 \"1C:ERP WE (с русским кодом)\"\n 2.5.22.134 \"ERP Управление предприятием\"\n 3.0.189.10 \"Бухгалтерия некоммерческой организации\"\n 3.0.189.10 \"Бухгалтерия некоммерческой организации КОРП\"\n 2.1.37.5 \"Документооборот КОРП\"\n 2.1.37.5 \"Документооборот ПРОФ\"\n 2.1.37.5 \"Документооборот государственного учреждения 8\"\n 2.5.22.134 \"Комплексная автоматизация\"\n 11.5.22.134 \"Управление торговлей\"\n 11.5.22.134 \"Управление торговлей базовая\"",
+      "month": "202512",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "DocMng",
+      "config_name": "Документооборот ПРОФ",
+      "version": "2.1.35.15",
+      "date": "2024-10-04",
+      "date_ru": "04.10.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/491389",
+      "news_id": "491389",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.1.35.15 \"Документооборот ПРОФ\"",
+      "month": "202410",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-12-19",
+      "count": 4
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "DocMngHolding3",
+    "config_name": "Документооборот Холдинга 3.0",
+    "slug": "DocMngHolding3",
+    "latest": {
+      "config_id": "DocMngHolding3",
+      "config_name": "Документооборот КОРП",
+      "version": "3.0.20.21",
+      "date": "2026-04-10",
+      "date_ru": "10.04.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499203",
+      "news_id": "499203",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.20.21 \"Документооборот КОРП\"\n 3.0.20.21 \"Документооборот Холдинга 3.0\"\n 3.0.20.21 \"Документооборот государственного учреждения 8\"\n 1.3.269.1 \"Управление производственным предприятием\"",
+      "month": "202604",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "DocMngHolding3",
+      "config_name": "Документооборот Холдинга 3.0",
+      "version": "3.0.17.36",
+      "date": "2025-04-04",
+      "date_ru": "04.04.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494203",
+      "news_id": "494203",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.17.36 \"Документооборот Холдинга 3.0\"",
+      "month": "202504",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-04-10",
+      "count": 5
+    },
+    "release_count": 10,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "BudgetHRM",
+    "config_name": "Зарплата и кадры бюджетного учреждения",
+    "slug": "BudgetHRM",
+    "latest": {
+      "config_id": "BudgetHRM",
+      "config_name": "Зарплата и кадры бюджетного учреждения",
+      "version": "1.0.121.2",
+      "date": "2018-03-29",
+      "date_ru": "29.03.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/455943",
+      "news_id": "455943",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.0.121.2 \"Зарплата и кадры бюджетного учреждения\"",
+      "month": "201803",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2017-03-29",
+      "count": 6
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateHRM30",
+    "config_name": "Зарплата и кадры государственного учреждения",
+    "slug": "StateHRM30",
+    "latest": {
+      "config_id": "StateHRM30",
+      "config_name": "Зарплата и кадры государственного учреждения",
+      "version": "3.1.38.18",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateHRM30",
+      "config_name": "Зарплата и кадры государственного учреждения",
+      "version": "3.1.34.4",
+      "date": "2025-06-16",
+      "date_ru": "16.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495197",
+      "news_id": "495197",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.34.4 \"Зарплата и кадры государственного учреждения\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 39
+    },
+    "release_count": 335,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateHRMBase",
+    "config_name": "Зарплата и кадры государственного учреждения базовая",
+    "slug": "StateHRMBase",
+    "latest": {
+      "config_id": "StateHRMBase",
+      "config_name": "Зарплата и кадры государственного учреждения базовая",
+      "version": "3.1.38.18",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateHRMBase",
+      "config_name": "Зарплата и кадры государственного учреждения базовая",
+      "version": "3.1.34.4",
+      "date": "2025-06-16",
+      "date_ru": "16.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495198",
+      "news_id": "495198",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.34.4 \"Зарплата и кадры государственного учреждения базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 39
+    },
+    "release_count": 333,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "StateHRMCorp3",
+    "config_name": "Зарплата и кадры государственного учреждения КОРП",
+    "slug": "StateHRMCorp3",
+    "latest": {
+      "config_id": "StateHRMCorp3",
+      "config_name": "Зарплата и кадры государственного учреждения КОРП",
+      "version": "3.1.38.18",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "StateHRMCorp3",
+      "config_name": "Зарплата и кадры государственного учреждения КОРП",
+      "version": "3.1.34.4",
+      "date": "2025-06-16",
+      "date_ru": "16.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495199",
+      "news_id": "495199",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.34.4 \"Зарплата и кадры государственного учреждения КОРП\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 40
+    },
+    "release_count": 334,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "HRM",
+    "config_name": "Зарплата и Управление Персоналом",
+    "slug": "HRM",
+    "latest": {
+      "config_id": "HRM",
+      "config_name": "Зарплата и Управление Персоналом",
+      "version": "2.5.130.2",
+      "date": "2018-03-29",
+      "date_ru": "29.03.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/455942",
+      "news_id": "455942",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.130.2 \"Зарплата и Управление Персоналом\"",
+      "month": "201803",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2017-03-29",
+      "count": 6
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "HRM30",
+    "config_name": "Зарплата и Управление Персоналом",
+    "slug": "HRM30",
+    "latest": {
+      "config_id": "HRM30",
+      "config_name": "Зарплата и Управление Персоналом",
+      "version": "3.1.38.18",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "HRM30",
+      "config_name": "Зарплата и Управление Персоналом",
+      "version": "3.1.34.4",
+      "date": "2025-06-16",
+      "date_ru": "16.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495186",
+      "news_id": "495186",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.34.4 \"Зарплата и Управление Персоналом\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 39
+    },
+    "release_count": 330,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "HRMBase",
+    "config_name": "Зарплата и Управление Персоналом базовая",
+    "slug": "HRMBase",
+    "latest": {
+      "config_id": "HRMBase",
+      "config_name": "Зарплата и Управление Персоналом базовая",
+      "version": "2.5.130.2",
+      "date": "2018-03-29",
+      "date_ru": "29.03.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/455952",
+      "news_id": "455952",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.130.2 \"Зарплата и Управление Персоналом базовая\"",
+      "month": "201803",
+      "source_kind": "its"
+    },
+    "year_ago_release": null,
+    "period": {
+      "days": 365,
+      "cutoff": "2017-03-29",
+      "count": 6
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "HRMBase30",
+    "config_name": "Зарплата и Управление Персоналом базовая",
+    "slug": "HRMBase30",
+    "latest": {
+      "config_id": "HRMBase30",
+      "config_name": "Зарплата и Управление Персоналом базовая",
+      "version": "3.1.38.18",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "HRMBase30",
+      "config_name": "Зарплата и Управление Персоналом базовая",
+      "version": "3.1.34.4",
+      "date": "2025-06-16",
+      "date_ru": "16.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495187",
+      "news_id": "495187",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.34.4 \"Зарплата и Управление Персоналом базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 39
+    },
+    "release_count": 327,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "HRMCorp",
+    "config_name": "Зарплата и управление персоналом КОРП",
+    "slug": "HRMCorp",
+    "latest": {
+      "config_id": "HRMCorp",
+      "config_name": "Зарплата и управление персоналом КОРП",
+      "version": "2.5.192.1",
+      "date": "2024-03-18",
+      "date_ru": "18.03.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/488406",
+      "news_id": "488406",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.192.1 \"Зарплата и управление персоналом КОРП\"",
+      "month": "202403",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "HRMCorp",
+      "config_name": "Зарплата и управление персоналом КОРП",
+      "version": "2.5.183.1",
+      "date": "2023-02-20",
+      "date_ru": "20.02.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483176",
+      "news_id": "483176",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.183.1 \"Зарплата и управление персоналом КОРП\"",
+      "month": "202302",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2023-03-19",
+      "count": 12
+    },
+    "release_count": 90,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "HRMCorp30",
+    "config_name": "Зарплата и управление персоналом КОРП",
+    "slug": "HRMCorp30",
+    "latest": {
+      "config_id": "HRMCorp30",
+      "config_name": "Зарплата и управление персоналом КОРП",
+      "version": "3.1.38.18",
+      "date": "2026-06-17",
+      "date_ru": "17.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500105",
+      "news_id": "500105",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.52 \"1C:ERP WE (English code)\"\n 2.5.27.52 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.52 \"ERP Управление предприятием\"\n 3.1.12.238 \"Библиотека стандартных подсистем\"\n 3.1.38.18 \"Зарплата и Управление Персоналом\"\n 3.1.38.18 \"Зарплата и Управление Персоналом базовая\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.38.18 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.38.18 \"Зарплата и управление персоналом КОРП\"\n 2.5.27.52 \"Комплексная автоматизация\"\n 11.5.27.52 \"Управление торговлей\"\n 11.5.27.52 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "HRMCorp30",
+      "config_name": "Зарплата и управление персоналом КОРП",
+      "version": "3.1.34.4",
+      "date": "2025-06-16",
+      "date_ru": "16.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495200",
+      "news_id": "495200",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.34.4 \"Зарплата и управление персоналом КОРП\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-17",
+      "count": 40
+    },
+    "release_count": 326,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ARAutomation11",
+    "config_name": "Комплексная автоматизация",
+    "slug": "ARAutomation11",
+    "latest": {
+      "config_id": "ARAutomation11",
+      "config_name": "Комплексная автоматизация",
+      "version": "1.1.115.1",
+      "date": "2019-03-29",
+      "date_ru": "29.03.2019",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/462287",
+      "news_id": "462287",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.1.115.1 \"Комплексная автоматизация\"",
+      "month": "201903",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ARAutomation11",
+      "config_name": "Комплексная автоматизация",
+      "version": "1.1.100.1",
+      "date": "2018-03-27",
+      "date_ru": "27.03.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/455938",
+      "news_id": "455938",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.1.100.1 \"Комплексная автоматизация\"",
+      "month": "201803",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2018-03-29",
+      "count": 34
+    },
+    "release_count": 40,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ARAutomation20",
+    "config_name": "Комплексная автоматизация",
+    "slug": "ARAutomation20",
+    "latest": {
+      "config_id": "ARAutomation20",
+      "config_name": "Комплексная автоматизация",
+      "version": "2.5.27.56",
+      "date": "2026-06-24",
+      "date_ru": "24.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500200",
+      "news_id": "500200",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.56 \"1C:ERP WE (English code)\"\n 2.5.27.56 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.56 \"ERP Управление предприятием\"\n 2.5.27.56 \"Комплексная автоматизация\"\n 11.5.27.56 \"Управление торговлей\"\n 11.5.27.56 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ARAutomation20",
+      "config_name": "Комплексная автоматизация",
+      "version": "2.5.22.70",
+      "date": "2025-06-23",
+      "date_ru": "23.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495290",
+      "news_id": "495290",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.5.22.70 \"Комплексная автоматизация\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-24",
+      "count": 93
+    },
+    "release_count": 449,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CConstrBase",
+    "config_name": "Конструктор курсов базовая",
+    "slug": "CConstrBase",
+    "latest": {
+      "config_id": "CConstrBase",
+      "config_name": "Конструктор курсов базовая",
+      "version": "3.0.11.109",
+      "date": "2022-11-21",
+      "date_ru": "21.11.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/481898",
+      "news_id": "481898",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.11.109 \"Конструктор курсов базовая\"",
+      "month": "202211",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "CConstrBase",
+      "config_name": "Конструктор курсов базовая",
+      "version": "3.0.11.107",
+      "date": "2021-02-02",
+      "date_ru": "02.02.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/472894",
+      "news_id": "472894",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.11.107 \"Конструктор курсов базовая\"",
+      "month": "202102",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2021-11-21",
+      "count": 2
+    },
+    "release_count": 8,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "ETP",
+    "config_name": "Корпоративный инструментальный пакет 8",
+    "slug": "ETP",
+    "latest": {
+      "config_id": "ETP",
+      "config_name": "Корпоративный инструментальный пакет 8",
+      "version": "2.2.1.1",
+      "date": "2026-06-08",
+      "date_ru": "08.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499961",
+      "news_id": "499961",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.2.1.1 \"Корпоративный инструментальный пакет 8\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "ETP",
+      "config_name": "Корпоративный инструментальный пакет 8",
+      "version": "2.1.23.1",
+      "date": "2025-05-30",
+      "date_ru": "30.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494978",
+      "news_id": "494978",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.1.23.1 \"Корпоративный инструментальный пакет 8\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-08",
+      "count": 9
+    },
+    "release_count": 46,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CorpUniversity",
+    "config_name": "Корпоративный университет",
+    "slug": "CorpUniversity",
+    "latest": {
+      "config_id": "CorpUniversity",
+      "config_name": "Корпоративный университет",
+      "version": "3.1.4.59",
+      "date": "2025-12-15",
+      "date_ru": "15.12.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/497779",
+      "news_id": "497779",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.1.34.172 \"Зарплата и Управление Персоналом\"\n 3.1.36.39 \"Зарплата и Управление Персоналом\"\n 3.1.34.172 \"Зарплата и Управление Персоналом базовая\"\n 3.1.36.39 \"Зарплата и Управление Персоналом базовая\"\n 3.1.34.172 \"Зарплата и кадры государственного учреждения\"\n 3.1.36.39 \"Зарплата и кадры государственного учреждения\"\n 3.1.34.172 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.36.39 \"Зарплата и кадры государственного учреждения КОРП\"\n 3.1.34.172 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.36.39 \"Зарплата и кадры государственного учреждения базовая\"\n 3.1.34.172 \"Зарплата и управление персоналом КОРП\"\n 3.1.36.39 \"Зарплата и управление персоналом КОРП\"\n 3.1.4.59 \"Корпоративный университет\"\n 3.0.266.1 \"Налогоплательщик\"\n 8.3.27.1936 \"Технологическая платформа\"\n 3.0.12.226 \"Управление нашей фирмой\"",
+      "month": "202512",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "CorpUniversity",
+      "config_name": "Корпоративный университет",
+      "version": "3.1.4.35",
+      "date": "2024-12-06",
+      "date_ru": "06.12.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/492363",
+      "news_id": "492363",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.1.4.35 \"Корпоративный университет\"",
+      "month": "202412",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2024-12-15",
+      "count": 5
+    },
+    "release_count": 73,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Taxes",
+    "config_name": "Налогоплательщик",
+    "slug": "Taxes",
+    "latest": {
+      "config_id": "Taxes",
+      "config_name": "Налогоплательщик",
+      "version": "3.0.273.1",
+      "date": "2026-06-25",
+      "date_ru": "25.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500221",
+      "news_id": "500221",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.273.1 \"Налогоплательщик\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Taxes",
+      "config_name": "Налогоплательщик",
+      "version": "3.0.260.1",
+      "date": "2025-06-24",
+      "date_ru": "24.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495333",
+      "news_id": "495333",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.260.1 \"Налогоплательщик\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-25",
+      "count": 14
+    },
+    "release_count": 134,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "PayDocs",
+    "config_name": "Платежные документы",
+    "slug": "PayDocs",
+    "latest": {
+      "config_id": "PayDocs",
+      "config_name": "Платежные документы",
+      "version": "1.0.32.1",
+      "date": "2026-03-20",
+      "date_ru": "20.03.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/498914",
+      "news_id": "498914",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 1.0.32.1 \"Платежные документы\"",
+      "month": "202603",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "PayDocs",
+      "config_name": "Платежные документы",
+      "version": "1.0.27.1",
+      "date": "2023-03-17",
+      "date_ru": "17.03.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483470",
+      "news_id": "483470",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.0.27.1 \"Платежные документы\"",
+      "month": "202303",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-03-20",
+      "count": 2
+    },
+    "release_count": 6,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Retail22",
+    "config_name": "Розница",
+    "slug": "Retail22",
+    "latest": {
+      "config_id": "Retail22",
+      "config_name": "Розница",
+      "version": "2.2.13.12",
+      "date": "2019-08-30",
+      "date_ru": "30.08.2019",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/464334",
+      "news_id": "464334",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.2.13.12 \"Розница\"",
+      "month": "201908",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Retail22",
+      "config_name": "Розница",
+      "version": "2.2.9.20",
+      "date": "2018-07-23",
+      "date_ru": "23.07.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/458581",
+      "news_id": "458581",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.2.9.20 \"Розница\"",
+      "month": "201807",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2018-08-30",
+      "count": 13
+    },
+    "release_count": 23,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Retail23",
+    "config_name": "Розница",
+    "slug": "Retail23",
+    "latest": {
+      "config_id": "Retail23",
+      "config_name": "Розница",
+      "version": "2.3.25.23",
+      "date": "2026-06-09",
+      "date_ru": "09.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499987",
+      "news_id": "499987",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.49 \"ERP Управление предприятием\"\n 2.5.27.49 \"Комплексная автоматизация\"\n 2.3.25.23 \"Розница\"\n 2.3.25.23 \"Розница базовая\"\n 3.0.199.2 \"Садовод\"\n 3.0.199.2 \"Садовод (базовая версия)\"\n 11.5.27.49 \"Управление торговлей\"\n 11.5.27.49 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Retail23",
+      "config_name": "Розница",
+      "version": "2.3.23.22",
+      "date": "2025-06-03",
+      "date_ru": "03.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495022",
+      "news_id": "495022",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.3.23.22 \"Розница\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-09",
+      "count": 14
+    },
+    "release_count": 102,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Retail30",
+    "config_name": "Розница",
+    "slug": "Retail30",
+    "latest": {
+      "config_id": "Retail30",
+      "config_name": "Розница",
+      "version": "3.0.13.363",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Retail30",
+      "config_name": "Розница",
+      "version": "3.0.11.169",
+      "date": "2025-06-03",
+      "date_ru": "03.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495017",
+      "news_id": "495017",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.11.169 \"Розница\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 26
+    },
+    "release_count": 86,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "RetailBase22",
+    "config_name": "Розница базовая",
+    "slug": "RetailBase22",
+    "latest": {
+      "config_id": "RetailBase22",
+      "config_name": "Розница базовая",
+      "version": "2.2.13.12",
+      "date": "2019-08-30",
+      "date_ru": "30.08.2019",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/464328",
+      "news_id": "464328",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.2.13.12 \"Розница базовая\"",
+      "month": "201908",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "RetailBase22",
+      "config_name": "Розница базовая",
+      "version": "2.2.9.20",
+      "date": "2018-07-23",
+      "date_ru": "23.07.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/458580",
+      "news_id": "458580",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.2.9.20 \"Розница базовая\"",
+      "month": "201807",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2018-08-30",
+      "count": 13
+    },
+    "release_count": 23,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "RetailBase23",
+    "config_name": "Розница базовая",
+    "slug": "RetailBase23",
+    "latest": {
+      "config_id": "RetailBase23",
+      "config_name": "Розница базовая",
+      "version": "2.3.25.23",
+      "date": "2026-06-09",
+      "date_ru": "09.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499987",
+      "news_id": "499987",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.49 \"ERP Управление предприятием\"\n 2.5.27.49 \"Комплексная автоматизация\"\n 2.3.25.23 \"Розница\"\n 2.3.25.23 \"Розница базовая\"\n 3.0.199.2 \"Садовод\"\n 3.0.199.2 \"Садовод (базовая версия)\"\n 11.5.27.49 \"Управление торговлей\"\n 11.5.27.49 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "RetailBase23",
+      "config_name": "Розница базовая",
+      "version": "2.3.23.22",
+      "date": "2025-06-03",
+      "date_ru": "03.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495021",
+      "news_id": "495021",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.3.23.22 \"Розница базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-09",
+      "count": 14
+    },
+    "release_count": 103,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "RetailBase30",
+    "config_name": "Розница базовая",
+    "slug": "RetailBase30",
+    "latest": {
+      "config_id": "RetailBase30",
+      "config_name": "Розница базовая",
+      "version": "3.0.13.363",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "RetailBase30",
+      "config_name": "Розница базовая",
+      "version": "3.0.11.169",
+      "date": "2025-06-02",
+      "date_ru": "02.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494996",
+      "news_id": "494996",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.11.169 \"Розница базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 28
+    },
+    "release_count": 88,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "BudgetConsolidation34",
+    "config_name": "Свод отчетов ПРОФ",
+    "slug": "BudgetConsolidation34",
+    "latest": {
+      "config_id": "BudgetConsolidation34",
+      "config_name": "Свод отчетов ПРОФ",
+      "version": "3.4.72.2",
+      "date": "2026-05-29",
+      "date_ru": "29.05.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499829",
+      "news_id": "499829",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.46 \"1C:ERP WE (English code)\"\n 2.5.27.46 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.45 \"ERP Управление предприятием\"\n 1.1.71.1 \"Бюджетная отчетность\"\n 2.0.43.2 \"Вещевое довольствие\"\n 2.5.27.45 \"Комплексная автоматизация\"\n 3.4.72.2 \"Свод отчетов ПРОФ\"\n 11.5.27.45 \"Управление торговлей\"\n 11.5.27.45 \"Управление торговлей базовая\"",
+      "month": "202605",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "BudgetConsolidation34",
+      "config_name": "Свод отчетов ПРОФ",
+      "version": "3.4.69.4",
+      "date": "2025-05-21",
+      "date_ru": "21.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494835",
+      "news_id": "494835",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.4.69.4 \"Свод отчетов ПРОФ\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-05-29",
+      "count": 6
+    },
+    "release_count": 40,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Modeling",
+    "config_name": "Система проектирования прикладных решений",
+    "slug": "Modeling",
+    "latest": {
+      "config_id": "Modeling",
+      "config_name": "Система проектирования прикладных решений",
+      "version": "2.1.1.29",
+      "date": "2026-06-23",
+      "date_ru": "23.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500178",
+      "news_id": "500178",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.1.1.29 \"Система проектирования прикладных решений\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Modeling",
+      "config_name": "Система проектирования прикладных решений",
+      "version": "2.0.14.15",
+      "date": "2025-03-25",
+      "date_ru": "25.03.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494033",
+      "news_id": "494033",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 2.0.14.15 \"Система проектирования прикладных решений\"",
+      "month": "202503",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-23",
+      "count": 7
+    },
+    "release_count": 22,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Platform83",
+    "config_name": "Технологическая платформа",
+    "slug": "Platform83",
+    "latest": {
+      "config_id": "Platform83",
+      "config_name": "Технологическая платформа",
+      "version": "8.3.27.2214",
+      "date": "2026-06-04",
+      "date_ru": "04.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/499921",
+      "news_id": "499921",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 3.0.199.13 \"Бухгалтерия предприятия\"\n 3.0.199.13 \"Бухгалтерия предприятия КОРП\"\n 3.0.199.13 \"Бухгалтерия предприятия базовая\"\n 8.3.27.2214 \"Технологическая платформа\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Platform83",
+      "config_name": "Технологическая платформа",
+      "version": "8.3.27.1559",
+      "date": "2025-05-27",
+      "date_ru": "27.05.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494908",
+      "news_id": "494908",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 8.3.27.1559 \"Технологическая платформа\"",
+      "month": "202505",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-04",
+      "count": 16
+    },
+    "release_count": 142,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "SmallBusiness16",
+    "config_name": "Управление нашей фирмой",
+    "slug": "SmallBusiness16",
+    "latest": {
+      "config_id": "SmallBusiness16",
+      "config_name": "Управление нашей фирмой",
+      "version": "1.6.27.295",
+      "date": "2022-08-05",
+      "date_ru": "05.08.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/480359",
+      "news_id": "480359",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.6.27.295 \"Управление нашей фирмой\"",
+      "month": "202208",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "SmallBusiness16",
+      "config_name": "Управление нашей фирмой",
+      "version": "1.6.25.178",
+      "date": "2021-08-04",
+      "date_ru": "04.08.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/475362",
+      "news_id": "475362",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.6.25.178 \"Управление нашей фирмой\"",
+      "month": "202108",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2021-08-05",
+      "count": 28
+    },
+    "release_count": 110,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "SmallBusiness30",
+    "config_name": "Управление нашей фирмой",
+    "slug": "SmallBusiness30",
+    "latest": {
+      "config_id": "SmallBusiness30",
+      "config_name": "Управление нашей фирмой",
+      "version": "3.0.13.363",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "SmallBusiness30",
+      "config_name": "Управление нашей фирмой",
+      "version": "3.0.11.169",
+      "date": "2025-06-03",
+      "date_ru": "03.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495018",
+      "news_id": "495018",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.11.169 \"Управление нашей фирмой\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 26
+    },
+    "release_count": 86,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "SmallBusinessBase16",
+    "config_name": "Управление нашей фирмой Базовая",
+    "slug": "SmallBusinessBase16",
+    "latest": {
+      "config_id": "SmallBusinessBase16",
+      "config_name": "Управление нашей фирмой Базовая",
+      "version": "1.6.27.295",
+      "date": "2022-08-05",
+      "date_ru": "05.08.2022",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/480357",
+      "news_id": "480357",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.6.27.295 \"Управление нашей фирмой Базовая \"",
+      "month": "202208",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "SmallBusinessBase16",
+      "config_name": "Управление нашей фирмой Базовая",
+      "version": "1.6.25.178",
+      "date": "2021-08-04",
+      "date_ru": "04.08.2021",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/475350",
+      "news_id": "475350",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 1.6.25.178 \"Управление нашей фирмой Базовая \"",
+      "month": "202108",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2021-08-05",
+      "count": 28
+    },
+    "release_count": 111,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "SmallBusinessBase30",
+    "config_name": "Управление нашей фирмой Базовая",
+    "slug": "SmallBusinessBase30",
+    "latest": {
+      "config_id": "SmallBusinessBase30",
+      "config_name": "Управление нашей фирмой Базовая",
+      "version": "3.0.13.363",
+      "date": "2026-06-19",
+      "date_ru": "19.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500146",
+      "news_id": "500146",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.0.109.68 \"Бухгалтерия государственного учреждения\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения КОРП\"\n 2.0.109.68 \"Бухгалтерия государственного учреждения базовая\"\n 3.0.13.363 \"Розница\"\n 3.0.13.363 \"Розница базовая\"\n 3.0.13.363 \"Управление нашей фирмой\"\n 3.0.13.363 \"Управление нашей фирмой Базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "SmallBusinessBase30",
+      "config_name": "Управление нашей фирмой Базовая",
+      "version": "3.0.11.169",
+      "date": "2025-06-02",
+      "date_ru": "02.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/494995",
+      "news_id": "494995",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.11.169 \"Управление нашей фирмой Базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-19",
+      "count": 28
+    },
+    "release_count": 88,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Trade103",
+    "config_name": "Управление торговлей",
+    "slug": "Trade103",
+    "latest": {
+      "config_id": "Trade103",
+      "config_name": "Управление торговлей",
+      "version": "10.3.88.3",
+      "date": "2024-04-05",
+      "date_ru": "05.04.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/488767",
+      "news_id": "488767",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 10.3.88.3 \"Управление торговлей\"",
+      "month": "202404",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Trade103",
+      "config_name": "Управление торговлей",
+      "version": "10.3.78.2",
+      "date": "2023-03-24",
+      "date_ru": "24.03.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483587",
+      "news_id": "483587",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 10.3.78.2 \"Управление торговлей\"",
+      "month": "202303",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2023-04-06",
+      "count": 20
+    },
+    "release_count": 101,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "Trade110",
+    "config_name": "Управление торговлей",
+    "slug": "Trade110",
+    "latest": {
+      "config_id": "Trade110",
+      "config_name": "Управление торговлей",
+      "version": "11.5.27.56",
+      "date": "2026-06-24",
+      "date_ru": "24.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500200",
+      "news_id": "500200",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.56 \"1C:ERP WE (English code)\"\n 2.5.27.56 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.56 \"ERP Управление предприятием\"\n 2.5.27.56 \"Комплексная автоматизация\"\n 11.5.27.56 \"Управление торговлей\"\n 11.5.27.56 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "Trade110",
+      "config_name": "Управление торговлей",
+      "version": "11.5.22.70",
+      "date": "2025-06-23",
+      "date_ru": "23.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495289",
+      "news_id": "495289",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 11.5.22.70 \"Управление торговлей\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-24",
+      "count": 93
+    },
+    "release_count": 430,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "TradeBase",
+    "config_name": "Управление торговлей базовая",
+    "slug": "TradeBase",
+    "latest": {
+      "config_id": "TradeBase",
+      "config_name": "Управление торговлей базовая",
+      "version": "10.3.88.3",
+      "date": "2024-04-05",
+      "date_ru": "05.04.2024",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/488768",
+      "news_id": "488768",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 10.3.88.3 \"Управление торговлей базовая\"",
+      "month": "202404",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "TradeBase",
+      "config_name": "Управление торговлей базовая",
+      "version": "10.3.78.2",
+      "date": "2023-03-24",
+      "date_ru": "24.03.2023",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/483588",
+      "news_id": "483588",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 10.3.78.2 \"Управление торговлей базовая\"",
+      "month": "202303",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2023-04-06",
+      "count": 20
+    },
+    "release_count": 102,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "TradeBase110",
+    "config_name": "Управление торговлей базовая",
+    "slug": "TradeBase110",
+    "latest": {
+      "config_id": "TradeBase110",
+      "config_name": "Управление торговлей базовая",
+      "version": "11.5.27.56",
+      "date": "2026-06-24",
+      "date_ru": "24.06.2026",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/500200",
+      "news_id": "500200",
+      "news_title": "На портале 1С:ИТС опубликованы новые версии:\n 2.5.27.56 \"1C:ERP WE (English code)\"\n 2.5.27.56 \"1C:ERP WE (с русским кодом)\"\n 2.5.27.56 \"ERP Управление предприятием\"\n 2.5.27.56 \"Комплексная автоматизация\"\n 11.5.27.56 \"Управление торговлей\"\n 11.5.27.56 \"Управление торговлей базовая\"",
+      "month": "202606",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "TradeBase110",
+      "config_name": "Управление торговлей базовая",
+      "version": "11.5.22.70",
+      "date": "2025-06-23",
+      "date_ru": "23.06.2025",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/495293",
+      "news_id": "495293",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 11.5.22.70 \"Управление торговлей базовая\"",
+      "month": "202506",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2025-06-24",
+      "count": 91
+    },
+    "release_count": 375,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  },
+  {
+    "config_id": "CConstr",
+    "config_name": "Электронное обучение. Конструктор курсов",
+    "slug": "CConstr",
+    "latest": {
+      "config_id": "CConstr",
+      "config_name": "Электронное обучение. Конструктор курсов ПРОФ",
+      "version": "3.0.10.70",
+      "date": "2019-12-27",
+      "date_ru": "27.12.2019",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/466019",
+      "news_id": "466019",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.10.70 \"Электронное обучение. Конструктор курсов ПРОФ\"",
+      "month": "201912",
+      "source_kind": "its"
+    },
+    "year_ago_release": {
+      "config_id": "CConstr",
+      "config_name": "Электронное обучение. Конструктор курсов",
+      "version": "3.0.9.67",
+      "date": "2018-03-01",
+      "date_ru": "01.03.2018",
+      "source": "its.1c.ru news",
+      "url": "https://its.1c.ru/news/455465",
+      "news_id": "455465",
+      "news_title": "На портале 1С:ИТС опубликована новая версия 3.0.9.67 \"Электронное обучение. Конструктор курсов\"",
+      "month": "201803",
+      "source_kind": "its"
+    },
+    "period": {
+      "days": 365,
+      "cutoff": "2018-12-27",
+      "count": 4
+    },
+    "release_count": 4,
+    "sources": [
+      "its.1c.ru news"
+    ]
+  }
+]

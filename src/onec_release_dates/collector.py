@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Collect release dates for a fixed set of 1C configurations.
-
-The script is intentionally small and tolerant: every failed source becomes a
-skipped item, while successful sources still produce JSON and Markdown output.
-"""
+"""Build a public release database and static pages from public 1C release news."""
 
 from __future__ import annotations
 
@@ -12,23 +8,29 @@ import datetime as dt
 import html
 import json
 import re
+import shutil
 import ssl
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
 
 TODAY = dt.date.today()
 DEFAULT_DAYS = 365
-UA = "Mozilla/5.0 1c-release-date-collector/0.1"
+UA = "Mozilla/5.0 onec-release-dates/0.2"
 ITS_NEWS_URL = "https://its.1c.ru/news/"
 ITS_START_YEAR = 2018
 ITS_CACHE_PATH = Path(".cache/its-news.json")
-ITS_NEWS_CACHE = None
+RARUS6_YEARS = range(2021, TODAY.year + 1)
+RARUS5_PAGES = [
+    "https://rarus.ru/forum/forum7/topic2826/",
+    "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=2",
+    "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=3",
+    "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=4",
+]
 
 MONTH_ALIASES = {
     "янв": 1,
@@ -45,73 +47,23 @@ MONTH_ALIASES = {
     "дек": 12,
 }
 
-ITS_NICK_ALIASES = {
-    "AccountingCorp20": ["AccountingCorp"],
-    "Enterprise24": ["EnterpriseERP20"],
-    "Enterprise25": ["EnterpriseERP20"],
-    "ERPUH32": ["ERP_UH32"],
-    "ERPUH31": ["ERP_UH31"],
-    "Trade115": ["Trade110"],
-    "DocMgrCorp21": ["DocMngCorp"],
-    "DocMgrCorp30": ["DocMngCorp30"],
+RARUS_CONFIGS = {
+    "AlfaAuto51": {
+        "name": "Альфа-Авто 5.1",
+        "source": "rarus.ru forum",
+        "version_prefix": "5.1.",
+    },
+    "AutoSalon60": {
+        "name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.0",
+        "source": "rarus.ru release page",
+        "version_prefix": "6.0.",
+    },
+    "AutoSalon61": {
+        "name": "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.1",
+        "source": "rarus.ru release page",
+        "version_prefix": "6.1.",
+    },
 }
-
-
-@dataclass(frozen=True)
-class Target:
-    template: str
-    name: str
-    version: str
-    group: str
-    source: str
-    nick: str | None = None
-    version_prefix: str | None = None
-
-
-TARGETS = [
-    Target("AccountingCorp30_latest", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.183.24", "УФ latest", "its", "AccountingCorp30"),
-    Target("Enterprise24_latest", "1С:ERP Управление предприятием 2, редакция 2.4", "2.4.14.181", "УФ latest", "its", "Enterprise24"),
-    Target("Enterprise25_latest", "1С:ERP Управление предприятием 2, редакция 2.5", "2.5.24.52", "УФ latest", "its", "Enterprise25"),
-    Target("ERPUH32_latest", "1С:ERP Управление холдингом, редакция 3.2", "3.2.8.11", "УФ latest", "its", "ERPUH32"),
-    Target("SmallBusiness16_latest", "Управление нашей фирмой, редакция 1.6", "1.6.27.295", "УФ latest", "its", "SmallBusiness16"),
-    Target("SmallBusiness30_latest", "Управление нашей фирмой, редакция 3.0", "3.0.12.170", "УФ latest", "its", "SmallBusiness30"),
-    Target("StateAccounting20_latest", "Бухгалтерия государственного учреждения, редакция 2.0", "2.0.105.76", "УФ latest", "its", "StateAccounting20"),
-    Target("Arenda3_latest", "Аренда и управление недвижимостью для 1С:Бухгалтерия 8, редакция 3.0", "3.0.182.33/3.3.3.326", "УФ latest", "its", "Arenda3"),
-    Target("AutoSalon60_latest", "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6", "6.0.41.02", "УФ latest", "rarus6", version_prefix="6.0"),
-    Target("AutoSalon61_latest", "Альфа-Авто: Автосалон+Автосервис+Автозапчасти КОРП. Редакция 6.1", "6.1.20.02", "УФ latest", "rarus6", version_prefix="6.1"),
-    Target("Retail23_latest", "Розница, редакция 2.3", "2.3.23.50", "УФ latest", "its", "Retail23"),
-    Target("Retail30_latest", "Розница, редакция 3.0", "3.0.12.170", "УФ latest", "its", "Retail30"),
-    Target("DocMgrCorp21_latest", "Документооборот КОРП, редакция 2.1", "2.1.36.3", "УФ latest", "its", "DocMgrCorp21"),
-    Target("DocMgrCorp30_latest", "Документооборот КОРП, редакция 3.0", "3.0.18.19", "УФ latest", "its", "DocMgrCorp30"),
-    Target("Trade115_latest", "Управление торговлей 11.5", "11.5.24.52", "УФ latest", "its", "Trade115"),
-    Target("CorporatePerformanceManagement32_latest", "Управление холдингом, редакция 3.2", "3.2.10.40", "УФ latest", "its", "CorporatePerformanceManagement32"),
-    Target("AlfaAuto51_latest", "Альфа-Авто 5.1", "5.1.47.04", "ОФ latest", "rarus5", version_prefix="5.1"),
-    Target("AccountingCorp20_latest", "Бухгалтерия предприятия КОРП 2.0", "2.0.67.75", "ОФ latest", "its", "AccountingCorp20"),
-    Target("ARAutomation11_latest", "Комплексная автоматизация 1.1", "1.1.115.1", "ОФ latest", "its", "ARAutomation11"),
-    Target("Enterprise13_latest", "Управление производственным предприятием 1.3", "1.3.274.2", "ОФ latest", "its", "Enterprise13"),
-    Target("Trade103_latest", "Управление торговлей 10.3", "10.3.88.3", "ОФ latest", "its", "Trade103"),
-    Target("AccountingCorp30_oldest", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.137.39", "УФ oldest", "its", "AccountingCorp30"),
-    Target("Arenda3_oldest", "Аренда и управление недвижимостью для 1С:Бухгалтерия 8, редакция 3.0", "3.0.135.22/3.3.3.264", "УФ oldest", "its", "Arenda3"),
-    Target("Enterprise24_oldest", "1С:ERP Управление предприятием 2, редакция 2.4", "2.4.13.282", "УФ oldest", "its", "Enterprise24"),
-    Target("Enterprise25_oldest", "1С:ERP Управление предприятием 2, редакция 2.5", "2.5.12.147", "УФ oldest", "its", "Enterprise25"),
-    Target("ERPUH31_oldest", "1С:ERP Управление холдингом, редакция 3.1", "3.1.13.20", "УФ oldest", "its", "ERPUH31"),
-    Target("SmallBusiness16_oldest", "Управление нашей фирмой, редакция 1.6", "1.6.26.229", "УФ oldest", "its", "SmallBusiness16"),
-    Target("ARAutomation11_100", "КА 1.1 (1.1.100.2)", "1.1.100.2", "ОФ oldest", "its", "ARAutomation11"),
-    Target("Vanessa_Pro_BP", "Бухгалтерия предприятия КОРП, редакция 3.0", "3.0.137.39", "Технические ИБ", "its", "AccountingCorp30"),
-    Target("AccountingCorp20_demo", "Бухгалтерия предприятия КОРП 2.0", "2.0.67.75", "ОФ demo", "its", "AccountingCorp20"),
-    Target("ARAutomation11_demo", "Комплексная автоматизация 1.1", "1.1.115.1", "ОФ demo", "its", "ARAutomation11"),
-    Target("Enterprise13_demo", "Управление производственным предприятием 1.3", "1.3.255.1", "ОФ demo", "its", "Enterprise13"),
-    Target("Trade103_demo", "Управление торговлей 10.3", "10.3.88.3", "ОФ demo", "its", "Trade103"),
-]
-
-
-RARUS6_YEARS = range(2021, TODAY.year + 1)
-RARUS5_PAGES = [
-    "https://rarus.ru/forum/forum7/topic2826/",
-    "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=2",
-    "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=3",
-    "https://rarus.ru/forum/forum7/topic2826/?PAGEN_1=4",
-]
 
 
 def fetch(url: str, timeout: int = 30) -> tuple[int, str]:
@@ -143,7 +95,7 @@ def clean_text(raw: str) -> str:
     raw = re.sub(r"(?is)<br\s*/?>", "\n", raw)
     raw = re.sub(r"(?is)</(tr|div|p|li|h\d|td|th)>", "\n", raw)
     raw = re.sub(r"(?is)<[^>]+>", " ", raw)
-    return re.sub(r"[ \t\r\f\v]+", " ", html.unescape(raw))
+    return re.sub(r"[ \t\r\f\v]+", " ", html.unescape(raw)).strip()
 
 
 def parse_date(value: str) -> dt.date | None:
@@ -159,44 +111,19 @@ def parse_date(value: str) -> dt.date | None:
         return None
 
 
+def date_ru(value: dt.date | str) -> str:
+    if isinstance(value, str):
+        value = dt.date.fromisoformat(value)
+    return value.strftime("%d.%m.%Y")
+
+
 def version_key(version: str) -> tuple[int, ...]:
-    return tuple(int(part) for part in version.split("."))
+    return tuple(int(part) for part in re.findall(r"\d+", version))
 
 
-def prefix_for(target: Target) -> str:
-    if target.version_prefix:
-        return target.version_prefix + "."
-    first = target.version.split("/")[0]
-    parts = first.split(".")
-    return ".".join(parts[:2]) + "."
-
-
-def keep_version(target: Target, version: str) -> bool:
-    return version.startswith(prefix_for(target))
-
-
-def release(version: str, date: dt.date, source: str, url: str, extra: dict | None = None) -> dict:
-    row = {
-        "version": version,
-        "date": date.isoformat(),
-        "date_ru": date.strftime("%d.%m.%Y"),
-        "source": source,
-        "url": url,
-    }
-    if extra:
-        row.update(extra)
-    return row
-
-
-def unique_releases(rows: Iterable[dict]) -> list[dict]:
-    best: dict[str, dict] = {}
-    for row in rows:
-        version = row["version"]
-        current = best.get(version)
-        if current is None or row["date"] > current["date"]:
-            best[version] = row
-    return sorted(best.values(), key=lambda row: version_key(row["version"]), reverse=True)
-
+def slugify(value: str) -> str:
+    value = re.sub(r"[^A-Za-z0-9_.-]+", "-", value).strip("-._")
+    return value or "configuration"
 
 
 def iter_its_months(start_year: int = ITS_START_YEAR, end: dt.date = TODAY) -> Iterable[str]:
@@ -237,7 +164,46 @@ def parse_news_id(panel: str) -> str | None:
 
 def parse_news_title(panel: str) -> str:
     match = re.search(r'(?is)<div class="link-item news-item[^>]*"[^>]*>(.*?)(?:<div class="link-item__state">|</div>)', panel)
-    return clean_text(match.group(1)).strip() if match else ""
+    return clean_text(match.group(1)).strip() if match else clean_text(panel)[:500]
+
+
+def names_by_version(title: str) -> dict[str, list[str]]:
+    found: dict[str, list[str]] = {}
+    pattern = re.compile(r'\b(\d+(?:\.\d+){2,3})\b\s+"([^"]+)"')
+    for version, name in pattern.findall(title):
+        found.setdefault(version, []).append(name.strip())
+    return found
+
+
+def pop_name(candidates: dict[str, list[str]], version: str) -> str | None:
+    names = candidates.get(version) or []
+    if names:
+        return names.pop(0)
+    return None
+
+
+def release_row(
+    *,
+    config_id: str,
+    version: str,
+    date: dt.date,
+    source: str,
+    url: str,
+    config_name: str | None = None,
+    extra: dict | None = None,
+) -> dict:
+    row = {
+        "config_id": config_id,
+        "config_name": config_name or config_id,
+        "version": version,
+        "date": date.isoformat(),
+        "date_ru": date_ru(date),
+        "source": source,
+        "url": url,
+    }
+    if extra:
+        row.update(extra)
+    return row
 
 
 def parse_its_news_month(ym: str) -> list[dict]:
@@ -253,43 +219,26 @@ def parse_its_news_month(ym: str) -> list[dict]:
             continue
         news_id = parse_news_id(panel)
         title = parse_news_title(panel)
+        name_candidates = names_by_version(title)
+        news_url = f"https://its.1c.ru/news/{news_id}" if news_id else url
         for nick, version in re.findall(r'version_files\?nick=([^"&]+)(?:&amp;|&)ver=([^"&]+)', panel):
-            news_url = f"https://its.1c.ru/news/{news_id}" if news_id else url
-            rows.append(release(
-                urllib.parse.unquote(version),
-                date,
-                "its.1c.ru news",
-                news_url,
-                {
-                    "nick": urllib.parse.unquote(nick),
+            nick = urllib.parse.unquote(nick)
+            version = urllib.parse.unquote(version)
+            rows.append(release_row(
+                config_id=nick,
+                config_name=pop_name(name_candidates, version),
+                version=version,
+                date=date,
+                source="its.1c.ru news",
+                url=news_url,
+                extra={
                     "news_id": news_id,
                     "news_title": title,
                     "month": ym,
+                    "source_kind": "its",
                 },
             ))
     return rows
-
-
-def its_news_rows() -> list[dict]:
-    global ITS_NEWS_CACHE
-    if ITS_NEWS_CACHE is None:
-        cache = load_its_cache()
-        refresh_months = {TODAY.strftime("%Y%m"), previous_month()}
-        rows = []
-        changed = False
-        for ym in iter_its_months():
-            if ym in cache and ym not in refresh_months:
-                rows.extend(cache[ym])
-                continue
-            month_rows = parse_its_news_month(ym)
-            rows.extend(month_rows)
-            if cache.get(ym) != month_rows:
-                cache[ym] = month_rows
-                changed = True
-        if changed:
-            save_its_cache(cache)
-        ITS_NEWS_CACHE = rows
-    return ITS_NEWS_CACHE
 
 
 def load_its_cache() -> dict[str, list[dict]]:
@@ -301,7 +250,36 @@ def load_its_cache() -> dict[str, list[dict]]:
     months = raw.get("months", {})
     if not isinstance(months, dict):
         return {}
-    return {str(month): rows for month, rows in months.items() if isinstance(rows, list)}
+    return {str(month): normalize_cached_rows(rows) for month, rows in months.items() if isinstance(rows, list)}
+
+
+def normalize_cached_rows(rows: list[dict]) -> list[dict]:
+    normalized = []
+    for row in rows:
+        if "config_id" in row:
+            normalized.append(row)
+            continue
+        config_id = row.get("nick")
+        version = row.get("version")
+        date = row.get("date")
+        if not config_id or not version or not date:
+            continue
+        title = row.get("news_title", "")
+        name = (names_by_version(title).get(version) or [config_id])[0]
+        normalized.append({
+            "config_id": config_id,
+            "config_name": name,
+            "version": version,
+            "date": date,
+            "date_ru": row.get("date_ru") or date_ru(date),
+            "source": row.get("source", "its.1c.ru news"),
+            "url": row.get("url", ITS_NEWS_URL),
+            "news_id": row.get("news_id"),
+            "news_title": title,
+            "month": row.get("month"),
+            "source_kind": "its",
+        })
+    return normalized
 
 
 def save_its_cache(months: dict[str, list[dict]]) -> None:
@@ -316,19 +294,26 @@ def save_its_cache(months: dict[str, list[dict]]) -> None:
         fp.write("\n")
 
 
-def its_nicks_for(target: Target) -> set[str]:
-    assert target.nick
-    return set(ITS_NICK_ALIASES.get(target.nick, [target.nick]))
+def collect_its_releases() -> list[dict]:
+    cache = load_its_cache()
+    refresh_months = {TODAY.strftime("%Y%m"), previous_month()}
+    rows = []
+    changed = False
+    for ym in iter_its_months():
+        if ym in cache and ym not in refresh_months:
+            rows.extend(cache[ym])
+            continue
+        month_rows = parse_its_news_month(ym)
+        rows.extend(month_rows)
+        if cache.get(ym) != month_rows:
+            cache[ym] = month_rows
+            changed = True
+    if changed:
+        save_its_cache(cache)
+    return rows
 
 
-def parse_its_news(target: Target) -> tuple[list[dict], str | None]:
-    nicks = its_nicks_for(target)
-    rows = [row for row in its_news_rows() if row.get("nick") in nicks and keep_version(target, row["version"])]
-    rows = unique_releases(rows)
-    return rows, None if rows else "no ITS news rows parsed"
-
-
-def parse_rarus6(target: Target) -> tuple[list[dict], str | None]:
+def collect_rarus6_releases() -> list[dict]:
     rows = []
     for year in RARUS6_YEARS:
         url = f"https://rarus.ru/1c-auto/releases-alfa-avto-avtosalon-avtoservis-avtozapchasti-korp-redaktsiya-6-{year}/"
@@ -338,14 +323,26 @@ def parse_rarus6(target: Target) -> tuple[list[dict], str | None]:
         text = clean_text(raw)
         for version, date_text in re.findall(r"Релиз\s+(6\.\d+\.\d+\.\d+)\s+от\s+(\d{2}\.\d{2}\.\d{4})", text):
             date = parse_date(date_text)
-            if date and keep_version(target, version):
-                rows.append(release(version, date, "rarus.ru release page", url))
-    rows = unique_releases(rows)
-    return rows, None if rows else "no Rarus 6 rows parsed"
+            if not date:
+                continue
+            for config_id in ("AutoSalon60", "AutoSalon61"):
+                cfg = RARUS_CONFIGS[config_id]
+                if version.startswith(cfg["version_prefix"]):
+                    rows.append(release_row(
+                        config_id=config_id,
+                        config_name=cfg["name"],
+                        version=version,
+                        date=date,
+                        source=cfg["source"],
+                        url=url,
+                        extra={"source_kind": "rarus"},
+                    ))
+    return rows
 
 
-def parse_rarus5(target: Target) -> tuple[list[dict], str | None]:
+def collect_rarus5_releases() -> list[dict]:
     rows = []
+    cfg = RARUS_CONFIGS["AlfaAuto51"]
     for url in RARUS5_PAGES:
         status, raw = fetch(url)
         if status != 200:
@@ -362,25 +359,52 @@ def parse_rarus5(target: Target) -> tuple[list[dict], str | None]:
             versions = sorted(set(re.findall(r"\b5\.\d+\.\d+\.\d+\b", body)), key=version_key, reverse=True)
             if date_match and versions and re.search("релиз", body, re.I):
                 date = parse_date(date_match.group(1))
-                version = versions[0]
-                if date and keep_version(target, version):
-                    rows.append(release(version, date, "rarus.ru forum", url, {"time": date_match.group(2), "message": message_id}))
-    rows = unique_releases(rows)
-    return rows, None if rows else "no Rarus 5 forum rows parsed"
-
-
-def collect_target(target: Target) -> tuple[list[dict], str | None]:
-    if target.source == "its":
-        return parse_its_news(target)
-    if target.source == "rarus6":
-        return parse_rarus6(target)
-    if target.source == "rarus5":
-        return parse_rarus5(target)
-    return [], f"unknown source {target.source}"
+                if not date:
+                    continue
+                rows.append(release_row(
+                    config_id="AlfaAuto51",
+                    config_name=cfg["name"],
+                    version=versions[0],
+                    date=date,
+                    source=cfg["source"],
+                    url=url,
+                    extra={"time": date_match.group(2), "message": message_id, "source_kind": "rarus"},
+                ))
+    return rows
 
 
 def row_date(row: dict) -> dt.date:
     return dt.date.fromisoformat(row["date"])
+
+
+def unique_releases(rows: Iterable[dict]) -> list[dict]:
+    best: dict[tuple[str, str], dict] = {}
+    for row in rows:
+        key = (row["config_id"], row["version"])
+        current = best.get(key)
+        if current is None or row["date"] > current["date"]:
+            best[key] = row
+    return sorted(best.values(), key=lambda row: (row["config_id"].lower(), row_date(row), version_key(row["version"])), reverse=True)
+
+
+def group_releases(rows: Iterable[dict]) -> dict[str, list[dict]]:
+    grouped: dict[str, list[dict]] = {}
+    for row in rows:
+        grouped.setdefault(row["config_id"], []).append(row)
+    for config_rows in grouped.values():
+        config_rows.sort(key=lambda row: (row_date(row), version_key(row["version"])), reverse=True)
+    return dict(sorted(grouped.items(), key=lambda item: item[0].lower()))
+
+
+def display_name(config_id: str, rows: list[dict]) -> str:
+    counts: dict[str, int] = {}
+    for row in rows:
+        name = (row.get("config_name") or "").strip()
+        if name and name != config_id:
+            counts[name] = counts.get(name, 0) + 1
+    if not counts:
+        return config_id
+    return sorted(counts.items(), key=lambda item: (-item[1], item[0]))[0][0]
 
 
 def select_year_ago_release(rows: list[dict], latest: dict, days: int) -> tuple[dt.date, dict | None]:
@@ -398,39 +422,45 @@ def period_rows(rows: list[dict], cutoff: dt.date, baseline: dict | None) -> lis
     return selected
 
 
-def summarize(target: Target, rows: list[dict], days: int) -> dict:
-    latest = rows[0] if rows else None
-    cutoff, baseline = select_year_ago_release(rows, latest, days) if latest else (None, None)
-    period = period_rows(rows, cutoff, baseline) if cutoff else []
-    return {
-        "template": target.template,
-        "name": target.name,
-        "group": target.group,
-        "source": target.source,
-        "latest": latest,
-        "year_ago_release": baseline,
-        "period": {
-            "days": days,
-            "cutoff": cutoff.isoformat() if cutoff else None,
-            "count": len(period),
-        },
-    }
+def build_summary(grouped: dict[str, list[dict]], days: int) -> list[dict]:
+    summary = []
+    for config_id, rows in grouped.items():
+        latest = rows[0]
+        cutoff, baseline = select_year_ago_release(rows, latest, days)
+        summary.append({
+            "config_id": config_id,
+            "config_name": display_name(config_id, rows),
+            "slug": slugify(config_id),
+            "latest": latest,
+            "year_ago_release": baseline,
+            "period": {
+                "days": days,
+                "cutoff": cutoff.isoformat(),
+                "count": len(period_rows(rows, cutoff, baseline)),
+            },
+            "release_count": len(rows),
+            "sources": sorted({row["source"] for row in rows}),
+        })
+    return sorted(summary, key=lambda item: (item["config_name"].lower(), item["config_id"].lower()))
 
 
-def skipped_summary(target: Target, reason: str, days: int) -> dict:
+def collect_all(days: int) -> dict:
+    releases = unique_releases([
+        *collect_its_releases(),
+        *collect_rarus6_releases(),
+        *collect_rarus5_releases(),
+    ])
+    grouped = group_releases(releases)
+    summary = build_summary(grouped, days)
     return {
-        "template": target.template,
-        "name": target.name,
-        "group": target.group,
-        "source": target.source,
-        "latest": None,
-        "year_ago_release": None,
-        "skipped_reason": reason,
-        "period": {
-            "days": days,
-            "cutoff": None,
-            "count": 0,
-        },
+        "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
+        "period": {"mode": "latest_minus_days_per_configuration", "days": days},
+        "sources": [
+            {"id": "its", "name": "1C ITS news", "url": ITS_NEWS_URL},
+            {"id": "rarus", "name": "Rarus release pages and forum", "url": "https://rarus.ru/"},
+        ],
+        "summary": summary,
+        "releases": releases,
     }
 
 
@@ -444,98 +474,235 @@ def md_table(headers: list[str], rows: list[list[str]]) -> str:
 def render_markdown(data: dict) -> str:
     summary_rows = []
     for item in data["summary"]:
-        latest = item.get("latest") or {}
+        latest = item["latest"]
         year_ago = item.get("year_ago_release") or {}
-        period = item["period"]
         summary_rows.append([
-            item["template"],
-            latest.get("version") or "skipped",
-            latest.get("date_ru", ""),
-            year_ago.get("version") or "skipped",
-            year_ago.get("date_ru", ""),
-            str(period["count"]),
-            item["source"],
+            item["config_name"],
+            item["config_id"],
+            f"{latest['version']} / {latest['date_ru']}",
+            f"{year_ago.get('version', 'skipped')} / {year_ago.get('date_ru', '')}".strip(),
+            str(item["release_count"]),
+            ", ".join(item["sources"]),
         ])
-    release_rows = []
-    for row in data["releases"]:
-        release_rows.append([
-            row["template"],
-            row["version"],
-            row["date_ru"],
-            row["source"],
-        ])
-    skipped_rows = [[row["template"], row["reason"]] for row in data["skipped"]]
     chunks = [
-        f"# 1C release dates\n\nGenerated: {data['generated_at']}\nPeriod: latest release date minus {data['period']['days']} days per target\n",
-        "## Summary\n\n" + md_table(["template", "latest", "latest_date", "year_ago", "year_ago_date", "releases_in_period", "source"], summary_rows),
-        "## Releases In Period\n\n" + md_table(["template", "version", "date", "source"], release_rows),
+        f"# 1C release dates\n\nGenerated: {data['generated_at']}\n\n"
+        f"Configurations: {len(data['summary'])}\n\nReleases: {len(data['releases'])}\n",
+        "## Configuration Summary\n\n" + md_table(
+            ["configuration", "id", "current_release", "year_ago_release", "release_count", "sources"],
+            summary_rows,
+        ),
     ]
-    if skipped_rows:
-        chunks.append("## Skipped\n\n" + md_table(["template", "reason"], skipped_rows))
     return "\n\n".join(chunks) + "\n"
+
+
+def esc(value: object) -> str:
+    return html.escape("" if value is None else str(value), quote=True)
+
+
+def source_link(row: dict) -> str:
+    return f'<a href="{esc(row["url"])}">{esc(row["source"])}</a>'
+
+
+def page_shell(title: str, body: str, prefix: str = "") -> str:
+    css = f"{prefix}assets/styles.css"
+    return f"""<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(title)}</title>
+  <link rel="stylesheet" href="{esc(css)}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{esc(prefix)}index.html">1C Release Dates</a>
+    <nav><a href="{esc(prefix)}data/summary.json">summary.json</a><a href="{esc(prefix)}data/releases.json">releases.json</a></nav>
+  </header>
+  <main>{body}</main>
+</body>
+</html>
+"""
+
+
+def render_index(data: dict) -> str:
+    rows = []
+    for item in data["summary"]:
+        latest = item["latest"]
+        year = item.get("year_ago_release") or {}
+        rows.append(f"""
+        <tr>
+          <td><a href="configs/{esc(item['slug'])}.html">{esc(item['config_name'])}</a><span class="muted code">{esc(item['config_id'])}</span></td>
+          <td><strong>{esc(latest['version'])}</strong><span class="muted">{esc(latest['date_ru'])}</span></td>
+          <td><strong>{esc(year.get('version', 'skipped'))}</strong><span class="muted">{esc(year.get('date_ru', ''))}</span></td>
+          <td>{esc(item['release_count'])}</td>
+          <td>{esc(', '.join(item['sources']))}</td>
+        </tr>""")
+    body = f"""
+    <section class="hero">
+      <div>
+        <h1>1C Release Dates</h1>
+        <p>Публичная база дат релизов конфигураций 1С из новостей ITS и страниц Rarus.</p>
+      </div>
+      <dl class="stats">
+        <div><dt>Конфигураций</dt><dd>{len(data['summary'])}</dd></div>
+        <div><dt>Релизов</dt><dd>{len(data['releases'])}</dd></div>
+        <div><dt>Обновлено</dt><dd>{esc(data['generated_at'])}</dd></div>
+      </dl>
+    </section>
+    <section class="toolbar"><input id="filter" type="search" placeholder="Фильтр по конфигурации, версии или источнику" aria-label="Фильтр"></section>
+    <section class="table-wrap">
+      <table id="configs">
+        <thead><tr><th>Конфигурация</th><th>Текущий релиз</th><th>Релиз годовой давности</th><th>Всего</th><th>Источник</th></tr></thead>
+        <tbody>{''.join(rows)}</tbody>
+      </table>
+    </section>
+    <script>
+      const input = document.getElementById('filter');
+      const rows = [...document.querySelectorAll('#configs tbody tr')];
+      input.addEventListener('input', () => {{
+        const q = input.value.toLowerCase();
+        for (const row of rows) row.hidden = !row.textContent.toLowerCase().includes(q);
+      }});
+    </script>
+    """
+    return page_shell("1C Release Dates", body)
+
+
+def render_config_page(item: dict, rows: list[dict]) -> str:
+    release_rows = []
+    for row in rows:
+        release_rows.append(f"""
+        <tr>
+          <td><strong>{esc(row['version'])}</strong></td>
+          <td>{esc(row['date_ru'])}</td>
+          <td>{source_link(row)}</td>
+          <td>{esc(row.get('news_title', ''))}</td>
+        </tr>""")
+    latest = item["latest"]
+    year = item.get("year_ago_release") or {}
+    body = f"""
+    <section class="detail-head">
+      <a class="back" href="../index.html">← Все конфигурации</a>
+      <h1>{esc(item['config_name'])}</h1>
+      <p class="code">{esc(item['config_id'])}</p>
+      <div class="release-cards">
+        <article><span>Текущий релиз</span><strong>{esc(latest['version'])}</strong><em>{esc(latest['date_ru'])}</em></article>
+        <article><span>Релиз годовой давности</span><strong>{esc(year.get('version', 'skipped'))}</strong><em>{esc(year.get('date_ru', ''))}</em></article>
+        <article><span>Всего релизов</span><strong>{esc(item['release_count'])}</strong><em>{esc(', '.join(item['sources']))}</em></article>
+      </div>
+    </section>
+    <section class="table-wrap">
+      <table>
+        <thead><tr><th>Версия</th><th>Дата</th><th>Источник</th><th>Новость</th></tr></thead>
+        <tbody>{''.join(release_rows)}</tbody>
+      </table>
+    </section>
+    """
+    return page_shell(f"{item['config_name']} - 1C Release Dates", body, prefix="../")
+
+
+def write_json(path: Path, data: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as fp:
+        json.dump(data, fp, ensure_ascii=False, indent=2)
+        fp.write("\n")
+
+
+def write_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
+def render_site(data: dict, out_dir: Path) -> None:
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+    (out_dir / "configs").mkdir(parents=True)
+    write_text(out_dir / ".nojekyll", "")
+    write_text(out_dir / "assets" / "styles.css", CSS)
+    write_text(out_dir / "index.html", render_index(data))
+    grouped = group_releases(data["releases"])
+    for item in data["summary"]:
+        write_text(out_dir / "configs" / f"{item['slug']}.html", render_config_page(item, grouped[item["config_id"]]))
+    write_json(out_dir / "data" / "summary.json", data["summary"])
+    write_json(out_dir / "data" / "releases.json", data["releases"])
+
+
+CSS = """
+:root {
+  color-scheme: light dark;
+  --bg: #f7f7f4;
+  --panel: #ffffff;
+  --text: #171717;
+  --muted: #6b6b63;
+  --line: #deded6;
+  --accent: #0f766e;
+  --accent-soft: #d7f2ee;
+  --shadow: 0 16px 40px rgba(20, 20, 20, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111312;
+    --panel: #1a1d1b;
+    --text: #f1f3ee;
+    --muted: #a8aca3;
+    --line: #333832;
+    --accent: #5eead4;
+    --accent-soft: #123b35;
+    --shadow: 0 16px 44px rgba(0, 0, 0, .28);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.topbar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 88%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); }
+.brand { color: var(--text); font-weight: 750; }
+nav { display: flex; gap: 14px; flex-wrap: wrap; }
+main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 56px; }
+.hero, .detail-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end; padding: 28px 0; }
+h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1.02; letter-spacing: 0; }
+p { margin: 10px 0 0; color: var(--muted); max-width: 720px; }
+.stats, .release-cards { display: grid; grid-template-columns: repeat(3, minmax(130px, 1fr)); gap: 12px; margin: 0; }
+.stats div, .release-cards article { padding: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
+dt, .release-cards span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+dd, .release-cards strong { display: block; margin: 4px 0 0; font-size: 24px; font-weight: 750; }
+.release-cards em { display: block; color: var(--muted); font-style: normal; }
+.toolbar { margin: 8px 0 18px; }
+input[type="search"] { width: 100%; min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); font: inherit; }
+.table-wrap { overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
+table { width: 100%; border-collapse: collapse; min-width: 760px; }
+th, td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+th { position: sticky; top: 54px; background: var(--panel); color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+tbody tr:last-child td { border-bottom: 0; }
+.muted { display: block; color: var(--muted); font-size: 13px; }
+.code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.back { display: inline-block; margin-bottom: 16px; }
+@media (max-width: 820px) {
+  .topbar, .hero, .detail-head { display: block; }
+  nav { margin-top: 8px; }
+  .stats, .release-cards { grid-template-columns: 1fr; margin-top: 18px; }
+  main { width: min(100% - 20px, 1180px); padding-top: 18px; }
+}
+""".strip() + "\n"
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="lookback window, default: 365")
-    parser.add_argument("--json-out", default="release_dates.json")
-    parser.add_argument("--md-out", default="release_dates.md")
-    parser.add_argument("--only", action="append", help="template id to collect; can be repeated")
+    parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="year baseline window, default: 365")
+    parser.add_argument("--json-out", default="reports/1c-release-dates.json")
+    parser.add_argument("--md-out", default="reports/1c-release-dates.md")
+    parser.add_argument("--site-out", default="site")
     args = parser.parse_args()
 
-    wanted = set(args.only or [])
-    targets = [target for target in TARGETS if not wanted or target.template in wanted]
-
-    summary = []
-    releases = []
-    skipped = []
-    for target in targets:
-        rows, error = collect_target(target)
-        if not rows:
-            reason = error or "no rows"
-            summary.append(skipped_summary(target, reason, args.days))
-            skipped.append({
-                "template": target.template,
-                "name": target.name,
-                "source": target.source,
-                "reason": reason,
-            })
-            continue
-        item = summarize(target, rows, args.days)
-        if not item.get("year_ago_release"):
-            reason = f"no release parsed at or before {item['period']['cutoff']}"
-            item["skipped_reason"] = reason
-            summary.append(item)
-            skipped.append({
-                "template": target.template,
-                "name": target.name,
-                "source": target.source,
-                "reason": reason,
-            })
-            continue
-        summary.append(item)
-        cutoff = dt.date.fromisoformat(item["period"]["cutoff"])
-        for row in period_rows(rows, cutoff, item.get("year_ago_release")):
-            releases.append({"template": target.template, "name": target.name, **row})
-
-    releases.sort(key=lambda row: (row["template"], row["date"], row["version"]), reverse=True)
-    data = {
-        "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
-        "period": {"mode": "latest_minus_days_per_target", "days": args.days},
-        "summary": summary,
-        "releases": releases,
-        "skipped": skipped,
-    }
-
-    with open(args.json_out, "w", encoding="utf-8") as fp:
-        json.dump(data, fp, ensure_ascii=False, indent=2)
-        fp.write("\n")
-    markdown = render_markdown(data)
-    with open(args.md_out, "w", encoding="utf-8") as fp:
-        fp.write(markdown)
-    print(markdown)
+    data = collect_all(args.days)
+    write_json(Path(args.json_out), data)
+    write_text(Path(args.md_out), render_markdown(data))
+    render_site(data, Path(args.site_out))
+    print(f"Configurations: {len(data['summary'])}")
+    print(f"Releases: {len(data['releases'])}")
     print(f"JSON: {args.json_out}", file=sys.stderr)
     print(f"Markdown: {args.md_out}", file=sys.stderr)
+    print(f"Site: {args.site_out}", file=sys.stderr)
     return 0
 
 

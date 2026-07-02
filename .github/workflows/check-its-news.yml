@@ -24,6 +24,7 @@ jobs:
           python - <<'PY'
           import datetime as dt
           import json
+          import re
           from collections import Counter
           from onec_release_dates import collector
 
@@ -37,10 +38,17 @@ jobs:
           ]
           results = []
           for ym in dict.fromkeys(months):
+              url = f"{collector.ITS_NEWS_URL}?ym={ym}&type="
+              status, raw = collector.fetch(url)
               rows = collector.parse_its_news_month(ym)
               nicks = Counter(row["source_config_id"] for row in rows)
               results.append({
                   "month": ym,
+                  "status": status,
+                  "html_length": len(raw),
+                  "version_files_links": len(re.findall(r"version_files\\?nick=", raw)),
+                  "panel_markers": raw.count('<div class="panel">'),
+                  "body_sample": re.sub(r"\\s+", " ", raw[:600]),
                   "rows": len(rows),
                   "configs": len(nicks),
                   "top_configs": nicks.most_common(10),

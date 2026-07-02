@@ -22,7 +22,8 @@ jobs:
       - name: Install package
         run: python -m pip install -e ".[dev]"
 
-      - name: Verify ITS credentials
+      - name: Probe ITS credentials
+        continue-on-error: true
         run: |
           python - <<'PY'
           import os
@@ -54,7 +55,7 @@ jobs:
           results = []
           for ym in dict.fromkeys(months):
               url = f"{collector.ITS_NEWS_URL}?ym={ym}&type="
-              status, raw = collector.fetch(url, auth=True)
+              status, raw = collector.fetch(url)
               rows = collector.parse_its_news_month(ym)
               nicks = Counter(row["source_config_id"] for row in rows)
               results.append({
@@ -92,7 +93,7 @@ jobs:
           ]
           results = []
           for url in urls:
-              status, raw = collector.fetch(url, auth=True)
+              status, raw = collector.fetch(url)
               results.append({
                   "url": url,
                   "status": status,

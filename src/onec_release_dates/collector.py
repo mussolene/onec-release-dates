@@ -24,6 +24,7 @@ TODAY = dt.date.today()
 DEFAULT_DAYS = 365
 UA = "Mozilla/5.0 onec-release-dates/0.2"
 LOGIN_URL = "https://login.1c.ru/login"
+ITS_LOGIN_CALLBACK = "https://its.1c.ru/login/?action=aftercheck&provider=login"
 ITS_NEWS_URL = "https://its.1c.ru/news/"
 ITS_START_YEAR = 2015
 ITS_CACHE_PATH = Path(".cache/its-news.json")
@@ -133,7 +134,8 @@ def authenticated_opener():
         urllib.request.HTTPCookieProcessor(jar),
         urllib.request.HTTPSHandler(context=context),
     )
-    status, login_page, _ = fetch_with_opener(opener, LOGIN_URL)
+    login_url = f"{LOGIN_URL}?{urllib.parse.urlencode({'service': ITS_LOGIN_CALLBACK})}"
+    status, login_page, login_url = fetch_with_opener(opener, login_url)
     if status != 200:
         return None
     execution = extract_input_value(login_page, "execution")
@@ -148,9 +150,12 @@ def authenticated_opener():
         "username": user,
         "password": password,
     }).encode()
-    fetch_with_opener(opener, LOGIN_URL, data=data)
-    profile_status, _, profile_url = fetch_with_opener(opener, "https://login.1c.ru/user/profile")
-    if profile_status == 200 and profile_url.rstrip("/").endswith("/user/profile"):
+    callback_status, callback_body, callback_url = fetch_with_opener(opener, login_url, data=data)
+    if (
+        callback_status == 200
+        and callback_url.startswith(ITS_LOGIN_CALLBACK)
+        and "DDoS-Guard" not in callback_body
+    ):
         AUTH_OPENER = opener
         return AUTH_OPENER
     return None
@@ -325,7 +330,7 @@ def release_row(
 
 def parse_its_news_month(ym: str) -> list[dict]:
     url = f"{ITS_NEWS_URL}?ym={ym}&type="
-    status, raw = fetch(url, auth=True)
+    status, raw = fetch(url)
     if status != 200:
         return []
     panels = re.findall(r'(?is)<div class="panel">(.*?)(?=<div class="panel">|<div id="footer"|</body>|\Z)', raw)

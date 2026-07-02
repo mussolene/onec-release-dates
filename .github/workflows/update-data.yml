@@ -15,9 +15,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    env:
-      ITS_LOGIN: ${{ secrets.ITS_LOGIN }}
-      ITS_PASSWORD: ${{ secrets.ITS_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,19 +24,6 @@ jobs:
 
       - name: Install package
         run: python -m pip install -e ".[dev]"
-
-      - name: Verify ITS credentials
-        run: |
-          python - <<'PY'
-          import os
-          from onec_release_dates import collector
-
-          if not os.getenv("ITS_LOGIN") or not os.getenv("ITS_PASSWORD"):
-              raise SystemExit("Missing ITS_LOGIN or ITS_PASSWORD repository secret")
-          if not collector.authenticated_opener():
-              raise SystemExit("ITS authentication failed")
-          print("its_authentication_ok=True")
-          PY
 
       - uses: actions/cache@v4
         with:

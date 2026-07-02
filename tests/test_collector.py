@@ -60,3 +60,18 @@ def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
             "source_kind": "its",
         }
     ]
+
+
+def test_erp_uh32_31_release_is_canonicalized_to_erp_uh31():
+    row = collector.release_row(
+        config_id="ERP_UH32",
+        config_name="1С:ERP.Управление холдингом",
+        version="3.1.13.24",
+        date=dt.date(2025, 4, 6),
+        source="its.1c.ru news",
+        url="https://its.1c.ru/news/494210",
+    )
+
+    assert row["source_config_id"] == "ERP_UH31"
+    assert row["config_id"] == "ERP_UH31_3_1"
+    assert row["version_branch"] == "3.1"

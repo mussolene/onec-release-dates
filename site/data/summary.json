@@ -106,36 +106,9 @@
     "period": {
       "days": 365,
       "cutoff": "2024-05-13",
-      "count": 16
+      "count": 17
     },
-    "release_count": 52,
-    "sources": [
-      "its.1c.ru news"
-    ]
-  },
-  {
-    "config_id": "ERP_UH32_3_1",
-    "config_name": "1С:ERP.Управление холдингом (3.1)",
-    "slug": "ERP_UH32_3_1",
-    "latest": {
-      "config_id": "ERP_UH32_3_1",
-      "config_name": "1С:ERP.Управление холдингом (3.1)",
-      "source_config_id": "ERP_UH32",
-      "version_branch": "3.1",
-      "version": "3.1.13.24",
-      "date": "2025-04-06",
-      "date_ru": "06.04.2025",
-      "source": "its.1c.ru news",
-      "month": "202504",
-      "source_kind": "its"
-    },
-    "year_ago_release": null,
-    "period": {
-      "days": 365,
-      "cutoff": "2024-04-06",
-      "count": 1
-    },
-    "release_count": 1,
+    "release_count": 53,
     "sources": [
       "its.1c.ru news"
     ]

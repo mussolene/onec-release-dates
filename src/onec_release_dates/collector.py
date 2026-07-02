@@ -71,6 +71,10 @@ RARUS_CONFIGS = {
     },
 }
 
+CONFIG_ID_ALIASES_BY_BRANCH = {
+    ("ERP_UH32", "3.1"): "ERP_UH31",
+}
+
 
 def load_dotenv(path: str = ".env") -> None:
     dotenv = Path(path)
@@ -243,6 +247,21 @@ def branched_config_name(base_name: str, version: str) -> str:
     return f"{base_name} ({branch})"
 
 
+def canonical_source_config_id(source_config_id: str, version: str) -> str:
+    return CONFIG_ID_ALIASES_BY_BRANCH.get((source_config_id, version_branch(version)), source_config_id)
+
+
+def normalize_release_identity(row: dict) -> dict:
+    version = row["version"]
+    source_config_id = canonical_source_config_id(row.get("source_config_id") or row["config_id"], version)
+    normalized = dict(row)
+    normalized["source_config_id"] = source_config_id
+    normalized["version_branch"] = version_branch(version)
+    normalized["config_id"] = branched_config_id(source_config_id, version)
+    normalized["config_name"] = branched_config_name(row.get("config_name") or source_config_id, version)
+    return normalized
+
+
 def iter_its_months(start_year: int = ITS_START_YEAR, end: dt.date = TODAY) -> Iterable[str]:
     for year in range(end.year, start_year - 1, -1):
         last_month = end.month if year == end.year else 12
@@ -310,6 +329,7 @@ def release_row(
     extra: dict | None = None,
 ) -> dict:
     branch = version_branch(version)
+    config_id = canonical_source_config_id(config_id, version)
     public_config_id = branched_config_id(config_id, version)
     public_config_name = branched_config_name(config_name or config_id, version)
     row = {
@@ -587,7 +607,7 @@ def source_catalog() -> list[dict]:
 
 
 def rebuild_database_from_releases(releases: list[dict], days: int, mode: str) -> dict:
-    releases = unique_releases(releases)
+    releases = unique_releases(normalize_release_identity(row) for row in releases)
     grouped = group_releases(releases)
     return {
         "generated_at": dt.datetime.now().isoformat(timespec="seconds"),

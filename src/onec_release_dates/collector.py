@@ -321,7 +321,6 @@ def release_row(
         "date": date.isoformat(),
         "date_ru": date_ru(date),
         "source": source,
-        "url": url,
     }
     if extra:
         row.update(extra)
@@ -354,8 +353,6 @@ def parse_its_news_month(ym: str) -> list[dict]:
                 source="its.1c.ru news",
                 url=news_url,
                 extra={
-                    "news_id": news_id,
-                    "news_title": title,
                     "month": ym,
                     "source_kind": "its",
                 },
@@ -384,7 +381,7 @@ def normalize_cached_rows(rows: list[dict]) -> list[dict]:
         if not config_id or not version or not date:
             continue
         title = row.get("news_title", "")
-        name = (names_by_version(title).get(version) or [config_id])[0]
+        name = row.get("config_name") or (names_by_version(title).get(version) or [config_id])[0]
         normalized.append(release_row(
             config_id=config_id,
             config_name=name,
@@ -393,8 +390,6 @@ def normalize_cached_rows(rows: list[dict]) -> list[dict]:
             source=row.get("source", "its.1c.ru news"),
             url=row.get("url", ITS_NEWS_URL),
             extra={
-                "news_id": row.get("news_id"),
-                "news_title": title,
                 "month": row.get("month"),
                 "source_kind": "its",
             },
@@ -665,8 +660,8 @@ def esc(value: object) -> str:
     return html.escape("" if value is None else str(value), quote=True)
 
 
-def source_link(row: dict) -> str:
-    return f'<a href="{esc(row["url"])}">{esc(row["source"])}</a>'
+def source_text(row: dict) -> str:
+    return esc(row["source"])
 
 
 def page_shell(title: str, body: str, prefix: str = "") -> str:
@@ -741,8 +736,7 @@ def render_config_page(item: dict, rows: list[dict]) -> str:
         <tr>
           <td><strong>{esc(row['version'])}</strong></td>
           <td>{esc(row['date_ru'])}</td>
-          <td>{source_link(row)}</td>
-          <td>{esc(row.get('news_title', ''))}</td>
+          <td>{source_text(row)}</td>
         </tr>""")
     latest = item["latest"]
     year = item.get("year_ago_release") or {}
@@ -761,7 +755,7 @@ def render_config_page(item: dict, rows: list[dict]) -> str:
     </section>
     <section class="table-wrap">
       <table>
-        <thead><tr><th>Версия</th><th>Дата</th><th>Источник</th><th>Новость</th></tr></thead>
+        <thead><tr><th>Версия</th><th>Дата</th><th>Источник</th></tr></thead>
         <tbody>{''.join(release_rows)}</tbody>
       </table>
     </section>

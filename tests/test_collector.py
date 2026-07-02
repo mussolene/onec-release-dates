@@ -56,9 +56,6 @@ def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
             "date": "2025-06-25",
             "date_ru": "25.06.2025",
             "source": "its.1c.ru news",
-            "url": "https://its.1c.ru/news/495339",
-            "news_id": "495339",
-            "news_title": 'Вышла новая версия 3.0.177.30 "Бухгалтерия предприятия КОРП"',
             "month": "202506",
             "source_kind": "its",
         }

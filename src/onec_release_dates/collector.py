@@ -464,6 +464,17 @@ def collect_all(days: int) -> dict:
     }
 
 
+def validate_public_database(data: dict) -> None:
+    config_count = len(data["summary"])
+    release_count = len(data["releases"])
+    has_its = any(row.get("source_kind") == "its" for row in data["releases"])
+    if config_count < 50 or release_count < 1000 or not has_its:
+        raise SystemExit(
+            "Refusing to write a degraded public database: "
+            f"configs={config_count}, releases={release_count}, has_its={has_its}"
+        )
+
+
 def md_table(headers: list[str], rows: list[list[str]]) -> str:
     out = ["| " + " | ".join(headers) + " |", "| " + " | ".join(["---"] * len(headers)) + " |"]
     for row in rows:
@@ -695,6 +706,7 @@ def main() -> int:
     args = parser.parse_args()
 
     data = collect_all(args.days)
+    validate_public_database(data)
     write_json(Path(args.json_out), data)
     write_text(Path(args.md_out), render_markdown(data))
     render_site(data, Path(args.site_out))

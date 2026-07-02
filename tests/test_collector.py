@@ -42,7 +42,7 @@ def test_parse_its_news_month_reads_panel_date_and_version_links(monkeypatch):
     </div>
     """
 
-    monkeypatch.setattr(collector, "fetch", lambda url: (200, html))
+    monkeypatch.setattr(collector, "fetch", lambda url, **kwargs: (200, html))
 
     rows = collector.parse_its_news_month("202506")
 

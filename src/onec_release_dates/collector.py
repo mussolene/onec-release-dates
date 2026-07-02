@@ -4,9 +4,11 @@
 from __future__ import annotations
 
 import argparse
+import http.cookiejar
 import datetime as dt
 import html
 import json
+import os
 import re
 import shutil
 import ssl
@@ -21,9 +23,12 @@ from typing import Iterable
 TODAY = dt.date.today()
 DEFAULT_DAYS = 365
 UA = "Mozilla/5.0 onec-release-dates/0.2"
+LOGIN_URL = "https://login.1c.ru/login"
 ITS_NEWS_URL = "https://its.1c.ru/news/"
 ITS_START_YEAR = 2015
 ITS_CACHE_PATH = Path(".cache/its-news.json")
+AUTH_OPENER = None
+AUTH_ATTEMPTED = False
 RARUS6_YEARS = range(2021, TODAY.year + 1)
 RARUS5_PAGES = [
     "https://rarus.ru/forum/forum7/topic2826/",
@@ -66,7 +71,97 @@ RARUS_CONFIGS = {
 }
 
 
-def fetch(url: str, timeout: int = 30) -> tuple[int, str]:
+def load_dotenv(path: str = ".env") -> None:
+    dotenv = Path(path)
+    if not dotenv.exists():
+        return
+    for line in dotenv.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.removeprefix("export ").strip()
+        if key in os.environ:
+            continue
+        os.environ[key] = value.strip().strip('"').strip("'")
+
+
+def credentials() -> tuple[str | None, str | None]:
+    return os.getenv("ITS_LOGIN"), os.getenv("ITS_PASSWORD")
+
+
+def extract_input_value(page: str, name: str) -> str:
+    patterns = [
+        rf'<input[^>]+name=["\']{re.escape(name)}["\'][^>]*value=["\']([^"\']*)',
+        rf'<input[^>]+value=["\']([^"\']*)["\'][^>]*name=["\']{re.escape(name)}["\']',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, page, re.I)
+        if match:
+            return html.unescape(match.group(1) or "")
+    return ""
+
+
+def fetch_with_opener(opener, url: str, data: bytes | None = None, timeout: int = 30) -> tuple[int, str, str]:
+    headers = {"User-Agent": UA}
+    if data is not None:
+        headers["Content-Type"] = "application/x-www-form-urlencoded"
+    req = urllib.request.Request(url, data=data, headers=headers)
+    try:
+        with opener.open(req, timeout=timeout) as resp:
+            charset = resp.headers.get_content_charset() or "utf-8"
+            return resp.status, resp.read().decode(charset, "replace"), resp.geturl()
+    except urllib.error.HTTPError as exc:
+        return exc.code, exc.read().decode("utf-8", "replace"), exc.geturl()
+
+
+def authenticated_opener():
+    global AUTH_ATTEMPTED, AUTH_OPENER
+    if AUTH_OPENER is not None:
+        return AUTH_OPENER
+    if AUTH_ATTEMPTED:
+        return None
+    AUTH_ATTEMPTED = True
+
+    user, password = credentials()
+    if not user or not password:
+        return None
+
+    context = ssl._create_unverified_context()
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(
+        urllib.request.HTTPCookieProcessor(jar),
+        urllib.request.HTTPSHandler(context=context),
+    )
+    status, login_page, _ = fetch_with_opener(opener, LOGIN_URL)
+    if status != 200:
+        return None
+    execution = extract_input_value(login_page, "execution")
+    if not execution:
+        return None
+
+    data = urllib.parse.urlencode({
+        "inviteCode": "",
+        "execution": execution,
+        "_eventId": "submit",
+        "rememberMe": "false",
+        "username": user,
+        "password": password,
+    }).encode()
+    fetch_with_opener(opener, LOGIN_URL, data=data)
+    profile_status, _, profile_url = fetch_with_opener(opener, "https://login.1c.ru/user/profile")
+    if profile_status == 200 and profile_url.rstrip("/").endswith("/user/profile"):
+        AUTH_OPENER = opener
+        return AUTH_OPENER
+    return None
+
+
+def fetch(url: str, timeout: int = 30, auth: bool = False) -> tuple[int, str]:
+    if auth:
+        opener = authenticated_opener()
+        if opener is not None:
+            status, body, _ = fetch_with_opener(opener, url, timeout=timeout)
+            return status, body
     headers = {"User-Agent": UA}
     req = urllib.request.Request(url, headers=headers)
     try:
@@ -230,7 +325,7 @@ def release_row(
 
 def parse_its_news_month(ym: str) -> list[dict]:
     url = f"{ITS_NEWS_URL}?ym={ym}&type="
-    status, raw = fetch(url)
+    status, raw = fetch(url, auth=True)
     if status != 200:
         return []
     panels = re.findall(r'(?is)<div class="panel">(.*?)(?=<div class="panel">|<div id="footer"|</body>|\Z)', raw)
@@ -753,6 +848,7 @@ tbody tr:last-child td { border-bottom: 0; }
 
 
 def main() -> int:
+    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="year baseline window, default: 365")
     parser.add_argument("--json-out", default="reports/1c-release-dates.json")

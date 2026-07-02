@@ -30,12 +30,17 @@ a:hover { text-decoration: underline; }
 nav { display: flex; gap: 14px; flex-wrap: wrap; }
 main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 56px; }
 .hero, .detail-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end; padding: 28px 0; }
-h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1.02; letter-spacing: 0; }
+.detail-head { grid-template-columns: minmax(0, 1fr) minmax(360px, 520px); align-items: start; padding: 18px 0 22px; }
+h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1.02; letter-spacing: 0; overflow-wrap: anywhere; }
+.detail-head h1 { font-size: clamp(24px, 3vw, 38px); line-height: 1.12; max-width: 760px; }
 p { margin: 10px 0 0; color: var(--muted); max-width: 720px; }
 .stats, .release-cards { display: grid; grid-template-columns: repeat(3, minmax(130px, 1fr)); gap: 12px; margin: 0; }
 .stats div, .release-cards article { padding: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
+.detail-head .release-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.detail-head .release-cards article { padding: 12px; }
 dt, .release-cards span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 dd, .release-cards strong { display: block; margin: 4px 0 0; font-size: 24px; font-weight: 750; }
+.detail-head .release-cards strong { font-size: 21px; }
 .release-cards em { display: block; color: var(--muted); font-style: normal; }
 .toolbar { margin: 8px 0 18px; }
 input[type="search"] { width: 100%; min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); font: inherit; }
@@ -46,10 +51,11 @@ th { position: sticky; top: 54px; background: var(--panel); color: var(--muted);
 tbody tr:last-child td { border-bottom: 0; }
 .muted { display: block; color: var(--muted); font-size: 13px; }
 .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-.back { display: inline-block; margin-bottom: 16px; }
+.back { display: inline-block; margin-bottom: 10px; }
 @media (max-width: 820px) {
   .topbar, .hero, .detail-head { display: block; }
   nav { margin-top: 8px; }
   .stats, .release-cards { grid-template-columns: 1fr; margin-top: 18px; }
   main { width: min(100% - 20px, 1180px); padding-top: 18px; }
+  .detail-head h1 { font-size: clamp(22px, 7vw, 30px); }
 }

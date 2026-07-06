@@ -8,11 +8,11 @@
       "config_name": "1C:ERP WE (English code) (2.5)",
       "source_config_id": "ERPWEENG",
       "version_branch": "2.5",
-      "version": "2.5.27.56",
-      "date": "2026-06-24",
-      "date_ru": "24.06.2026",
+      "version": "2.5.27.58",
+      "date": "2026-07-03",
+      "date_ru": "03.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -20,19 +20,19 @@
       "config_name": "1C:ERP WE (English code) (2.5)",
       "source_config_id": "ERPWEENG",
       "version_branch": "2.5",
-      "version": "2.5.22.70",
-      "date": "2025-06-23",
-      "date_ru": "23.06.2025",
+      "version": "2.5.22.72",
+      "date": "2025-06-26",
+      "date_ru": "26.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-24",
+      "cutoff": "2025-07-03",
       "count": 40
     },
-    "release_count": 152,
+    "release_count": 153,
     "sources": [
       "its.1c.ru news"
     ]
@@ -46,11 +46,11 @@
       "config_name": "1C:ERP WE (с русским кодом) (2.5)",
       "source_config_id": "ERPWERU",
       "version_branch": "2.5",
-      "version": "2.5.27.56",
-      "date": "2026-06-24",
-      "date_ru": "24.06.2026",
+      "version": "2.5.27.58",
+      "date": "2026-07-03",
+      "date_ru": "03.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -58,19 +58,19 @@
       "config_name": "1C:ERP WE (с русским кодом) (2.5)",
       "source_config_id": "ERPWERU",
       "version_branch": "2.5",
-      "version": "2.5.22.70",
-      "date": "2025-06-23",
-      "date_ru": "23.06.2025",
+      "version": "2.5.22.72",
+      "date": "2025-06-26",
+      "date_ru": "26.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-24",
+      "cutoff": "2025-07-03",
       "count": 40
     },
-    "release_count": 155,
+    "release_count": 156,
     "sources": [
       "its.1c.ru news"
     ]
@@ -122,11 +122,11 @@
       "config_name": "ERP.Управление холдингом (3.2)",
       "source_config_id": "ERP_UH32",
       "version_branch": "3.2",
-      "version": "3.2.12.3",
-      "date": "2026-06-18",
-      "date_ru": "18.06.2026",
+      "version": "3.2.12.4",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -143,10 +143,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-18",
-      "count": 24
+      "cutoff": "2025-07-02",
+      "count": 25
     },
-    "release_count": 49,
+    "release_count": 50,
     "sources": [
       "its.1c.ru news"
     ]
@@ -236,11 +236,11 @@
       "config_name": "Библиотека стандартных подсистем (3.1)",
       "source_config_id": "SSL31",
       "version_branch": "3.1",
-      "version": "3.1.12.238",
-      "date": "2026-06-17",
-      "date_ru": "17.06.2026",
+      "version": "3.1.12.254",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -248,19 +248,19 @@
       "config_name": "1С:Библиотека стандартных подсистем (3.1)",
       "source_config_id": "SSL31",
       "version_branch": "3.1",
-      "version": "3.1.11.202",
-      "date": "2025-06-06",
-      "date_ru": "06.06.2025",
+      "version": "3.1.11.215",
+      "date": "2025-06-20",
+      "date_ru": "20.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-17",
-      "count": 29
+      "cutoff": "2025-07-02",
+      "count": 28
     },
-    "release_count": 253,
+    "release_count": 254,
     "sources": [
       "its.1c.ru news"
     ]
@@ -806,9 +806,9 @@
       "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.200.13",
-      "date": "2026-07-01",
-      "date_ru": "01.07.2026",
+      "version": "3.0.201.2",
+      "date": "2026-07-03",
+      "date_ru": "03.07.2026",
       "source": "its.1c.ru news",
       "month": "202607",
       "source_kind": "its"
@@ -827,10 +827,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-01",
-      "count": 29
+      "cutoff": "2025-07-03",
+      "count": 30
     },
-    "release_count": 197,
+    "release_count": 198,
     "sources": [
       "its.1c.ru news"
     ]
@@ -844,9 +844,9 @@
       "config_name": "Садовод (базовая версия) (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.200.13",
-      "date": "2026-07-01",
-      "date_ru": "01.07.2026",
+      "version": "3.0.201.2",
+      "date": "2026-07-03",
+      "date_ru": "03.07.2026",
       "source": "its.1c.ru news",
       "month": "202607",
       "source_kind": "its"
@@ -865,10 +865,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-01",
-      "count": 29
+      "cutoff": "2025-07-03",
+      "count": 30
     },
-    "release_count": 197,
+    "release_count": 198,
     "sources": [
       "its.1c.ru news"
     ]
@@ -1338,11 +1338,11 @@
       "config_name": "ERP Управление предприятием (2.5)",
       "source_config_id": "EnterpriseERP20",
       "version_branch": "2.5",
-      "version": "2.5.27.56",
-      "date": "2026-06-24",
-      "date_ru": "24.06.2026",
+      "version": "2.5.27.58",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1350,19 +1350,19 @@
       "config_name": "ERP Управление предприятием (2.5)",
       "source_config_id": "EnterpriseERP20",
       "version_branch": "2.5",
-      "version": "2.5.22.70",
-      "date": "2025-06-23",
-      "date_ru": "23.06.2025",
+      "version": "2.5.17.227",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-24",
-      "count": 92
+      "cutoff": "2025-07-02",
+      "count": 91
     },
-    "release_count": 352,
+    "release_count": 353,
     "sources": [
       "its.1c.ru news"
     ]
@@ -1946,11 +1946,11 @@
       "config_name": "Бухгалтерия некоммерческой организации (3.0)",
       "source_config_id": "AccountingNPO",
       "version_branch": "3.0",
-      "version": "3.0.200.12",
-      "date": "2026-06-30",
-      "date_ru": "30.06.2026",
+      "version": "3.0.201.6",
+      "date": "2026-07-03",
+      "date_ru": "03.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1967,10 +1967,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-30",
-      "count": 40
+      "cutoff": "2025-07-03",
+      "count": 41
     },
-    "release_count": 219,
+    "release_count": 220,
     "sources": [
       "its.1c.ru news"
     ]
@@ -1984,11 +1984,11 @@
       "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
       "source_config_id": "AccountingNPOCorp",
       "version_branch": "3.0",
-      "version": "3.0.200.12",
-      "date": "2026-06-30",
-      "date_ru": "30.06.2026",
+      "version": "3.0.201.6",
+      "date": "2026-07-03",
+      "date_ru": "03.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -2005,10 +2005,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-30",
-      "count": 40
+      "cutoff": "2025-07-03",
+      "count": 41
     },
-    "release_count": 206,
+    "release_count": 207,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2098,11 +2098,11 @@
       "config_name": "Бухгалтерия предприятия (3.0)",
       "source_config_id": "Accounting30",
       "version_branch": "3.0",
-      "version": "3.0.200.23",
-      "date": "2026-06-26",
-      "date_ru": "26.06.2026",
+      "version": "3.0.201.16",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -2119,10 +2119,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-26",
-      "count": 40
+      "cutoff": "2025-07-02",
+      "count": 41
     },
-    "release_count": 486,
+    "release_count": 487,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2212,11 +2212,11 @@
       "config_name": "Бухгалтерия предприятия базовая (3.0)",
       "source_config_id": "AccountingBase30",
       "version_branch": "3.0",
-      "version": "3.0.200.23",
-      "date": "2026-06-26",
-      "date_ru": "26.06.2026",
+      "version": "3.0.201.16",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -2233,10 +2233,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-26",
-      "count": 40
+      "cutoff": "2025-07-02",
+      "count": 41
     },
-    "release_count": 486,
+    "release_count": 487,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2326,11 +2326,11 @@
       "config_name": "Бухгалтерия предприятия КОРП (3.0)",
       "source_config_id": "AccountingCorp30",
       "version_branch": "3.0",
-      "version": "3.0.200.23",
-      "date": "2026-06-26",
-      "date_ru": "26.06.2026",
+      "version": "3.0.201.16",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -2347,10 +2347,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-26",
-      "count": 40
+      "cutoff": "2025-07-02",
+      "count": 41
     },
-    "release_count": 486,
+    "release_count": 487,
     "sources": [
       "its.1c.ru news"
     ]
@@ -3656,11 +3656,11 @@
       "config_name": "Комплексная автоматизация (2.5)",
       "source_config_id": "ARAutomation20",
       "version_branch": "2.5",
-      "version": "2.5.27.56",
-      "date": "2026-06-24",
-      "date_ru": "24.06.2026",
+      "version": "2.5.27.58",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3668,19 +3668,19 @@
       "config_name": "Комплексная автоматизация (2.5)",
       "source_config_id": "ARAutomation20",
       "version_branch": "2.5",
-      "version": "2.5.22.70",
-      "date": "2025-06-23",
-      "date_ru": "23.06.2025",
+      "version": "2.5.17.227",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-24",
-      "count": 93
+      "cutoff": "2025-07-02",
+      "count": 92
     },
-    "release_count": 322,
+    "release_count": 323,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4226,11 +4226,11 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.13.363",
-      "date": "2026-06-19",
-      "date_ru": "19.06.2026",
+      "version": "3.0.13.374",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4238,19 +4238,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.11.169",
-      "date": "2025-06-03",
-      "date_ru": "03.06.2025",
+      "version": "3.0.12.89",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-19",
-      "count": 26
+      "cutoff": "2025-07-02",
+      "count": 25
     },
-    "release_count": 86,
+    "release_count": 87,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4340,11 +4340,11 @@
       "config_name": "Розница базовая (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.13.363",
-      "date": "2026-06-19",
-      "date_ru": "19.06.2026",
+      "version": "3.0.13.374",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4352,19 +4352,19 @@
       "config_name": "Розница базовая (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.11.169",
-      "date": "2025-06-02",
-      "date_ru": "02.06.2025",
+      "version": "3.0.12.89",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-19",
-      "count": 28
+      "cutoff": "2025-07-02",
+      "count": 27
     },
-    "release_count": 88,
+    "release_count": 89,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4568,11 +4568,11 @@
       "config_name": "Управление нашей фирмой (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.13.363",
-      "date": "2026-06-19",
-      "date_ru": "19.06.2026",
+      "version": "3.0.13.374",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4580,19 +4580,19 @@
       "config_name": "Управление нашей фирмой (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.11.169",
-      "date": "2025-06-03",
-      "date_ru": "03.06.2025",
+      "version": "3.0.12.89",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-19",
-      "count": 26
+      "cutoff": "2025-07-02",
+      "count": 25
     },
-    "release_count": 86,
+    "release_count": 87,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4644,11 +4644,11 @@
       "config_name": "Управление нашей фирмой Базовая (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.13.363",
-      "date": "2026-06-19",
-      "date_ru": "19.06.2026",
+      "version": "3.0.13.374",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4656,19 +4656,19 @@
       "config_name": "Управление нашей фирмой Базовая (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.11.169",
-      "date": "2025-06-02",
-      "date_ru": "02.06.2025",
+      "version": "3.0.12.89",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-19",
-      "count": 28
+      "cutoff": "2025-07-02",
+      "count": 27
     },
-    "release_count": 88,
+    "release_count": 89,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4986,11 +4986,11 @@
       "config_name": "Управление торговлей (11.5)",
       "source_config_id": "Trade110",
       "version_branch": "11.5",
-      "version": "11.5.27.56",
-      "date": "2026-06-24",
-      "date_ru": "24.06.2026",
+      "version": "11.5.27.58",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4998,19 +4998,19 @@
       "config_name": "Управление торговлей (11.5)",
       "source_config_id": "Trade110",
       "version_branch": "11.5",
-      "version": "11.5.22.70",
-      "date": "2025-06-23",
-      "date_ru": "23.06.2025",
+      "version": "11.5.17.227",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-24",
-      "count": 93
+      "cutoff": "2025-07-02",
+      "count": 92
     },
-    "release_count": 311,
+    "release_count": 312,
     "sources": [
       "its.1c.ru news"
     ]
@@ -5214,11 +5214,11 @@
       "config_name": "Управление торговлей базовая (11.5)",
       "source_config_id": "TradeBase110",
       "version_branch": "11.5",
-      "version": "11.5.27.56",
-      "date": "2026-06-24",
-      "date_ru": "24.06.2026",
+      "version": "11.5.27.58",
+      "date": "2026-07-02",
+      "date_ru": "02.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -5226,19 +5226,19 @@
       "config_name": "Управление торговлей базовая (11.5)",
       "source_config_id": "TradeBase110",
       "version_branch": "11.5",
-      "version": "11.5.22.70",
-      "date": "2025-06-23",
-      "date_ru": "23.06.2025",
+      "version": "11.5.17.227",
+      "date": "2025-06-27",
+      "date_ru": "27.06.2025",
       "source": "its.1c.ru news",
       "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-24",
-      "count": 91
+      "cutoff": "2025-07-02",
+      "count": 90
     },
-    "release_count": 294,
+    "release_count": 295,
     "sources": [
       "its.1c.ru news"
     ]

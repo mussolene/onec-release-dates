@@ -67,12 +67,13 @@ python -m pytest -q
 
 ## GitHub Pages
 
-Публикация и сбор данных разделены:
+Публикация и сбор данных объединены:
 
 - `.github/workflows/update-data.yml` ежедневно запускает инкрементальное
-  обновление, прогоняет тесты и коммитит измененные `reports/` и `site/`;
-- `.github/workflows/deploy-pages.yml` публикует уже собранный `site/` через
-  GitHub Pages workflow.
+  обновление, прогоняет тесты, коммитит измененные `reports/` и `site/`, а
+  затем публикует собранный `site/` через GitHub Pages workflow;
+- `.github/workflows/deploy-pages.yml` оставлен как ручной fallback для
+  повторной публикации уже собранного `site/`.
 
 В настройках репозитория Pages должен быть включен режим **GitHub Actions**.
 

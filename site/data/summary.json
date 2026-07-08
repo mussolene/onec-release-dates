@@ -1183,14 +1183,14 @@
     "slug": "WebCabinet_3_1",
     "latest": {
       "config_id": "WebCabinet_3_1",
-      "config_name": "1С:Электронное обучение. Веб-кабинет преподавателя и студента (3.1)",
+      "config_name": "Электронное обучение. Веб-кабинет преподавателя и студента (3.1)",
       "source_config_id": "WebCabinet",
       "version_branch": "3.1",
-      "version": "3.1.4.51",
-      "date": "2025-04-10",
-      "date_ru": "10.04.2025",
+      "version": "3.1.4.66",
+      "date": "2026-07-07",
+      "date_ru": "07.07.2026",
       "source": "its.1c.ru news",
-      "month": "202504",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1207,10 +1207,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-04-10",
-      "count": 1
+      "cutoff": "2025-07-07",
+      "count": 2
     },
-    "release_count": 7,
+    "release_count": 8,
     "sources": [
       "its.1c.ru news"
     ]
@@ -1908,11 +1908,11 @@
       "config_name": "Бухгалтерия КОРП МСФО (3.3)",
       "source_config_id": "AccountingCorpIFRS3",
       "version_branch": "3.3",
-      "version": "3.3.3.45",
-      "date": "2026-06-01",
-      "date_ru": "01.06.2026",
+      "version": "3.3.3.48",
+      "date": "2026-07-07",
+      "date_ru": "07.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1920,19 +1920,19 @@
       "config_name": "Бухгалтерия КОРП МСФО (3.3)",
       "source_config_id": "AccountingCorpIFRS3",
       "version_branch": "3.3",
-      "version": "3.3.3.45",
-      "date": "2026-06-01",
-      "date_ru": "01.06.2026",
+      "version": "3.3.3.48",
+      "date": "2026-07-07",
+      "date_ru": "07.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-01",
-      "count": 15
+      "cutoff": "2025-07-07",
+      "count": 16
     },
-    "release_count": 15,
+    "release_count": 16,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4036,11 +4036,11 @@
       "config_name": "Корпоративный университет (3.1)",
       "source_config_id": "CorpUniversity",
       "version_branch": "3.1",
-      "version": "3.1.4.59",
-      "date": "2025-12-15",
-      "date_ru": "15.12.2025",
+      "version": "3.1.4.66",
+      "date": "2026-07-07",
+      "date_ru": "07.07.2026",
       "source": "its.1c.ru news",
-      "month": "202512",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4048,19 +4048,19 @@
       "config_name": "Корпоративный университет (3.1)",
       "source_config_id": "CorpUniversity",
       "version_branch": "3.1",
-      "version": "3.1.4.35",
-      "date": "2024-12-06",
-      "date_ru": "06.12.2024",
+      "version": "3.1.4.54",
+      "date": "2025-05-30",
+      "date_ru": "30.05.2025",
       "source": "its.1c.ru news",
-      "month": "202412",
+      "month": "202505",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2024-12-15",
-      "count": 5
+      "cutoff": "2025-07-07",
+      "count": 3
     },
-    "release_count": 12,
+    "release_count": 13,
     "sources": [
       "its.1c.ru news"
     ]

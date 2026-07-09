@@ -350,11 +350,11 @@
       "config_name": "Библиотека электронных документов (1.9)",
       "source_config_id": "LED19",
       "version_branch": "1.9",
-      "version": "1.9.16.55",
-      "date": "2026-06-15",
-      "date_ru": "15.06.2026",
+      "version": "1.9.16.61",
+      "date": "2026-07-08",
+      "date_ru": "08.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -362,19 +362,19 @@
       "config_name": "1С:Библиотека электронных документов (1.9)",
       "source_config_id": "LED19",
       "version_branch": "1.9",
-      "version": "1.9.14.31",
-      "date": "2025-06-11",
-      "date_ru": "11.06.2025",
+      "version": "1.9.14.35",
+      "date": "2025-07-04",
+      "date_ru": "04.07.2025",
       "source": "its.1c.ru news",
-      "month": "202506",
+      "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-15",
-      "count": 19
+      "cutoff": "2025-07-08",
+      "count": 18
     },
-    "release_count": 57,
+    "release_count": 58,
     "sources": [
       "its.1c.ru news"
     ]
@@ -692,11 +692,11 @@
       "config_name": "Клиент ЭДО 8 Базовая (2.9)",
       "source_config_id": "ClientEDOBase",
       "version_branch": "2.9",
-      "version": "2.9.16.44",
-      "date": "2026-05-14",
-      "date_ru": "14.05.2026",
+      "version": "2.9.16.61",
+      "date": "2026-07-08",
+      "date_ru": "08.07.2026",
       "source": "its.1c.ru news",
-      "month": "202605",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -704,19 +704,19 @@
       "config_name": "1С:Клиент ЭДО 8 Базовая (2.9)",
       "source_config_id": "ClientEDOBase",
       "version_branch": "2.9",
-      "version": "2.9.14.20",
-      "date": "2025-04-11",
-      "date_ru": "11.04.2025",
+      "version": "2.9.15.21",
+      "date": "2025-06-24",
+      "date_ru": "24.06.2025",
       "source": "its.1c.ru news",
-      "month": "202504",
+      "month": "202506",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-05-14",
-      "count": 17
+      "cutoff": "2025-07-08",
+      "count": 16
     },
-    "release_count": 51,
+    "release_count": 52,
     "sources": [
       "its.1c.ru news"
     ]

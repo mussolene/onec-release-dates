@@ -4,6 +4,10 @@ from onec_release_dates import collector
 from onec_release_dates.collector import period_rows, select_year_ago_release
 
 
+def test_sticky_table_header_does_not_cover_first_release_row():
+    assert "th { position: sticky; top: 0;" in collector.CSS
+
+
 def test_select_year_ago_release_returns_release_at_or_before_cutoff():
     rows = [
         {"version": "1.0.3", "date": "2026-06-10"},

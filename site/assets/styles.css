@@ -47,7 +47,7 @@ input[type="search"] { width: 100%; min-height: 44px; padding: 10px 14px; border
 .table-wrap { overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
 table { width: 100%; border-collapse: collapse; min-width: 760px; }
 th, td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
-th { position: sticky; top: 54px; background: var(--panel); color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+th { position: sticky; top: 0; background: var(--panel); color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 tbody tr:last-child td { border-bottom: 0; }
 .muted { display: block; color: var(--muted); font-size: 13px; }
 .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }

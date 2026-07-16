@@ -920,11 +920,11 @@
       "config_name": "Управление производственным предприятием (1.3)",
       "source_config_id": "Enterprise13",
       "version_branch": "1.3",
-      "version": "1.3.277.1",
-      "date": "2026-06-26",
-      "date_ru": "26.06.2026",
+      "version": "1.3.278.1",
+      "date": "2026-07-15",
+      "date_ru": "15.07.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202607",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -932,19 +932,19 @@
       "config_name": "1С:Управление производственным предприятием (1.3)",
       "source_config_id": "Enterprise13",
       "version_branch": "1.3",
-      "version": "1.3.248.1",
-      "date": "2025-06-24",
-      "date_ru": "24.06.2025",
+      "version": "1.3.249.1",
+      "date": "2025-07-07",
+      "date_ru": "07.07.2025",
       "source": "its.1c.ru news",
-      "month": "202506",
+      "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-26",
+      "cutoff": "2025-07-15",
       "count": 40
     },
-    "release_count": 362,
+    "release_count": 363,
     "sources": [
       "its.1c.ru news"
     ]

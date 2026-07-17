@@ -236,9 +236,9 @@
       "config_name": "Библиотека стандартных подсистем (3.1)",
       "source_config_id": "SSL31",
       "version_branch": "3.1",
-      "version": "3.1.12.254",
-      "date": "2026-07-02",
-      "date_ru": "02.07.2026",
+      "version": "3.1.12.268",
+      "date": "2026-07-16",
+      "date_ru": "16.07.2026",
       "source": "its.1c.ru news",
       "month": "202607",
       "source_kind": "its"
@@ -248,19 +248,19 @@
       "config_name": "1С:Библиотека стандартных подсистем (3.1)",
       "source_config_id": "SSL31",
       "version_branch": "3.1",
-      "version": "3.1.11.215",
-      "date": "2025-06-20",
-      "date_ru": "20.06.2025",
+      "version": "3.1.11.228",
+      "date": "2025-07-04",
+      "date_ru": "04.07.2025",
       "source": "its.1c.ru news",
-      "month": "202506",
+      "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-02",
-      "count": 28
+      "cutoff": "2025-07-16",
+      "count": 27
     },
-    "release_count": 254,
+    "release_count": 255,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2098,9 +2098,9 @@
       "config_name": "Бухгалтерия предприятия (3.0)",
       "source_config_id": "Accounting30",
       "version_branch": "3.0",
-      "version": "3.0.201.24",
-      "date": "2026-07-14",
-      "date_ru": "14.07.2026",
+      "version": "3.0.202.14",
+      "date": "2026-07-16",
+      "date_ru": "16.07.2026",
       "source": "its.1c.ru news",
       "month": "202607",
       "source_kind": "its"
@@ -2110,19 +2110,19 @@
       "config_name": "Бухгалтерия предприятия (3.0)",
       "source_config_id": "Accounting30",
       "version_branch": "3.0",
-      "version": "3.0.178.20",
-      "date": "2025-07-03",
-      "date_ru": "03.07.2025",
+      "version": "3.0.178.26",
+      "date": "2025-07-15",
+      "date_ru": "15.07.2025",
       "source": "its.1c.ru news",
       "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-14",
+      "cutoff": "2025-07-16",
       "count": 41
     },
-    "release_count": 488,
+    "release_count": 489,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2212,9 +2212,9 @@
       "config_name": "Бухгалтерия предприятия базовая (3.0)",
       "source_config_id": "AccountingBase30",
       "version_branch": "3.0",
-      "version": "3.0.201.24",
-      "date": "2026-07-14",
-      "date_ru": "14.07.2026",
+      "version": "3.0.202.14",
+      "date": "2026-07-16",
+      "date_ru": "16.07.2026",
       "source": "its.1c.ru news",
       "month": "202607",
       "source_kind": "its"
@@ -2224,19 +2224,19 @@
       "config_name": "Бухгалтерия предприятия базовая (3.0)",
       "source_config_id": "AccountingBase30",
       "version_branch": "3.0",
-      "version": "3.0.178.20",
-      "date": "2025-07-03",
-      "date_ru": "03.07.2025",
+      "version": "3.0.178.26",
+      "date": "2025-07-15",
+      "date_ru": "15.07.2025",
       "source": "its.1c.ru news",
       "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-14",
+      "cutoff": "2025-07-16",
       "count": 41
     },
-    "release_count": 488,
+    "release_count": 489,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2326,9 +2326,9 @@
       "config_name": "Бухгалтерия предприятия КОРП (3.0)",
       "source_config_id": "AccountingCorp30",
       "version_branch": "3.0",
-      "version": "3.0.201.24",
-      "date": "2026-07-14",
-      "date_ru": "14.07.2026",
+      "version": "3.0.202.14",
+      "date": "2026-07-16",
+      "date_ru": "16.07.2026",
       "source": "its.1c.ru news",
       "month": "202607",
       "source_kind": "its"
@@ -2338,19 +2338,19 @@
       "config_name": "Бухгалтерия предприятия КОРП (3.0)",
       "source_config_id": "AccountingCorp30",
       "version_branch": "3.0",
-      "version": "3.0.178.20",
-      "date": "2025-07-03",
-      "date_ru": "03.07.2025",
+      "version": "3.0.178.26",
+      "date": "2025-07-15",
+      "date_ru": "15.07.2025",
       "source": "its.1c.ru news",
       "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-14",
+      "cutoff": "2025-07-16",
       "count": 41
     },
-    "release_count": 488,
+    "release_count": 489,
     "sources": [
       "its.1c.ru news"
     ]

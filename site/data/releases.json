@@ -102988,6 +102988,18 @@
     "config_name": "Бюджетная отчетность (1.1)",
     "source_config_id": "BudgetReports",
     "version_branch": "1.1",
+    "version": "1.1.71.2",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "BudgetReports_1_1",
+    "config_name": "Бюджетная отчетность (1.1)",
+    "source_config_id": "BudgetReports",
+    "version_branch": "1.1",
     "version": "1.1.71.1",
     "date": "2026-05-29",
     "date_ru": "29.05.2026",
@@ -105009,6 +105021,18 @@
     "date_ru": "28.12.2023",
     "source": "its.1c.ru news",
     "month": "202312",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "BudgetConsolidation34_3_4",
+    "config_name": "Свод отчетов ПРОФ (3.4)",
+    "source_config_id": "BudgetConsolidation34",
+    "version_branch": "3.4",
+    "version": "3.4.72.3",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -114392,6 +114416,18 @@
     "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
     "source_config_id": "AccountingNPOCorp",
     "version_branch": "3.0",
+    "version": "3.0.203.9",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingNPOCorp_3_0",
+    "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
+    "source_config_id": "AccountingNPOCorp",
+    "version_branch": "3.0",
     "version": "3.0.202.5",
     "date": "2026-07-21",
     "date_ru": "21.07.2026",
@@ -116881,6 +116917,18 @@
     "date_ru": "27.09.2019",
     "source": "its.1c.ru news",
     "month": "201909",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingNPO_3_0",
+    "config_name": "Бухгалтерия некоммерческой организации (3.0)",
+    "source_config_id": "AccountingNPO",
+    "version_branch": "3.0",
+    "version": "3.0.203.9",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -128276,6 +128324,18 @@
     "config_name": "Бухгалтерия предприятия КОРП (3.0)",
     "source_config_id": "AccountingCorp30",
     "version_branch": "3.0",
+    "version": "3.0.203.24",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorp30_3_0",
+    "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+    "source_config_id": "AccountingCorp30",
+    "version_branch": "3.0",
     "version": "3.0.203.18",
     "date": "2026-07-30",
     "date_ru": "30.07.2026",
@@ -134173,6 +134233,18 @@
     "date_ru": "24.01.2017",
     "source": "its.1c.ru news",
     "month": "201701",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingBase30_3_0",
+    "config_name": "Бухгалтерия предприятия базовая (3.0)",
+    "source_config_id": "AccountingBase30",
+    "version_branch": "3.0",
+    "version": "3.0.203.24",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -143209,6 +143281,18 @@
     "date_ru": "12.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Accounting30_3_0",
+    "config_name": "Бухгалтерия предприятия (3.0)",
+    "source_config_id": "Accounting30",
+    "version_branch": "3.0",
+    "version": "3.0.203.24",
+    "date": "2026-08-06",
+    "date_ru": "06.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {

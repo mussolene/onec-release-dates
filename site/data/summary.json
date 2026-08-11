@@ -1756,11 +1756,11 @@
       "config_name": "Бухгалтерия государственного учреждения (2.0)",
       "source_config_id": "StateAccounting20",
       "version_branch": "2.0",
-      "version": "2.0.110.49",
-      "date": "2026-07-24",
-      "date_ru": "24.07.2026",
+      "version": "2.0.110.60",
+      "date": "2026-08-10",
+      "date_ru": "10.08.2026",
       "source": "its.1c.ru news",
-      "month": "202607",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1768,19 +1768,19 @@
       "config_name": "Бухгалтерия государственного учреждения (2.0)",
       "source_config_id": "StateAccounting20",
       "version_branch": "2.0",
-      "version": "2.0.104.41",
-      "date": "2025-07-21",
-      "date_ru": "21.07.2025",
+      "version": "2.0.104.43",
+      "date": "2025-07-30",
+      "date_ru": "30.07.2025",
       "source": "its.1c.ru news",
       "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-24",
+      "cutoff": "2025-08-10",
       "count": 24
     },
-    "release_count": 339,
+    "release_count": 340,
     "sources": [
       "its.1c.ru news"
     ]
@@ -1832,11 +1832,11 @@
       "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
       "source_config_id": "StateAccountingBase20",
       "version_branch": "2.0",
-      "version": "2.0.110.49",
-      "date": "2026-07-24",
-      "date_ru": "24.07.2026",
+      "version": "2.0.110.60",
+      "date": "2026-08-10",
+      "date_ru": "10.08.2026",
       "source": "its.1c.ru news",
-      "month": "202607",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1844,19 +1844,19 @@
       "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
       "source_config_id": "StateAccountingBase20",
       "version_branch": "2.0",
-      "version": "2.0.104.41",
-      "date": "2025-07-21",
-      "date_ru": "21.07.2025",
+      "version": "2.0.104.43",
+      "date": "2025-07-30",
+      "date_ru": "30.07.2025",
       "source": "its.1c.ru news",
       "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-24",
+      "cutoff": "2025-08-10",
       "count": 24
     },
-    "release_count": 224,
+    "release_count": 225,
     "sources": [
       "its.1c.ru news"
     ]
@@ -1870,11 +1870,11 @@
       "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
       "source_config_id": "StateAccountingCorp",
       "version_branch": "2.0",
-      "version": "2.0.110.49",
-      "date": "2026-07-24",
-      "date_ru": "24.07.2026",
+      "version": "2.0.110.60",
+      "date": "2026-08-10",
+      "date_ru": "10.08.2026",
       "source": "its.1c.ru news",
-      "month": "202607",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -1882,19 +1882,19 @@
       "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
       "source_config_id": "StateAccountingCorp",
       "version_branch": "2.0",
-      "version": "2.0.104.41",
-      "date": "2025-07-21",
-      "date_ru": "21.07.2025",
+      "version": "2.0.104.43",
+      "date": "2025-07-31",
+      "date_ru": "31.07.2025",
       "source": "its.1c.ru news",
       "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-24",
+      "cutoff": "2025-08-10",
       "count": 24
     },
-    "release_count": 111,
+    "release_count": 112,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4492,11 +4492,11 @@
       "config_name": "Технологическая платформа (8.3)",
       "source_config_id": "Platform83",
       "version_branch": "8.3",
-      "version": "8.3.27.2214",
-      "date": "2026-06-04",
-      "date_ru": "04.06.2026",
+      "version": "8.3.27.2325",
+      "date": "2026-08-10",
+      "date_ru": "10.08.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4504,19 +4504,19 @@
       "config_name": "Технологическая платформа (8.3)",
       "source_config_id": "Platform83",
       "version_branch": "8.3",
-      "version": "8.3.27.1559",
-      "date": "2025-05-27",
-      "date_ru": "27.05.2025",
+      "version": "8.3.27.1644",
+      "date": "2025-07-08",
+      "date_ru": "08.07.2025",
       "source": "its.1c.ru news",
-      "month": "202505",
+      "month": "202507",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-04",
-      "count": 16
+      "cutoff": "2025-08-10",
+      "count": 13
     },
-    "release_count": 142,
+    "release_count": 143,
     "sources": [
       "its.1c.ru news"
     ]

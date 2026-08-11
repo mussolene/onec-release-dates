@@ -32248,6 +32248,18 @@
     "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
     "source_config_id": "StateAccountingCorp",
     "version_branch": "2.0",
+    "version": "2.0.110.60",
+    "date": "2026-08-10",
+    "date_ru": "10.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateAccountingCorp_2_0",
+    "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
+    "source_config_id": "StateAccountingCorp",
+    "version_branch": "2.0",
     "version": "2.0.110.49",
     "date": "2026-07-24",
     "date_ru": "24.07.2026",
@@ -35589,6 +35601,18 @@
     "date_ru": "14.08.2015",
     "source": "its.1c.ru news",
     "month": "201508",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateAccountingBase20_2_0",
+    "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
+    "source_config_id": "StateAccountingBase20",
+    "version_branch": "2.0",
+    "version": "2.0.110.60",
+    "date": "2026-08-10",
+    "date_ru": "10.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -40293,6 +40317,18 @@
     "date_ru": "14.08.2015",
     "source": "its.1c.ru news",
     "month": "201508",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateAccounting20_2_0",
+    "config_name": "Бухгалтерия государственного учреждения (2.0)",
+    "source_config_id": "StateAccounting20",
+    "version_branch": "2.0",
+    "version": "2.0.110.60",
+    "date": "2026-08-10",
+    "date_ru": "10.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -59193,6 +59229,18 @@
     "date_ru": "16.12.2016",
     "source": "its.1c.ru news",
     "month": "201612",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Platform83_8_3",
+    "config_name": "Технологическая платформа (8.3)",
+    "source_config_id": "Platform83",
+    "version_branch": "8.3",
+    "version": "8.3.27.2325",
+    "date": "2026-08-10",
+    "date_ru": "10.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {

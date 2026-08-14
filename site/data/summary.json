@@ -768,11 +768,11 @@
       "config_name": "Конвертация данных (3.1)",
       "source_config_id": "Conversion30",
       "version_branch": "3.1",
-      "version": "3.1.6.15",
-      "date": "2026-06-03",
-      "date_ru": "03.06.2026",
+      "version": "3.1.6.16",
+      "date": "2026-08-13",
+      "date_ru": "13.08.2026",
       "source": "its.1c.ru news",
-      "month": "202606",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -789,10 +789,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-06-03",
-      "count": 6
+      "cutoff": "2025-08-13",
+      "count": 7
     },
-    "release_count": 29,
+    "release_count": 30,
     "sources": [
       "its.1c.ru news"
     ]
@@ -806,11 +806,11 @@
       "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.202.2",
-      "date": "2026-07-21",
-      "date_ru": "21.07.2026",
+      "version": "3.0.203.7",
+      "date": "2026-08-13",
+      "date_ru": "13.08.2026",
       "source": "its.1c.ru news",
-      "month": "202607",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -818,19 +818,19 @@
       "config_name": "1С:Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.178.4",
-      "date": "2025-07-17",
-      "date_ru": "17.07.2025",
+      "version": "3.0.180.2",
+      "date": "2025-08-07",
+      "date_ru": "07.08.2025",
       "source": "its.1c.ru news",
-      "month": "202507",
+      "month": "202508",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-21",
-      "count": 29
+      "cutoff": "2025-08-13",
+      "count": 28
     },
-    "release_count": 199,
+    "release_count": 200,
     "sources": [
       "its.1c.ru news"
     ]
@@ -844,11 +844,11 @@
       "config_name": "Садовод (базовая версия) (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.202.2",
-      "date": "2026-07-21",
-      "date_ru": "21.07.2026",
+      "version": "3.0.203.7",
+      "date": "2026-08-13",
+      "date_ru": "13.08.2026",
       "source": "its.1c.ru news",
-      "month": "202607",
+      "month": "202608",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -856,19 +856,19 @@
       "config_name": "1С:Садовод (базовая версия) (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.178.4",
-      "date": "2025-07-17",
-      "date_ru": "17.07.2025",
+      "version": "3.0.180.2",
+      "date": "2025-08-07",
+      "date_ru": "07.08.2025",
       "source": "its.1c.ru news",
-      "month": "202507",
+      "month": "202508",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-07-21",
-      "count": 29
+      "cutoff": "2025-08-13",
+      "count": 28
     },
-    "release_count": 199,
+    "release_count": 200,
     "sources": [
       "its.1c.ru news"
     ]

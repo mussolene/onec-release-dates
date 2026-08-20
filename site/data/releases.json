@@ -47548,6 +47548,18 @@
     "config_name": "Управление нашей фирмой Базовая (3.0)",
     "source_config_id": "SmallBusinessBase30",
     "version_branch": "3.0",
+    "version": "3.0.14.123",
+    "date": "2026-08-19",
+    "date_ru": "19.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SmallBusinessBase30_3_0",
+    "config_name": "Управление нашей фирмой Базовая (3.0)",
+    "source_config_id": "SmallBusinessBase30",
+    "version_branch": "3.0",
     "version": "3.0.14.115",
     "date": "2026-08-11",
     "date_ru": "11.08.2026",
@@ -50692,6 +50704,18 @@
     "config_name": "Управление нашей фирмой (3.0)",
     "source_config_id": "SmallBusiness30",
     "version_branch": "3.0",
+    "version": "3.0.14.123",
+    "date": "2026-08-19",
+    "date_ru": "19.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SmallBusiness30_3_0",
+    "config_name": "Управление нашей фирмой (3.0)",
+    "source_config_id": "SmallBusiness30",
+    "version_branch": "3.0",
     "version": "3.0.14.115",
     "date": "2026-08-11",
     "date_ru": "11.08.2026",
@@ -53776,6 +53800,18 @@
     "config_name": "Розница базовая (3.0)",
     "source_config_id": "RetailBase30",
     "version_branch": "3.0",
+    "version": "3.0.14.123",
+    "date": "2026-08-19",
+    "date_ru": "19.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "RetailBase30_3_0",
+    "config_name": "Розница базовая (3.0)",
+    "source_config_id": "RetailBase30",
+    "version_branch": "3.0",
     "version": "3.0.14.115",
     "date": "2026-08-11",
     "date_ru": "11.08.2026",
@@ -56577,6 +56613,18 @@
     "date_ru": "16.12.2016",
     "source": "its.1c.ru news",
     "month": "201612",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Retail30_3_0",
+    "config_name": "Розница (3.0)",
+    "source_config_id": "Retail30",
+    "version_branch": "3.0",
+    "version": "3.0.14.123",
+    "date": "2026-08-19",
+    "date_ru": "19.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -102249,6 +102297,18 @@
     "date_ru": "21.01.2016",
     "source": "its.1c.ru news",
     "month": "201601",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ClientEDOBase_2_9",
+    "config_name": "Клиент ЭДО 8 Базовая (2.9)",
+    "source_config_id": "ClientEDOBase",
+    "version_branch": "2.9",
+    "version": "2.9.16.72",
+    "date": "2026-08-19",
+    "date_ru": "19.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {

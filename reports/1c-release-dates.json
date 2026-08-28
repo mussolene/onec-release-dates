@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T10:43:59",
+  "generated_at": "2026-08-28T12:21:36",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -330,9 +330,9 @@
         "config_name": "Библиотека стандартных подсистем (3.1)",
         "source_config_id": "SSL31",
         "version_branch": "3.1",
-        "version": "3.1.12.297",
-        "date": "2026-08-14",
-        "date_ru": "14.08.2026",
+        "version": "3.1.12.310",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -342,19 +342,19 @@
         "config_name": "1С:Библиотека стандартных подсистем (3.1)",
         "source_config_id": "SSL31",
         "version_branch": "3.1",
-        "version": "3.1.10.607",
-        "date": "2025-08-14",
-        "date_ru": "14.08.2025",
+        "version": "3.1.11.269",
+        "date": "2025-08-15",
+        "date_ru": "15.08.2025",
         "source": "its.1c.ru news",
         "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-14",
+        "cutoff": "2025-08-27",
         "count": 24
       },
-      "release_count": 257,
+      "release_count": 258,
       "sources": [
         "its.1c.ru news"
       ]
@@ -1888,9 +1888,9 @@
         "config_name": "Бухгалтерия государственного учреждения (2.0)",
         "source_config_id": "StateAccounting20",
         "version_branch": "2.0",
-        "version": "2.0.110.60",
-        "date": "2026-08-10",
-        "date_ru": "10.08.2026",
+        "version": "2.0.110.66",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -1900,19 +1900,19 @@
         "config_name": "Бухгалтерия государственного учреждения (2.0)",
         "source_config_id": "StateAccounting20",
         "version_branch": "2.0",
-        "version": "2.0.104.43",
-        "date": "2025-07-30",
-        "date_ru": "30.07.2025",
+        "version": "2.0.105.66",
+        "date": "2025-08-23",
+        "date_ru": "23.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-10",
-        "count": 24
+        "cutoff": "2025-08-27",
+        "count": 23
       },
-      "release_count": 340,
+      "release_count": 341,
       "sources": [
         "its.1c.ru news"
       ]
@@ -1964,9 +1964,9 @@
         "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
         "source_config_id": "StateAccountingBase20",
         "version_branch": "2.0",
-        "version": "2.0.110.60",
-        "date": "2026-08-10",
-        "date_ru": "10.08.2026",
+        "version": "2.0.110.66",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -1976,19 +1976,19 @@
         "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
         "source_config_id": "StateAccountingBase20",
         "version_branch": "2.0",
-        "version": "2.0.104.43",
-        "date": "2025-07-30",
-        "date_ru": "30.07.2025",
+        "version": "2.0.105.66",
+        "date": "2025-08-23",
+        "date_ru": "23.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-10",
-        "count": 24
+        "cutoff": "2025-08-27",
+        "count": 23
       },
-      "release_count": 225,
+      "release_count": 226,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2002,9 +2002,9 @@
         "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
         "source_config_id": "StateAccountingCorp",
         "version_branch": "2.0",
-        "version": "2.0.110.60",
-        "date": "2026-08-10",
-        "date_ru": "10.08.2026",
+        "version": "2.0.110.66",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -2014,19 +2014,19 @@
         "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
         "source_config_id": "StateAccountingCorp",
         "version_branch": "2.0",
-        "version": "2.0.104.43",
-        "date": "2025-07-31",
-        "date_ru": "31.07.2025",
+        "version": "2.0.105.66",
+        "date": "2025-08-23",
+        "date_ru": "23.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-10",
-        "count": 24
+        "cutoff": "2025-08-27",
+        "count": 23
       },
-      "release_count": 112,
+      "release_count": 113,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2230,9 +2230,9 @@
         "config_name": "Бухгалтерия предприятия (3.0)",
         "source_config_id": "Accounting30",
         "version_branch": "3.0",
-        "version": "3.0.204.22",
-        "date": "2026-08-18",
-        "date_ru": "18.08.2026",
+        "version": "3.0.205.17",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -2251,10 +2251,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-18",
-        "count": 40
+        "cutoff": "2025-08-27",
+        "count": 41
       },
-      "release_count": 492,
+      "release_count": 493,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2344,9 +2344,9 @@
         "config_name": "Бухгалтерия предприятия базовая (3.0)",
         "source_config_id": "AccountingBase30",
         "version_branch": "3.0",
-        "version": "3.0.204.22",
-        "date": "2026-08-18",
-        "date_ru": "18.08.2026",
+        "version": "3.0.205.17",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -2365,10 +2365,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-18",
-        "count": 40
+        "cutoff": "2025-08-27",
+        "count": 41
       },
-      "release_count": 492,
+      "release_count": 493,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2458,9 +2458,9 @@
         "config_name": "Бухгалтерия предприятия КОРП (3.0)",
         "source_config_id": "AccountingCorp30",
         "version_branch": "3.0",
-        "version": "3.0.204.22",
-        "date": "2026-08-18",
-        "date_ru": "18.08.2026",
+        "version": "3.0.205.17",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -2479,10 +2479,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-18",
-        "count": 40
+        "cutoff": "2025-08-27",
+        "count": 41
       },
-      "release_count": 492,
+      "release_count": 493,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4662,9 +4662,9 @@
         "config_name": "Технологическая платформа (8.3)",
         "source_config_id": "Platform83",
         "version_branch": "8.3",
-        "version": "8.3.27.2325",
-        "date": "2026-08-10",
-        "date_ru": "10.08.2026",
+        "version": "8.3.27.2342",
+        "date": "2026-08-27",
+        "date_ru": "27.08.2026",
         "source": "its.1c.ru news",
         "month": "202608",
         "source_kind": "its"
@@ -4674,19 +4674,19 @@
         "config_name": "Технологическая платформа (8.3)",
         "source_config_id": "Platform83",
         "version_branch": "8.3",
-        "version": "8.3.27.1644",
-        "date": "2025-07-08",
-        "date_ru": "08.07.2025",
+        "version": "8.3.27.1688",
+        "date": "2025-08-13",
+        "date_ru": "13.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-10",
+        "cutoff": "2025-08-27",
         "count": 13
       },
-      "release_count": 143,
+      "release_count": 144,
       "sources": [
         "its.1c.ru news"
       ]
@@ -37896,6 +37896,18 @@
       "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
       "source_config_id": "StateAccountingCorp",
       "version_branch": "2.0",
+      "version": "2.0.110.66",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "StateAccountingCorp_2_0",
+      "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
+      "source_config_id": "StateAccountingCorp",
+      "version_branch": "2.0",
       "version": "2.0.110.60",
       "date": "2026-08-10",
       "date_ru": "10.08.2026",
@@ -41249,6 +41261,18 @@
       "date_ru": "14.08.2015",
       "source": "its.1c.ru news",
       "month": "201508",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "StateAccountingBase20_2_0",
+      "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
+      "source_config_id": "StateAccountingBase20",
+      "version_branch": "2.0",
+      "version": "2.0.110.66",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
       "source_kind": "its"
     },
     {
@@ -45972,6 +45996,18 @@
       "config_name": "Бухгалтерия государственного учреждения (2.0)",
       "source_config_id": "StateAccounting20",
       "version_branch": "2.0",
+      "version": "2.0.110.66",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "StateAccounting20_2_0",
+      "config_name": "Бухгалтерия государственного учреждения (2.0)",
+      "source_config_id": "StateAccounting20",
+      "version_branch": "2.0",
       "version": "2.0.110.60",
       "date": "2026-08-10",
       "date_ru": "10.08.2026",
@@ -50045,6 +50081,18 @@
       "date_ru": "18.08.2015",
       "source": "its.1c.ru news",
       "month": "201508",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "SSL31_3_1",
+      "config_name": "Библиотека стандартных подсистем (3.1)",
+      "source_config_id": "SSL31",
+      "version_branch": "3.1",
+      "version": "3.1.12.310",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
       "source_kind": "its"
     },
     {
@@ -65009,6 +65057,18 @@
       "date_ru": "16.12.2016",
       "source": "its.1c.ru news",
       "month": "201612",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Platform83_8_3",
+      "config_name": "Технологическая платформа (8.3)",
+      "source_config_id": "Platform83",
+      "version_branch": "8.3",
+      "version": "8.3.27.2342",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
       "source_kind": "its"
     },
     {
@@ -134548,6 +134608,18 @@
       "config_name": "Бухгалтерия предприятия КОРП (3.0)",
       "source_config_id": "AccountingCorp30",
       "version_branch": "3.0",
+      "version": "3.0.205.17",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingCorp30_3_0",
+      "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+      "source_config_id": "AccountingCorp30",
+      "version_branch": "3.0",
       "version": "3.0.204.22",
       "date": "2026-08-18",
       "date_ru": "18.08.2026",
@@ -140469,6 +140541,18 @@
       "date_ru": "24.01.2017",
       "source": "its.1c.ru news",
       "month": "201701",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingBase30_3_0",
+      "config_name": "Бухгалтерия предприятия базовая (3.0)",
+      "source_config_id": "AccountingBase30",
+      "version_branch": "3.0",
+      "version": "3.0.205.17",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
       "source_kind": "its"
     },
     {
@@ -149529,6 +149613,18 @@
       "date_ru": "12.10.2015",
       "source": "its.1c.ru news",
       "month": "201510",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Accounting30_3_0",
+      "config_name": "Бухгалтерия предприятия (3.0)",
+      "source_config_id": "Accounting30",
+      "version_branch": "3.0",
+      "version": "3.0.205.17",
+      "date": "2026-08-27",
+      "date_ru": "27.08.2026",
+      "source": "its.1c.ru news",
+      "month": "202608",
       "source_kind": "its"
     },
     {

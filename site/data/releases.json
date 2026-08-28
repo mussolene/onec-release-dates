@@ -32404,6 +32404,18 @@
     "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
     "source_config_id": "StateAccountingCorp",
     "version_branch": "2.0",
+    "version": "2.0.110.66",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateAccountingCorp_2_0",
+    "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
+    "source_config_id": "StateAccountingCorp",
+    "version_branch": "2.0",
     "version": "2.0.110.60",
     "date": "2026-08-10",
     "date_ru": "10.08.2026",
@@ -35757,6 +35769,18 @@
     "date_ru": "14.08.2015",
     "source": "its.1c.ru news",
     "month": "201508",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateAccountingBase20_2_0",
+    "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
+    "source_config_id": "StateAccountingBase20",
+    "version_branch": "2.0",
+    "version": "2.0.110.66",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -40480,6 +40504,18 @@
     "config_name": "Бухгалтерия государственного учреждения (2.0)",
     "source_config_id": "StateAccounting20",
     "version_branch": "2.0",
+    "version": "2.0.110.66",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateAccounting20_2_0",
+    "config_name": "Бухгалтерия государственного учреждения (2.0)",
+    "source_config_id": "StateAccounting20",
+    "version_branch": "2.0",
     "version": "2.0.110.60",
     "date": "2026-08-10",
     "date_ru": "10.08.2026",
@@ -44553,6 +44589,18 @@
     "date_ru": "18.08.2015",
     "source": "its.1c.ru news",
     "month": "201508",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SSL31_3_1",
+    "config_name": "Библиотека стандартных подсистем (3.1)",
+    "source_config_id": "SSL31",
+    "version_branch": "3.1",
+    "version": "3.1.12.310",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -59517,6 +59565,18 @@
     "date_ru": "16.12.2016",
     "source": "its.1c.ru news",
     "month": "201612",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Platform83_8_3",
+    "config_name": "Технологическая платформа (8.3)",
+    "source_config_id": "Platform83",
+    "version_branch": "8.3",
+    "version": "8.3.27.2342",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -129056,6 +129116,18 @@
     "config_name": "Бухгалтерия предприятия КОРП (3.0)",
     "source_config_id": "AccountingCorp30",
     "version_branch": "3.0",
+    "version": "3.0.205.17",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorp30_3_0",
+    "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+    "source_config_id": "AccountingCorp30",
+    "version_branch": "3.0",
     "version": "3.0.204.22",
     "date": "2026-08-18",
     "date_ru": "18.08.2026",
@@ -134977,6 +135049,18 @@
     "date_ru": "24.01.2017",
     "source": "its.1c.ru news",
     "month": "201701",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingBase30_3_0",
+    "config_name": "Бухгалтерия предприятия базовая (3.0)",
+    "source_config_id": "AccountingBase30",
+    "version_branch": "3.0",
+    "version": "3.0.205.17",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -144037,6 +144121,18 @@
     "date_ru": "12.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Accounting30_3_0",
+    "config_name": "Бухгалтерия предприятия (3.0)",
+    "source_config_id": "Accounting30",
+    "version_branch": "3.0",
+    "version": "3.0.205.17",
+    "date": "2026-08-27",
+    "date_ru": "27.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {

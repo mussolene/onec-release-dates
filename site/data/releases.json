@@ -424,6 +424,18 @@
     "config_name": "Вещевое довольствие (2.0)",
     "source_config_id": "UniformAllowances20",
     "version_branch": "2.0",
+    "version": "2.0.43.11",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "UniformAllowances20_2_0",
+    "config_name": "Вещевое довольствие (2.0)",
+    "source_config_id": "UniformAllowances20",
+    "version_branch": "2.0",
     "version": "2.0.43.2",
     "date": "2026-05-29",
     "date_ru": "29.05.2026",
@@ -55108,6 +55120,18 @@
     "config_name": "Розница базовая (2.3)",
     "source_config_id": "RetailBase23",
     "version_branch": "2.3",
+    "version": "2.3.26.16",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "RetailBase23_2_3",
+    "config_name": "Розница базовая (2.3)",
+    "source_config_id": "RetailBase23",
+    "version_branch": "2.3",
     "version": "2.3.26.13",
     "date": "2026-08-25",
     "date_ru": "25.08.2026",
@@ -57909,6 +57933,18 @@
     "date_ru": "21.10.2022",
     "source": "its.1c.ru news",
     "month": "202210",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Retail23_2_3",
+    "config_name": "Розница (2.3)",
+    "source_config_id": "Retail23",
+    "version_branch": "2.3",
+    "version": "2.3.26.16",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -95152,6 +95188,18 @@
     "config_name": "Управление производственным предприятием (1.3)",
     "source_config_id": "Enterprise13",
     "version_branch": "1.3",
+    "version": "1.3.281.1",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Enterprise13_1_3",
+    "config_name": "Управление производственным предприятием (1.3)",
+    "source_config_id": "Enterprise13",
+    "version_branch": "1.3",
     "version": "1.3.280.3",
     "date": "2026-08-14",
     "date_ru": "14.08.2026",
@@ -129248,6 +129296,18 @@
     "config_name": "Бухгалтерия предприятия КОРП (3.0)",
     "source_config_id": "AccountingCorp30",
     "version_branch": "3.0",
+    "version": "3.0.205.22",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorp30_3_0",
+    "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+    "source_config_id": "AccountingCorp30",
+    "version_branch": "3.0",
     "version": "3.0.205.17",
     "date": "2026-08-27",
     "date_ru": "27.08.2026",
@@ -135181,6 +135241,18 @@
     "date_ru": "24.01.2017",
     "source": "its.1c.ru news",
     "month": "201701",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingBase30_3_0",
+    "config_name": "Бухгалтерия предприятия базовая (3.0)",
+    "source_config_id": "AccountingBase30",
+    "version_branch": "3.0",
+    "version": "3.0.205.22",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {
@@ -144253,6 +144325,18 @@
     "date_ru": "12.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Accounting30_3_0",
+    "config_name": "Бухгалтерия предприятия (3.0)",
+    "source_config_id": "Accounting30",
+    "version_branch": "3.0",
+    "version": "3.0.205.22",
+    "date": "2026-08-31",
+    "date_ru": "31.08.2026",
+    "source": "its.1c.ru news",
+    "month": "202608",
     "source_kind": "its"
   },
   {

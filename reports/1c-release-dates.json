@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T05:49:59",
+  "generated_at": "2026-09-02T05:13:29",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -216,11 +216,11 @@
         "config_name": "ERP.Управление холдингом (3.2)",
         "source_config_id": "ERP_UH32",
         "version_branch": "3.2",
-        "version": "3.2.12.6",
-        "date": "2026-07-31",
-        "date_ru": "31.07.2026",
+        "version": "3.2.12.9",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202607",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -228,19 +228,19 @@
         "config_name": "1С:ERP.Управление холдингом (3.2)",
         "source_config_id": "ERP_UH32",
         "version_branch": "3.2",
-        "version": "3.2.8.6",
-        "date": "2025-07-17",
-        "date_ru": "17.07.2025",
+        "version": "3.2.9.2",
+        "date": "2025-08-15",
+        "date_ru": "15.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-07-31",
-        "count": 25
+        "cutoff": "2025-09-01",
+        "count": 24
       },
-      "release_count": 51,
+      "release_count": 52,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2078,11 +2078,11 @@
         "config_name": "Бухгалтерия некоммерческой организации (3.0)",
         "source_config_id": "AccountingNPO",
         "version_branch": "3.0",
-        "version": "3.0.204.4",
-        "date": "2026-08-25",
-        "date_ru": "25.08.2026",
+        "version": "3.0.205.3",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -2099,10 +2099,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-25",
-        "count": 39
+        "cutoff": "2025-09-01",
+        "count": 40
       },
-      "release_count": 224,
+      "release_count": 225,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2116,11 +2116,11 @@
         "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
         "source_config_id": "AccountingNPOCorp",
         "version_branch": "3.0",
-        "version": "3.0.204.4",
-        "date": "2026-08-25",
-        "date_ru": "25.08.2026",
+        "version": "3.0.205.3",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -2137,10 +2137,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-25",
-        "count": 39
+        "cutoff": "2025-09-01",
+        "count": 40
       },
-      "release_count": 211,
+      "release_count": 212,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4396,11 +4396,11 @@
         "config_name": "Розница (3.0)",
         "source_config_id": "Retail30",
         "version_branch": "3.0",
-        "version": "3.0.14.123",
-        "date": "2026-08-19",
-        "date_ru": "19.08.2026",
+        "version": "3.0.14.140",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -4408,19 +4408,19 @@
         "config_name": "Розница (3.0)",
         "source_config_id": "Retail30",
         "version_branch": "3.0",
-        "version": "3.0.12.114",
-        "date": "2025-07-23",
-        "date_ru": "23.07.2025",
+        "version": "3.0.12.146",
+        "date": "2025-08-28",
+        "date_ru": "28.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-19",
-        "count": 28
+        "cutoff": "2025-09-01",
+        "count": 27
       },
-      "release_count": 91,
+      "release_count": 92,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4510,11 +4510,11 @@
         "config_name": "Розница базовая (3.0)",
         "source_config_id": "RetailBase30",
         "version_branch": "3.0",
-        "version": "3.0.14.123",
-        "date": "2026-08-19",
-        "date_ru": "19.08.2026",
+        "version": "3.0.14.140",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -4522,19 +4522,19 @@
         "config_name": "Розница базовая (3.0)",
         "source_config_id": "RetailBase30",
         "version_branch": "3.0",
-        "version": "3.0.12.114",
-        "date": "2025-07-23",
-        "date_ru": "23.07.2025",
+        "version": "3.0.12.146",
+        "date": "2025-08-28",
+        "date_ru": "28.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-19",
-        "count": 30
+        "cutoff": "2025-09-01",
+        "count": 29
       },
-      "release_count": 93,
+      "release_count": 94,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4738,11 +4738,11 @@
         "config_name": "Управление нашей фирмой (3.0)",
         "source_config_id": "SmallBusiness30",
         "version_branch": "3.0",
-        "version": "3.0.14.123",
-        "date": "2026-08-19",
-        "date_ru": "19.08.2026",
+        "version": "3.0.14.140",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -4750,19 +4750,19 @@
         "config_name": "Управление нашей фирмой (3.0)",
         "source_config_id": "SmallBusiness30",
         "version_branch": "3.0",
-        "version": "3.0.12.114",
-        "date": "2025-07-23",
-        "date_ru": "23.07.2025",
+        "version": "3.0.12.146",
+        "date": "2025-08-28",
+        "date_ru": "28.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-19",
-        "count": 28
+        "cutoff": "2025-09-01",
+        "count": 27
       },
-      "release_count": 91,
+      "release_count": 92,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4814,11 +4814,11 @@
         "config_name": "Управление нашей фирмой Базовая (3.0)",
         "source_config_id": "SmallBusinessBase30",
         "version_branch": "3.0",
-        "version": "3.0.14.123",
-        "date": "2026-08-19",
-        "date_ru": "19.08.2026",
+        "version": "3.0.14.140",
+        "date": "2026-09-01",
+        "date_ru": "01.09.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -4826,19 +4826,19 @@
         "config_name": "Управление нашей фирмой Базовая (3.0)",
         "source_config_id": "SmallBusinessBase30",
         "version_branch": "3.0",
-        "version": "3.0.12.114",
-        "date": "2025-07-23",
-        "date_ru": "23.07.2025",
+        "version": "3.0.12.146",
+        "date": "2025-08-28",
+        "date_ru": "28.08.2025",
         "source": "its.1c.ru news",
-        "month": "202507",
+        "month": "202508",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-19",
-        "count": 30
+        "cutoff": "2025-09-01",
+        "count": 29
       },
-      "release_count": 93,
+      "release_count": 94,
       "sources": [
         "its.1c.ru news"
       ]
@@ -53244,6 +53244,18 @@
       "config_name": "Управление нашей фирмой Базовая (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
+      "version": "3.0.14.140",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "SmallBusinessBase30_3_0",
+      "config_name": "Управление нашей фирмой Базовая (3.0)",
+      "source_config_id": "SmallBusinessBase30",
+      "version_branch": "3.0",
       "version": "3.0.14.123",
       "date": "2026-08-19",
       "date_ru": "19.08.2026",
@@ -56400,6 +56412,18 @@
       "config_name": "Управление нашей фирмой (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
+      "version": "3.0.14.140",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "SmallBusiness30_3_0",
+      "config_name": "Управление нашей фирмой (3.0)",
+      "source_config_id": "SmallBusiness30",
+      "version_branch": "3.0",
       "version": "3.0.14.123",
       "date": "2026-08-19",
       "date_ru": "19.08.2026",
@@ -59496,6 +59520,18 @@
       "config_name": "Розница базовая (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
+      "version": "3.0.14.140",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "RetailBase30_3_0",
+      "config_name": "Розница базовая (3.0)",
+      "source_config_id": "RetailBase30",
+      "version_branch": "3.0",
       "version": "3.0.14.123",
       "date": "2026-08-19",
       "date_ru": "19.08.2026",
@@ -62333,6 +62369,18 @@
       "date_ru": "16.12.2016",
       "source": "its.1c.ru news",
       "month": "201612",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Retail30_3_0",
+      "config_name": "Розница (3.0)",
+      "source_config_id": "Retail30",
+      "version_branch": "3.0",
+      "version": "3.0.14.140",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
       "source_kind": "its"
     },
     {
@@ -92856,6 +92904,18 @@
       "config_name": "ERP.Управление холдингом (3.2)",
       "source_config_id": "ERP_UH32",
       "version_branch": "3.2",
+      "version": "3.2.12.9",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "ERP_UH32_3_2",
+      "config_name": "ERP.Управление холдингом (3.2)",
+      "source_config_id": "ERP_UH32",
+      "version_branch": "3.2",
       "version": "3.2.12.6",
       "date": "2026-07-31",
       "date_ru": "31.07.2026",
@@ -120760,6 +120820,18 @@
       "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
       "source_config_id": "AccountingNPOCorp",
       "version_branch": "3.0",
+      "version": "3.0.205.3",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingNPOCorp_3_0",
+      "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
+      "source_config_id": "AccountingNPOCorp",
+      "version_branch": "3.0",
       "version": "3.0.204.4",
       "date": "2026-08-25",
       "date_ru": "25.08.2026",
@@ -123285,6 +123357,18 @@
       "date_ru": "27.09.2019",
       "source": "its.1c.ru news",
       "month": "201909",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingNPO_3_0",
+      "config_name": "Бухгалтерия некоммерческой организации (3.0)",
+      "source_config_id": "AccountingNPO",
+      "version_branch": "3.0",
+      "version": "3.0.205.3",
+      "date": "2026-09-01",
+      "date_ru": "01.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
       "source_kind": "its"
     },
     {

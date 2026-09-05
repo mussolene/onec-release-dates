@@ -2716,6 +2716,18 @@
     "config_name": "Управление торговлей базовая (11.5)",
     "source_config_id": "TradeBase110",
     "version_branch": "11.5",
+    "version": "11.5.27.82",
+    "date": "2026-09-04",
+    "date_ru": "04.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "TradeBase110_11_5",
+    "config_name": "Управление торговлей базовая (11.5)",
+    "source_config_id": "TradeBase110",
+    "version_branch": "11.5",
     "version": "11.5.27.81",
     "date": "2026-08-30",
     "date_ru": "30.08.2026",
@@ -7977,6 +7989,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Trade110_11_5",
+    "config_name": "Управление торговлей (11.5)",
+    "source_config_id": "Trade110",
+    "version_branch": "11.5",
+    "version": "11.5.27.82",
+    "date": "2026-09-04",
+    "date_ru": "04.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {
@@ -83572,6 +83596,18 @@
     "config_name": "1C:ERP WE (с русским кодом) (2.6)",
     "source_config_id": "ERPWERU",
     "version_branch": "2.6",
+    "version": "2.6.1.59",
+    "date": "2026-09-04",
+    "date_ru": "04.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ERPWERU_2_6",
+    "config_name": "1C:ERP WE (с русским кодом) (2.6)",
+    "source_config_id": "ERPWERU",
+    "version_branch": "2.6",
     "version": "2.6.1.56",
     "date": "2026-08-29",
     "date_ru": "29.08.2026",
@@ -85521,6 +85557,18 @@
     "date_ru": "18.04.2022",
     "source": "its.1c.ru news",
     "month": "202204",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ERPWEENG_2_6",
+    "config_name": "1C:ERP WE (English code) (2.6)",
+    "source_config_id": "ERPWEENG",
+    "version_branch": "2.6",
+    "version": "2.6.1.59",
+    "date": "2026-09-04",
+    "date_ru": "04.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {
@@ -88809,6 +88857,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "EnterpriseERP20_2_5",
+    "config_name": "ERP Управление предприятием (2.5)",
+    "source_config_id": "EnterpriseERP20",
+    "version_branch": "2.5",
+    "version": "2.5.27.82",
+    "date": "2026-09-04",
+    "date_ru": "04.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {
@@ -107127,6 +107187,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ARAutomation20_2_5",
+    "config_name": "Комплексная автоматизация (2.5)",
+    "source_config_id": "ARAutomation20",
+    "version_branch": "2.5",
+    "version": "2.5.27.82",
+    "date": "2026-09-04",
+    "date_ru": "04.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {

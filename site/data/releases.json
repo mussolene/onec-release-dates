@@ -47836,6 +47836,18 @@
     "config_name": "Управление нашей фирмой Базовая (3.0)",
     "source_config_id": "SmallBusinessBase30",
     "version_branch": "3.0",
+    "version": "3.0.14.143",
+    "date": "2026-09-07",
+    "date_ru": "07.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SmallBusinessBase30_3_0",
+    "config_name": "Управление нашей фирмой Базовая (3.0)",
+    "source_config_id": "SmallBusinessBase30",
+    "version_branch": "3.0",
     "version": "3.0.14.140",
     "date": "2026-09-01",
     "date_ru": "01.09.2026",
@@ -51004,6 +51016,18 @@
     "config_name": "Управление нашей фирмой (3.0)",
     "source_config_id": "SmallBusiness30",
     "version_branch": "3.0",
+    "version": "3.0.14.143",
+    "date": "2026-09-07",
+    "date_ru": "07.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SmallBusiness30_3_0",
+    "config_name": "Управление нашей фирмой (3.0)",
+    "source_config_id": "SmallBusiness30",
+    "version_branch": "3.0",
     "version": "3.0.14.140",
     "date": "2026-09-01",
     "date_ru": "01.09.2026",
@@ -54112,6 +54136,18 @@
     "config_name": "Розница базовая (3.0)",
     "source_config_id": "RetailBase30",
     "version_branch": "3.0",
+    "version": "3.0.14.143",
+    "date": "2026-09-07",
+    "date_ru": "07.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "RetailBase30_3_0",
+    "config_name": "Розница базовая (3.0)",
+    "source_config_id": "RetailBase30",
+    "version_branch": "3.0",
     "version": "3.0.14.140",
     "date": "2026-09-01",
     "date_ru": "01.09.2026",
@@ -55233,6 +55269,18 @@
     "date_ru": "21.10.2022",
     "source": "its.1c.ru news",
     "month": "202210",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "RetailBase23_2_3",
+    "config_name": "Розница базовая (2.3)",
+    "source_config_id": "RetailBase23",
+    "version_branch": "2.3",
+    "version": "2.3.26.22",
+    "date": "2026-09-07",
+    "date_ru": "07.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {
@@ -56968,6 +57016,18 @@
     "config_name": "Розница (3.0)",
     "source_config_id": "Retail30",
     "version_branch": "3.0",
+    "version": "3.0.14.143",
+    "date": "2026-09-07",
+    "date_ru": "07.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Retail30_3_0",
+    "config_name": "Розница (3.0)",
+    "source_config_id": "Retail30",
+    "version_branch": "3.0",
     "version": "3.0.14.140",
     "date": "2026-09-01",
     "date_ru": "01.09.2026",
@@ -58065,6 +58125,18 @@
     "date_ru": "21.10.2022",
     "source": "its.1c.ru news",
     "month": "202210",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Retail23_2_3",
+    "config_name": "Розница (2.3)",
+    "source_config_id": "Retail23",
+    "version_branch": "2.3",
+    "version": "2.3.26.22",
+    "date": "2026-09-07",
+    "date_ru": "07.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {

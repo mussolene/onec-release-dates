@@ -4340,11 +4340,11 @@
       "config_name": "Розница (2.3)",
       "source_config_id": "Retail23",
       "version_branch": "2.3",
-      "version": "2.3.26.16",
-      "date": "2026-08-31",
-      "date_ru": "31.08.2026",
+      "version": "2.3.26.22",
+      "date": "2026-09-07",
+      "date_ru": "07.09.2026",
       "source": "its.1c.ru news",
-      "month": "202608",
+      "month": "202609",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4361,10 +4361,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-08-31",
-      "count": 13
+      "cutoff": "2025-09-07",
+      "count": 14
     },
-    "release_count": 104,
+    "release_count": 105,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4378,9 +4378,9 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.14.140",
-      "date": "2026-09-01",
-      "date_ru": "01.09.2026",
+      "version": "3.0.14.143",
+      "date": "2026-09-07",
+      "date_ru": "07.09.2026",
       "source": "its.1c.ru news",
       "month": "202609",
       "source_kind": "its"
@@ -4399,10 +4399,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-01",
-      "count": 27
+      "cutoff": "2025-09-07",
+      "count": 28
     },
-    "release_count": 92,
+    "release_count": 93,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4454,11 +4454,11 @@
       "config_name": "Розница базовая (2.3)",
       "source_config_id": "RetailBase23",
       "version_branch": "2.3",
-      "version": "2.3.26.16",
-      "date": "2026-08-31",
-      "date_ru": "31.08.2026",
+      "version": "2.3.26.22",
+      "date": "2026-09-07",
+      "date_ru": "07.09.2026",
       "source": "its.1c.ru news",
-      "month": "202608",
+      "month": "202609",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4475,10 +4475,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-08-31",
-      "count": 13
+      "cutoff": "2025-09-07",
+      "count": 14
     },
-    "release_count": 105,
+    "release_count": 106,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4492,9 +4492,9 @@
       "config_name": "Розница базовая (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.14.140",
-      "date": "2026-09-01",
-      "date_ru": "01.09.2026",
+      "version": "3.0.14.143",
+      "date": "2026-09-07",
+      "date_ru": "07.09.2026",
       "source": "its.1c.ru news",
       "month": "202609",
       "source_kind": "its"
@@ -4513,10 +4513,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-01",
-      "count": 29
+      "cutoff": "2025-09-07",
+      "count": 30
     },
-    "release_count": 94,
+    "release_count": 95,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4720,9 +4720,9 @@
       "config_name": "Управление нашей фирмой (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.14.140",
-      "date": "2026-09-01",
-      "date_ru": "01.09.2026",
+      "version": "3.0.14.143",
+      "date": "2026-09-07",
+      "date_ru": "07.09.2026",
       "source": "its.1c.ru news",
       "month": "202609",
       "source_kind": "its"
@@ -4741,10 +4741,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-01",
-      "count": 27
+      "cutoff": "2025-09-07",
+      "count": 28
     },
-    "release_count": 92,
+    "release_count": 93,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4796,9 +4796,9 @@
       "config_name": "Управление нашей фирмой Базовая (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.14.140",
-      "date": "2026-09-01",
-      "date_ru": "01.09.2026",
+      "version": "3.0.14.143",
+      "date": "2026-09-07",
+      "date_ru": "07.09.2026",
       "source": "its.1c.ru news",
       "month": "202609",
       "source_kind": "its"
@@ -4817,10 +4817,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-01",
-      "count": 29
+      "cutoff": "2025-09-07",
+      "count": 30
     },
-    "release_count": 94,
+    "release_count": 95,
     "sources": [
       "its.1c.ru news"
     ]

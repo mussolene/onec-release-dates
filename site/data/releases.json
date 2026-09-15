@@ -63232,6 +63232,18 @@
     "config_name": "Библиотека электронных документов (1.9)",
     "source_config_id": "LED19",
     "version_branch": "1.9",
+    "version": "1.9.16.76",
+    "date": "2026-09-14",
+    "date_ru": "14.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "LED19_1_9",
+    "config_name": "Библиотека электронных документов (1.9)",
+    "source_config_id": "LED19",
+    "version_branch": "1.9",
     "version": "1.9.16.72",
     "date": "2026-08-18",
     "date_ru": "18.08.2026",

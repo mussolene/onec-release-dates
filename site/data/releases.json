@@ -115880,6 +115880,18 @@
     "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
     "source_config_id": "AccountingNPOCorp",
     "version_branch": "3.0",
+    "version": "3.0.206.3",
+    "date": "2026-09-15",
+    "date_ru": "15.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingNPOCorp_3_0",
+    "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
+    "source_config_id": "AccountingNPOCorp",
+    "version_branch": "3.0",
     "version": "3.0.205.5",
     "date": "2026-09-02",
     "date_ru": "02.09.2026",
@@ -118429,6 +118441,18 @@
     "date_ru": "27.09.2019",
     "source": "its.1c.ru news",
     "month": "201909",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingNPO_3_0",
+    "config_name": "Бухгалтерия некоммерческой организации (3.0)",
+    "source_config_id": "AccountingNPO",
+    "version_branch": "3.0",
+    "version": "3.0.206.3",
+    "date": "2026-09-15",
+    "date_ru": "15.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {

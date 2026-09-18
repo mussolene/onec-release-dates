@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T05:34:48",
+  "generated_at": "2026-09-18T05:22:48",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -1014,9 +1014,9 @@
         "config_name": "Управление производственным предприятием (1.3)",
         "source_config_id": "Enterprise13",
         "version_branch": "1.3",
-        "version": "1.3.282.1",
-        "date": "2026-09-09",
-        "date_ru": "09.09.2026",
+        "version": "1.3.283.1",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -1035,10 +1035,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-09",
-        "count": 40
+        "cutoff": "2025-09-17",
+        "count": 41
       },
-      "release_count": 369,
+      "release_count": 370,
       "sources": [
         "its.1c.ru news"
       ]
@@ -1470,9 +1470,9 @@
         "config_name": "ERP Управление предприятием (2.6)",
         "source_config_id": "EnterpriseERP20",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -1482,19 +1482,19 @@
         "config_name": "ERP Управление предприятием (2.6)",
         "source_config_id": "EnterpriseERP20",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 5
+        "cutoff": "2025-09-17",
+        "count": 6
       },
-      "release_count": 5,
+      "release_count": 6,
       "sources": [
         "its.1c.ru news"
       ]
@@ -3674,9 +3674,9 @@
         "config_name": "Клиент ЭДО 8 Базовая (2.10)",
         "source_config_id": "ClientEDOBase",
         "version_branch": "2.10",
-        "version": "2.10.2.23",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.10.2.25",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -3686,19 +3686,19 @@
         "config_name": "Клиент ЭДО 8 Базовая (2.10)",
         "source_config_id": "ClientEDOBase",
         "version_branch": "2.10",
-        "version": "2.10.2.23",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.10.2.25",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 1
+        "cutoff": "2025-09-17",
+        "count": 2
       },
-      "release_count": 1,
+      "release_count": 2,
       "sources": [
         "its.1c.ru news"
       ]
@@ -3864,9 +3864,9 @@
         "config_name": "Комплексная автоматизация (2.6)",
         "source_config_id": "ARAutomation20",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -3876,19 +3876,19 @@
         "config_name": "Комплексная автоматизация (2.6)",
         "source_config_id": "ARAutomation20",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 5
+        "cutoff": "2025-09-17",
+        "count": 6
       },
-      "release_count": 5,
+      "release_count": 6,
       "sources": [
         "its.1c.ru news"
       ]
@@ -5232,9 +5232,9 @@
         "config_name": "Управление торговлей (11.6)",
         "source_config_id": "Trade110",
         "version_branch": "11.6",
-        "version": "11.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "11.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -5244,19 +5244,19 @@
         "config_name": "Управление торговлей (11.6)",
         "source_config_id": "Trade110",
         "version_branch": "11.6",
-        "version": "11.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "11.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 5
+        "cutoff": "2025-09-17",
+        "count": 6
       },
-      "release_count": 5,
+      "release_count": 6,
       "sources": [
         "its.1c.ru news"
       ]
@@ -5498,9 +5498,9 @@
         "config_name": "Управление торговлей базовая (11.6)",
         "source_config_id": "TradeBase110",
         "version_branch": "11.6",
-        "version": "11.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "11.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -5510,19 +5510,19 @@
         "config_name": "Управление торговлей базовая (11.6)",
         "source_config_id": "TradeBase110",
         "version_branch": "11.6",
-        "version": "11.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "11.6.1.64",
+        "date": "2026-09-17",
+        "date_ru": "17.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 4
+        "cutoff": "2025-09-17",
+        "count": 5
       },
-      "release_count": 4,
+      "release_count": 5,
       "sources": [
         "its.1c.ru news"
       ]
@@ -8203,6 +8203,18 @@
       "date_ru": "01.10.2015",
       "source": "its.1c.ru news",
       "month": "201510",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "TradeBase110_11_6",
+      "config_name": "Управление торговлей базовая (11.6)",
+      "source_config_id": "TradeBase110",
+      "version_branch": "11.6",
+      "version": "11.6.1.64",
+      "date": "2026-09-17",
+      "date_ru": "17.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
       "source_kind": "its"
     },
     {
@@ -13495,6 +13507,18 @@
       "date_ru": "21.08.2015",
       "source": "its.1c.ru news",
       "month": "201508",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Trade110_11_6",
+      "config_name": "Управление торговлей (11.6)",
+      "source_config_id": "Trade110",
+      "version_branch": "11.6",
+      "version": "11.6.1.64",
+      "date": "2026-09-17",
+      "date_ru": "17.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
       "source_kind": "its"
     },
     {
@@ -94574,6 +94598,18 @@
       "config_name": "ERP Управление предприятием (2.6)",
       "source_config_id": "EnterpriseERP20",
       "version_branch": "2.6",
+      "version": "2.6.1.64",
+      "date": "2026-09-17",
+      "date_ru": "17.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "EnterpriseERP20_2_6",
+      "config_name": "ERP Управление предприятием (2.6)",
+      "source_config_id": "EnterpriseERP20",
+      "version_branch": "2.6",
       "version": "2.6.1.61",
       "date": "2026-09-10",
       "date_ru": "10.09.2026",
@@ -101191,6 +101227,18 @@
       "date_ru": "31.08.2016",
       "source": "its.1c.ru news",
       "month": "201608",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Enterprise13_1_3",
+      "config_name": "Управление производственным предприятием (1.3)",
+      "source_config_id": "Enterprise13",
+      "version_branch": "1.3",
+      "version": "1.3.283.1",
+      "date": "2026-09-17",
+      "date_ru": "17.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
       "source_kind": "its"
     },
     {
@@ -109430,6 +109478,18 @@
       "config_name": "Клиент ЭДО 8 Базовая (2.10)",
       "source_config_id": "ClientEDOBase",
       "version_branch": "2.10",
+      "version": "2.10.2.25",
+      "date": "2026-09-17",
+      "date_ru": "17.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "ClientEDOBase_2_10",
+      "config_name": "Клиент ЭДО 8 Базовая (2.10)",
+      "source_config_id": "ClientEDOBase",
+      "version_branch": "2.10",
       "version": "2.10.2.23",
       "date": "2026-09-10",
       "date_ru": "10.09.2026",
@@ -113006,6 +113066,18 @@
       "date_ru": "03.02.2021",
       "source": "rarus.ru release page",
       "source_kind": "rarus"
+    },
+    {
+      "config_id": "ARAutomation20_2_6",
+      "config_name": "Комплексная автоматизация (2.6)",
+      "source_config_id": "ARAutomation20",
+      "version_branch": "2.6",
+      "version": "2.6.1.64",
+      "date": "2026-09-17",
+      "date_ru": "17.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
     },
     {
       "config_id": "ARAutomation20_2_6",

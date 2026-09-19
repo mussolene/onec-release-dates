@@ -882,31 +882,31 @@
       "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.205.4",
-      "date": "2026-09-08",
-      "date_ru": "08.09.2026",
+      "version": "3.0.206.2",
+      "date": "2026-09-18",
+      "date_ru": "18.09.2026",
       "source": "its.1c.ru news",
       "month": "202609",
       "source_kind": "its"
     },
     "year_ago_release": {
       "config_id": "AccountingGP_3_0",
-      "config_name": "1С:Садовод (3.0)",
+      "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.181.2",
-      "date": "2025-08-19",
-      "date_ru": "19.08.2025",
+      "version": "3.0.182.8",
+      "date": "2025-09-16",
+      "date_ru": "16.09.2025",
       "source": "its.1c.ru news",
-      "month": "202508",
+      "month": "202509",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-08",
-      "count": 29
+      "cutoff": "2025-09-18",
+      "count": 28
     },
-    "release_count": 202,
+    "release_count": 203,
     "sources": [
       "its.1c.ru news"
     ]
@@ -920,31 +920,31 @@
       "config_name": "Садовод (базовая версия) (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.205.4",
-      "date": "2026-09-08",
-      "date_ru": "08.09.2026",
+      "version": "3.0.206.2",
+      "date": "2026-09-18",
+      "date_ru": "18.09.2026",
       "source": "its.1c.ru news",
       "month": "202609",
       "source_kind": "its"
     },
     "year_ago_release": {
       "config_id": "AccountingGPBase_3_0",
-      "config_name": "1С:Садовод (базовая версия) (3.0)",
+      "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.181.2",
-      "date": "2025-08-19",
-      "date_ru": "19.08.2025",
+      "version": "3.0.182.8",
+      "date": "2025-09-16",
+      "date_ru": "16.09.2025",
       "source": "its.1c.ru news",
-      "month": "202508",
+      "month": "202509",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-08",
-      "count": 29
+      "cutoff": "2025-09-18",
+      "count": 28
     },
-    "release_count": 202,
+    "release_count": 203,
     "sources": [
       "its.1c.ru news"
     ]

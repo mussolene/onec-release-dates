@@ -55456,6 +55456,18 @@
     "config_name": "Розница базовая (2.3)",
     "source_config_id": "RetailBase23",
     "version_branch": "2.3",
+    "version": "2.3.26.24",
+    "date": "2026-09-29",
+    "date_ru": "29.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "RetailBase23_2_3",
+    "config_name": "Розница базовая (2.3)",
+    "source_config_id": "RetailBase23",
+    "version_branch": "2.3",
     "version": "2.3.26.22",
     "date": "2026-09-07",
     "date_ru": "07.09.2026",
@@ -58317,6 +58329,18 @@
     "date_ru": "21.10.2022",
     "source": "its.1c.ru news",
     "month": "202210",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Retail23_2_3",
+    "config_name": "Розница (2.3)",
+    "source_config_id": "Retail23",
+    "version_branch": "2.3",
+    "version": "2.3.26.24",
+    "date": "2026-09-29",
+    "date_ru": "29.09.2026",
+    "source": "its.1c.ru news",
+    "month": "202609",
     "source_kind": "its"
   },
   {

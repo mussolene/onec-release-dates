@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T06:23:09",
+  "generated_at": "2026-09-30T06:07:51",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -4396,9 +4396,9 @@
         "config_name": "Розница (2.3)",
         "source_config_id": "Retail23",
         "version_branch": "2.3",
-        "version": "2.3.26.22",
-        "date": "2026-09-07",
-        "date_ru": "07.09.2026",
+        "version": "2.3.26.24",
+        "date": "2026-09-29",
+        "date_ru": "29.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
@@ -4408,19 +4408,19 @@
         "config_name": "Розница (2.3)",
         "source_config_id": "Retail23",
         "version_branch": "2.3",
-        "version": "2.3.23.44",
-        "date": "2025-08-27",
-        "date_ru": "27.08.2025",
+        "version": "2.3.23.50",
+        "date": "2025-09-16",
+        "date_ru": "16.09.2025",
         "source": "its.1c.ru news",
-        "month": "202508",
+        "month": "202509",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-07",
+        "cutoff": "2025-09-29",
         "count": 14
       },
-      "release_count": 105,
+      "release_count": 106,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4510,31 +4510,31 @@
         "config_name": "Розница базовая (2.3)",
         "source_config_id": "RetailBase23",
         "version_branch": "2.3",
-        "version": "2.3.26.22",
-        "date": "2026-09-07",
-        "date_ru": "07.09.2026",
+        "version": "2.3.26.24",
+        "date": "2026-09-29",
+        "date_ru": "29.09.2026",
         "source": "its.1c.ru news",
         "month": "202609",
         "source_kind": "its"
       },
       "year_ago_release": {
         "config_id": "RetailBase23_2_3",
-        "config_name": "Розница базовая (2.3)",
+        "config_name": "Розница (2.3)",
         "source_config_id": "RetailBase23",
         "version_branch": "2.3",
-        "version": "2.3.23.44",
-        "date": "2025-08-27",
-        "date_ru": "27.08.2025",
+        "version": "2.3.23.50",
+        "date": "2025-09-16",
+        "date_ru": "16.09.2025",
         "source": "its.1c.ru news",
-        "month": "202508",
+        "month": "202509",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-07",
+        "cutoff": "2025-09-29",
         "count": 14
       },
-      "release_count": 106,
+      "release_count": 107,
       "sources": [
         "its.1c.ru news"
       ]
@@ -60986,6 +60986,18 @@
       "config_name": "Розница базовая (2.3)",
       "source_config_id": "RetailBase23",
       "version_branch": "2.3",
+      "version": "2.3.26.24",
+      "date": "2026-09-29",
+      "date_ru": "29.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "RetailBase23_2_3",
+      "config_name": "Розница базовая (2.3)",
+      "source_config_id": "RetailBase23",
+      "version_branch": "2.3",
       "version": "2.3.26.22",
       "date": "2026-09-07",
       "date_ru": "07.09.2026",
@@ -63847,6 +63859,18 @@
       "date_ru": "21.10.2022",
       "source": "its.1c.ru news",
       "month": "202210",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Retail23_2_3",
+      "config_name": "Розница (2.3)",
+      "source_config_id": "Retail23",
+      "version_branch": "2.3",
+      "version": "2.3.26.24",
+      "date": "2026-09-29",
+      "date_ru": "29.09.2026",
+      "source": "its.1c.ru news",
+      "month": "202609",
       "source_kind": "its"
     },
     {

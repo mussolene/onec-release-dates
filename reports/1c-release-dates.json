@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T06:40:10",
+  "generated_at": "2026-10-02T06:24:12",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -2230,11 +2230,11 @@
         "config_name": "Бухгалтерия предприятия (3.0)",
         "source_config_id": "Accounting30",
         "version_branch": "3.0",
-        "version": "3.0.206.19",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "3.0.207.25",
+        "date": "2026-10-01",
+        "date_ru": "01.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -2242,19 +2242,19 @@
         "config_name": "Бухгалтерия предприятия (3.0)",
         "source_config_id": "Accounting30",
         "version_branch": "3.0",
-        "version": "3.0.182.33",
-        "date": "2025-09-05",
-        "date_ru": "05.09.2025",
+        "version": "3.0.183.24",
+        "date": "2025-09-23",
+        "date_ru": "23.09.2025",
         "source": "its.1c.ru news",
         "month": "202509",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
+        "cutoff": "2025-10-01",
         "count": 41
       },
-      "release_count": 495,
+      "release_count": 496,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2344,11 +2344,11 @@
         "config_name": "Бухгалтерия предприятия базовая (3.0)",
         "source_config_id": "AccountingBase30",
         "version_branch": "3.0",
-        "version": "3.0.206.19",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "3.0.207.25",
+        "date": "2026-10-01",
+        "date_ru": "01.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -2356,19 +2356,19 @@
         "config_name": "Бухгалтерия предприятия (3.0)",
         "source_config_id": "AccountingBase30",
         "version_branch": "3.0",
-        "version": "3.0.182.33",
-        "date": "2025-09-05",
-        "date_ru": "05.09.2025",
+        "version": "3.0.183.24",
+        "date": "2025-09-23",
+        "date_ru": "23.09.2025",
         "source": "its.1c.ru news",
         "month": "202509",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
+        "cutoff": "2025-10-01",
         "count": 41
       },
-      "release_count": 495,
+      "release_count": 496,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2458,11 +2458,11 @@
         "config_name": "Бухгалтерия предприятия КОРП (3.0)",
         "source_config_id": "AccountingCorp30",
         "version_branch": "3.0",
-        "version": "3.0.206.19",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "3.0.207.25",
+        "date": "2026-10-01",
+        "date_ru": "01.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -2470,19 +2470,19 @@
         "config_name": "Бухгалтерия предприятия (3.0)",
         "source_config_id": "AccountingCorp30",
         "version_branch": "3.0",
-        "version": "3.0.182.33",
-        "date": "2025-09-05",
-        "date_ru": "05.09.2025",
+        "version": "3.0.183.24",
+        "date": "2025-09-23",
+        "date_ru": "23.09.2025",
         "source": "its.1c.ru news",
         "month": "202509",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
+        "cutoff": "2025-10-01",
         "count": 41
       },
-      "release_count": 495,
+      "release_count": 496,
       "sources": [
         "its.1c.ru news"
       ]
@@ -135882,6 +135882,18 @@
       "config_name": "Бухгалтерия предприятия КОРП (3.0)",
       "source_config_id": "AccountingCorp30",
       "version_branch": "3.0",
+      "version": "3.0.207.25",
+      "date": "2026-10-01",
+      "date_ru": "01.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingCorp30_3_0",
+      "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+      "source_config_id": "AccountingCorp30",
+      "version_branch": "3.0",
       "version": "3.0.206.19",
       "date": "2026-09-10",
       "date_ru": "10.09.2026",
@@ -141839,6 +141851,18 @@
       "date_ru": "24.01.2017",
       "source": "its.1c.ru news",
       "month": "201701",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingBase30_3_0",
+      "config_name": "Бухгалтерия предприятия базовая (3.0)",
+      "source_config_id": "AccountingBase30",
+      "version_branch": "3.0",
+      "version": "3.0.207.25",
+      "date": "2026-10-01",
+      "date_ru": "01.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -150935,6 +150959,18 @@
       "date_ru": "12.10.2015",
       "source": "its.1c.ru news",
       "month": "201510",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Accounting30_3_0",
+      "config_name": "Бухгалтерия предприятия (3.0)",
+      "source_config_id": "Accounting30",
+      "version_branch": "3.0",
+      "version": "3.0.207.25",
+      "date": "2026-10-01",
+      "date_ru": "01.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {

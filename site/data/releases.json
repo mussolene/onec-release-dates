@@ -2752,6 +2752,18 @@
     "config_name": "Управление торговлей базовая (11.5)",
     "source_config_id": "TradeBase110",
     "version_branch": "11.5",
+    "version": "11.5.27.95",
+    "date": "2026-10-02",
+    "date_ru": "02.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "TradeBase110_11_5",
+    "config_name": "Управление торговлей базовая (11.5)",
+    "source_config_id": "TradeBase110",
+    "version_branch": "11.5",
     "version": "11.5.27.93",
     "date": "2026-09-24",
     "date_ru": "24.09.2026",
@@ -8085,6 +8097,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Trade110_11_5",
+    "config_name": "Управление торговлей (11.5)",
+    "source_config_id": "Trade110",
+    "version_branch": "11.5",
+    "version": "11.5.27.95",
+    "date": "2026-10-02",
+    "date_ru": "02.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {
@@ -89308,6 +89332,18 @@
     "config_name": "ERP Управление предприятием (2.5)",
     "source_config_id": "EnterpriseERP20",
     "version_branch": "2.5",
+    "version": "2.5.27.95",
+    "date": "2026-10-02",
+    "date_ru": "02.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "EnterpriseERP20_2_5",
+    "config_name": "ERP Управление предприятием (2.5)",
+    "source_config_id": "EnterpriseERP20",
+    "version_branch": "2.5",
     "version": "2.5.27.93",
     "date": "2026-09-24",
     "date_ru": "24.09.2026",
@@ -104164,6 +104200,18 @@
     "config_name": "Клиент ЭДО 8 Базовая (2.10)",
     "source_config_id": "ClientEDOBase",
     "version_branch": "2.10",
+    "version": "2.10.2.31",
+    "date": "2026-10-02",
+    "date_ru": "02.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ClientEDOBase_2_10",
+    "config_name": "Клиент ЭДО 8 Базовая (2.10)",
+    "source_config_id": "ClientEDOBase",
+    "version_branch": "2.10",
     "version": "2.10.2.25",
     "date": "2026-09-17",
     "date_ru": "17.09.2026",
@@ -107835,6 +107883,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ARAutomation20_2_5",
+    "config_name": "Комплексная автоматизация (2.5)",
+    "source_config_id": "ARAutomation20",
+    "version_branch": "2.5",
+    "version": "2.5.27.95",
+    "date": "2026-10-02",
+    "date_ru": "02.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {

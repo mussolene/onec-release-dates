@@ -2752,6 +2752,18 @@
     "config_name": "Управление торговлей базовая (11.5)",
     "source_config_id": "TradeBase110",
     "version_branch": "11.5",
+    "version": "11.5.27.98",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "TradeBase110_11_5",
+    "config_name": "Управление торговлей базовая (11.5)",
+    "source_config_id": "TradeBase110",
+    "version_branch": "11.5",
     "version": "11.5.27.95",
     "date": "2026-10-02",
     "date_ru": "02.10.2026",
@@ -8097,6 +8109,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Trade110_11_5",
+    "config_name": "Управление торговлей (11.5)",
+    "source_config_id": "Trade110",
+    "version_branch": "11.5",
+    "version": "11.5.27.98",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {
@@ -44937,6 +44961,18 @@
     "date_ru": "18.08.2015",
     "source": "its.1c.ru news",
     "month": "201508",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SSL31_3_1",
+    "config_name": "Библиотека стандартных подсистем (3.1)",
+    "source_config_id": "SSL31",
+    "version_branch": "3.1",
+    "version": "3.1.12.348",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {
@@ -89464,6 +89500,18 @@
     "config_name": "ERP Управление предприятием (2.5)",
     "source_config_id": "EnterpriseERP20",
     "version_branch": "2.5",
+    "version": "2.5.27.98",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "EnterpriseERP20_2_5",
+    "config_name": "ERP Управление предприятием (2.5)",
+    "source_config_id": "EnterpriseERP20",
+    "version_branch": "2.5",
     "version": "2.5.27.95",
     "date": "2026-10-02",
     "date_ru": "02.10.2026",
@@ -108027,6 +108075,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ARAutomation20_2_5",
+    "config_name": "Комплексная автоматизация (2.5)",
+    "source_config_id": "ARAutomation20",
+    "version_branch": "2.5",
+    "version": "2.5.27.98",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {
@@ -130556,6 +130616,30 @@
     "config_name": "Бухгалтерия предприятия КОРП (3.0)",
     "source_config_id": "AccountingCorp30",
     "version_branch": "3.0",
+    "version": "3.0.208.14",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorp30_3_0",
+    "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+    "source_config_id": "AccountingCorp30",
+    "version_branch": "3.0",
+    "version": "3.0.207.28",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorp30_3_0",
+    "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+    "source_config_id": "AccountingCorp30",
+    "version_branch": "3.0",
     "version": "3.0.207.25",
     "date": "2026-10-01",
     "date_ru": "01.10.2026",
@@ -136525,6 +136609,30 @@
     "date_ru": "24.01.2017",
     "source": "its.1c.ru news",
     "month": "201701",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingBase30_3_0",
+    "config_name": "Бухгалтерия предприятия базовая (3.0)",
+    "source_config_id": "AccountingBase30",
+    "version_branch": "3.0",
+    "version": "3.0.208.14",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingBase30_3_0",
+    "config_name": "Бухгалтерия предприятия базовая (3.0)",
+    "source_config_id": "AccountingBase30",
+    "version_branch": "3.0",
+    "version": "3.0.207.28",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {
@@ -145633,6 +145741,30 @@
     "date_ru": "12.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Accounting30_3_0",
+    "config_name": "Бухгалтерия предприятия (3.0)",
+    "source_config_id": "Accounting30",
+    "version_branch": "3.0",
+    "version": "3.0.208.14",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Accounting30_3_0",
+    "config_name": "Бухгалтерия предприятия (3.0)",
+    "source_config_id": "Accounting30",
+    "version_branch": "3.0",
+    "version": "3.0.207.28",
+    "date": "2026-10-08",
+    "date_ru": "08.10.2026",
+    "source": "its.1c.ru news",
+    "month": "202610",
     "source_kind": "its"
   },
   {

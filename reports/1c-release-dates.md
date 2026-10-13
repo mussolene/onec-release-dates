@@ -1,19 +1,19 @@
 # 1C release dates
 
-Generated: 2026-10-12T06:43:18
+Generated: 2026-10-13T07:12:01
 
 Configurations: 145
 
-Releases: 12905
+Releases: 12907
 
 
 ## Configuration Summary
 
 | configuration | id | current_release | year_ago_release | release_count | sources |
 | --- | --- | --- | --- | --- | --- |
-| 1C:ERP WE (English code) (2.5) | ERPWEENG_2_5 | 2.5.27.88 / 11.09.2026 | 2.5.22.99 / 11.09.2025 | 159 | its.1c.ru news |
+| 1C:ERP WE (English code) (2.5) | ERPWEENG_2_5 | 2.5.27.98 / 12.10.2026 | 2.5.24.57 / 03.10.2025 | 160 | its.1c.ru news |
 | 1C:ERP WE (English code) (2.6) | ERPWEENG_2_6 | 2.6.1.61 / 10.09.2026 | 2.6.1.61 / 10.09.2026 | 4 | its.1c.ru news |
-| 1C:ERP WE (с русским кодом) (2.5) | ERPWERU_2_5 | 2.5.27.88 / 11.09.2026 | 2.5.22.99 / 11.09.2025 | 162 | its.1c.ru news |
+| 1C:ERP WE (с русским кодом) (2.5) | ERPWERU_2_5 | 2.5.27.98 / 12.10.2026 | 2.5.24.57 / 03.10.2025 | 163 | its.1c.ru news |
 | 1C:ERP WE (с русским кодом) (2.6) | ERPWERU_2_6 | 2.6.1.61 / 10.09.2026 | 2.6.1.61 / 10.09.2026 | 4 | its.1c.ru news |
 | 1С:ERP.Управление холдингом (3.1) | ERP_UH31_3_1 | 3.1.13.25 / 13.05.2025 | 3.1.13.25 / 13.05.2025 | 53 | its.1c.ru news |
 | 1С:ERP.Управление холдингом (3.2) | ERP_UH32_3_2 | 3.2.12.9 / 01.09.2026 | 3.2.9.2 / 15.08.2025 | 52 | its.1c.ru news |

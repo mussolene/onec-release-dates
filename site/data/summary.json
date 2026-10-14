@@ -882,11 +882,11 @@
       "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.206.2",
-      "date": "2026-09-18",
-      "date_ru": "18.09.2026",
+      "version": "3.0.207.9",
+      "date": "2026-10-13",
+      "date_ru": "13.10.2026",
       "source": "its.1c.ru news",
-      "month": "202609",
+      "month": "202610",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -894,19 +894,19 @@
       "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGP",
       "version_branch": "3.0",
-      "version": "3.0.182.8",
-      "date": "2025-09-16",
-      "date_ru": "16.09.2025",
+      "version": "3.0.184.2",
+      "date": "2025-10-08",
+      "date_ru": "08.10.2025",
       "source": "its.1c.ru news",
-      "month": "202509",
+      "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-18",
-      "count": 28
+      "cutoff": "2025-10-13",
+      "count": 26
     },
-    "release_count": 203,
+    "release_count": 204,
     "sources": [
       "its.1c.ru news"
     ]
@@ -920,11 +920,11 @@
       "config_name": "Садовод (базовая версия) (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.206.2",
-      "date": "2026-09-18",
-      "date_ru": "18.09.2026",
+      "version": "3.0.207.9",
+      "date": "2026-10-13",
+      "date_ru": "13.10.2026",
       "source": "its.1c.ru news",
-      "month": "202609",
+      "month": "202610",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -932,19 +932,19 @@
       "config_name": "Садовод (3.0)",
       "source_config_id": "AccountingGPBase",
       "version_branch": "3.0",
-      "version": "3.0.182.8",
-      "date": "2025-09-16",
-      "date_ru": "16.09.2025",
+      "version": "3.0.184.2",
+      "date": "2025-10-08",
+      "date_ru": "08.10.2025",
       "source": "its.1c.ru news",
-      "month": "202509",
+      "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-18",
-      "count": 28
+      "cutoff": "2025-10-13",
+      "count": 26
     },
-    "release_count": 203,
+    "release_count": 204,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2060,9 +2060,9 @@
       "config_name": "Бухгалтерия некоммерческой организации (3.0)",
       "source_config_id": "AccountingNPO",
       "version_branch": "3.0",
-      "version": "3.0.207.12",
-      "date": "2026-10-09",
-      "date_ru": "09.10.2026",
+      "version": "3.0.208.3",
+      "date": "2026-10-13",
+      "date_ru": "13.10.2026",
       "source": "its.1c.ru news",
       "month": "202610",
       "source_kind": "its"
@@ -2081,10 +2081,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-09",
-      "count": 39
+      "cutoff": "2025-10-13",
+      "count": 40
     },
-    "release_count": 228,
+    "release_count": 229,
     "sources": [
       "its.1c.ru news"
     ]
@@ -2098,9 +2098,9 @@
       "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
       "source_config_id": "AccountingNPOCorp",
       "version_branch": "3.0",
-      "version": "3.0.207.12",
-      "date": "2026-10-09",
-      "date_ru": "09.10.2026",
+      "version": "3.0.208.3",
+      "date": "2026-10-13",
+      "date_ru": "13.10.2026",
       "source": "its.1c.ru news",
       "month": "202610",
       "source_kind": "its"
@@ -2119,10 +2119,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-09",
-      "count": 39
+      "cutoff": "2025-10-13",
+      "count": 40
     },
-    "release_count": 215,
+    "release_count": 216,
     "sources": [
       "its.1c.ru news"
     ]

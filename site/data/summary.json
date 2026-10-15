@@ -198,31 +198,31 @@
       "config_name": "ERP.Управление холдингом (3.2)",
       "source_config_id": "ERP_UH32",
       "version_branch": "3.2",
-      "version": "3.2.12.9",
-      "date": "2026-09-01",
-      "date_ru": "01.09.2026",
+      "version": "3.2.12.12",
+      "date": "2026-10-14",
+      "date_ru": "14.10.2026",
       "source": "its.1c.ru news",
-      "month": "202609",
+      "month": "202610",
       "source_kind": "its"
     },
     "year_ago_release": {
       "config_id": "ERP_UH32_3_2",
-      "config_name": "1С:ERP.Управление холдингом (3.2)",
+      "config_name": "ERP.Управление холдингом (3.2)",
       "source_config_id": "ERP_UH32",
       "version_branch": "3.2",
-      "version": "3.2.9.2",
-      "date": "2025-08-15",
-      "date_ru": "15.08.2025",
+      "version": "3.2.10.2",
+      "date": "2025-10-14",
+      "date_ru": "14.10.2025",
       "source": "its.1c.ru news",
-      "month": "202508",
+      "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-01",
-      "count": 24
+      "cutoff": "2025-10-14",
+      "count": 21
     },
-    "release_count": 52,
+    "release_count": 53,
     "sources": [
       "its.1c.ru news"
     ]

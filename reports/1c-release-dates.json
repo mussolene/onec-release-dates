@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T05:32:47",
+  "generated_at": "2026-10-24T05:11:40",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -64,11 +64,11 @@
         "config_name": "1C:ERP WE (English code) (2.6)",
         "source_config_id": "ERPWEENG",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.2.68",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -76,19 +76,19 @@
         "config_name": "1C:ERP WE (English code) (2.6)",
         "source_config_id": "ERPWEENG",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.2.68",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 4
+        "cutoff": "2025-10-23",
+        "count": 5
       },
-      "release_count": 4,
+      "release_count": 5,
       "sources": [
         "its.1c.ru news"
       ]
@@ -140,11 +140,11 @@
         "config_name": "1C:ERP WE (с русским кодом) (2.6)",
         "source_config_id": "ERPWERU",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.2.68",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -152,19 +152,19 @@
         "config_name": "1C:ERP WE (с русским кодом) (2.6)",
         "source_config_id": "ERPWERU",
         "version_branch": "2.6",
-        "version": "2.6.1.61",
-        "date": "2026-09-10",
-        "date_ru": "10.09.2026",
+        "version": "2.6.2.68",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
-        "month": "202609",
+        "month": "202610",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-09-10",
-        "count": 4
+        "cutoff": "2025-10-23",
+        "count": 5
       },
-      "release_count": 4,
+      "release_count": 5,
       "sources": [
         "its.1c.ru news"
       ]
@@ -330,9 +330,9 @@
         "config_name": "Библиотека стандартных подсистем (3.1)",
         "source_config_id": "SSL31",
         "version_branch": "3.1",
-        "version": "3.1.12.348",
-        "date": "2026-10-08",
-        "date_ru": "08.10.2026",
+        "version": "3.1.12.362",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -342,19 +342,19 @@
         "config_name": "Библиотека стандартных подсистем (3.1)",
         "source_config_id": "SSL31",
         "version_branch": "3.1",
-        "version": "3.1.11.309",
-        "date": "2025-09-26",
-        "date_ru": "26.09.2025",
+        "version": "3.1.11.335",
+        "date": "2025-10-23",
+        "date_ru": "23.10.2025",
         "source": "its.1c.ru news",
-        "month": "202509",
+        "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-08",
-        "count": 22
+        "cutoff": "2025-10-23",
+        "count": 21
       },
-      "release_count": 261,
+      "release_count": 262,
       "sources": [
         "its.1c.ru news"
       ]
@@ -1014,9 +1014,9 @@
         "config_name": "Управление производственным предприятием (1.3)",
         "source_config_id": "Enterprise13",
         "version_branch": "1.3",
-        "version": "1.3.286.1",
-        "date": "2026-10-21",
-        "date_ru": "21.10.2026",
+        "version": "1.3.286.2",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -1035,10 +1035,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-21",
-        "count": 41
+        "cutoff": "2025-10-23",
+        "count": 42
       },
-      "release_count": 375,
+      "release_count": 376,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2078,9 +2078,9 @@
         "config_name": "Бухгалтерия некоммерческой организации (3.0)",
         "source_config_id": "AccountingNPO",
         "version_branch": "3.0",
-        "version": "3.0.208.4",
-        "date": "2026-10-20",
-        "date_ru": "20.10.2026",
+        "version": "3.0.209.6",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -2090,19 +2090,19 @@
         "config_name": "Бухгалтерия некоммерческой организации (3.0)",
         "source_config_id": "AccountingNPO",
         "version_branch": "3.0",
-        "version": "3.0.184.13",
-        "date": "2025-10-03",
-        "date_ru": "03.10.2025",
+        "version": "3.0.184.14",
+        "date": "2025-10-21",
+        "date_ru": "21.10.2025",
         "source": "its.1c.ru news",
         "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-20",
+        "cutoff": "2025-10-23",
         "count": 41
       },
-      "release_count": 230,
+      "release_count": 231,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2116,9 +2116,9 @@
         "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
         "source_config_id": "AccountingNPOCorp",
         "version_branch": "3.0",
-        "version": "3.0.208.4",
-        "date": "2026-10-20",
-        "date_ru": "20.10.2026",
+        "version": "3.0.209.6",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -2128,19 +2128,19 @@
         "config_name": "Бухгалтерия некоммерческой организации (3.0)",
         "source_config_id": "AccountingNPOCorp",
         "version_branch": "3.0",
-        "version": "3.0.184.13",
-        "date": "2025-10-03",
-        "date_ru": "03.10.2025",
+        "version": "3.0.184.14",
+        "date": "2025-10-21",
+        "date_ru": "21.10.2025",
         "source": "its.1c.ru news",
         "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-20",
+        "cutoff": "2025-10-23",
         "count": 41
       },
-      "release_count": 217,
+      "release_count": 218,
       "sources": [
         "its.1c.ru news"
       ]
@@ -5498,9 +5498,9 @@
         "config_name": "Управление торговлей базовая (11.6)",
         "source_config_id": "TradeBase110",
         "version_branch": "11.6",
-        "version": "11.6.2.59",
-        "date": "2026-10-09",
-        "date_ru": "09.10.2026",
+        "version": "11.6.2.68",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -5510,19 +5510,19 @@
         "config_name": "Управление торговлей базовая (11.6)",
         "source_config_id": "TradeBase110",
         "version_branch": "11.6",
-        "version": "11.6.2.59",
-        "date": "2026-10-09",
-        "date_ru": "09.10.2026",
+        "version": "11.6.2.68",
+        "date": "2026-10-23",
+        "date_ru": "23.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-09",
-        "count": 7
+        "cutoff": "2025-10-23",
+        "count": 8
       },
-      "release_count": 7,
+      "release_count": 8,
       "sources": [
         "its.1c.ru news"
       ]
@@ -8203,6 +8203,18 @@
       "date_ru": "01.10.2015",
       "source": "its.1c.ru news",
       "month": "201510",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "TradeBase110_11_6",
+      "config_name": "Управление торговлей базовая (11.6)",
+      "source_config_id": "TradeBase110",
+      "version_branch": "11.6",
+      "version": "11.6.2.68",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -50630,6 +50642,18 @@
       "config_name": "Библиотека стандартных подсистем (3.1)",
       "source_config_id": "SSL31",
       "version_branch": "3.1",
+      "version": "3.1.12.362",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "SSL31_3_1",
+      "config_name": "Библиотека стандартных подсистем (3.1)",
+      "source_config_id": "SSL31",
+      "version_branch": "3.1",
       "version": "3.1.12.348",
       "date": "2026-10-08",
       "date_ru": "08.10.2026",
@@ -89918,6 +89942,18 @@
       "config_name": "1C:ERP WE (с русским кодом) (2.6)",
       "source_config_id": "ERPWERU",
       "version_branch": "2.6",
+      "version": "2.6.2.68",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "ERPWERU_2_6",
+      "config_name": "1C:ERP WE (с русским кодом) (2.6)",
+      "source_config_id": "ERPWERU",
+      "version_branch": "2.6",
       "version": "2.6.1.61",
       "date": "2026-09-10",
       "date_ru": "10.09.2026",
@@ -91927,6 +91963,18 @@
       "date_ru": "18.04.2022",
       "source": "its.1c.ru news",
       "month": "202204",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "ERPWEENG_2_6",
+      "config_name": "1C:ERP WE (English code) (2.6)",
+      "source_config_id": "ERPWEENG",
+      "version_branch": "2.6",
+      "version": "2.6.2.68",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -101959,6 +102007,18 @@
       "date_ru": "31.08.2016",
       "source": "its.1c.ru news",
       "month": "201608",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Enterprise13_1_3",
+      "config_name": "Управление производственным предприятием (1.3)",
+      "source_config_id": "Enterprise13",
+      "version_branch": "1.3",
+      "version": "1.3.286.2",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -122382,6 +122442,18 @@
       "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
       "source_config_id": "AccountingNPOCorp",
       "version_branch": "3.0",
+      "version": "3.0.209.6",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingNPOCorp_3_0",
+      "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
+      "source_config_id": "AccountingNPOCorp",
+      "version_branch": "3.0",
       "version": "3.0.208.4",
       "date": "2026-10-20",
       "date_ru": "20.10.2026",
@@ -124979,6 +125051,18 @@
       "date_ru": "27.09.2019",
       "source": "its.1c.ru news",
       "month": "201909",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingNPO_3_0",
+      "config_name": "Бухгалтерия некоммерческой организации (3.0)",
+      "source_config_id": "AccountingNPO",
+      "version_branch": "3.0",
+      "version": "3.0.209.6",
+      "date": "2026-10-23",
+      "date_ru": "23.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {

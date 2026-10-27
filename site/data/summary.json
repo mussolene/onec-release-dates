@@ -4618,17 +4618,17 @@
       "config_name": "Система проектирования прикладных решений (2.0)",
       "source_config_id": "Modeling",
       "version_branch": "2.0",
-      "version": "2.0.13.7",
-      "date": "2024-09-24",
-      "date_ru": "24.09.2024",
+      "version": "2.0.14.27",
+      "date": "2025-10-27",
+      "date_ru": "27.10.2025",
       "source": "its.1c.ru news",
-      "month": "202409",
+      "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2024-10-27",
-      "count": 6
+      "cutoff": "2025-10-27",
+      "count": 1
     },
     "release_count": 19,
     "sources": [

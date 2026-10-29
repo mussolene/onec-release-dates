@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T06:25:37",
+  "generated_at": "2026-10-29T06:36:16",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -2754,6 +2754,44 @@
       ]
     },
     {
+      "config_id": "BudgetDocMng30_3_1",
+      "config_name": "Документооборот государственного учреждения 8 (3.1)",
+      "slug": "BudgetDocMng30_3_1",
+      "latest": {
+        "config_id": "BudgetDocMng30_3_1",
+        "config_name": "Документооборот государственного учреждения 8 (3.1)",
+        "source_config_id": "BudgetDocMng30",
+        "version_branch": "3.1",
+        "version": "3.1.1.15",
+        "date": "2026-10-28",
+        "date_ru": "28.10.2026",
+        "source": "its.1c.ru news",
+        "month": "202610",
+        "source_kind": "its"
+      },
+      "year_ago_release": {
+        "config_id": "BudgetDocMng30_3_1",
+        "config_name": "Документооборот государственного учреждения 8 (3.1)",
+        "source_config_id": "BudgetDocMng30",
+        "version_branch": "3.1",
+        "version": "3.1.1.15",
+        "date": "2026-10-28",
+        "date_ru": "28.10.2026",
+        "source": "its.1c.ru news",
+        "month": "202610",
+        "source_kind": "its"
+      },
+      "period": {
+        "days": 365,
+        "cutoff": "2025-10-28",
+        "count": 1
+      },
+      "release_count": 1,
+      "sources": [
+        "its.1c.ru news"
+      ]
+    },
+    {
       "config_id": "DocMngCorp14_1_4",
       "config_name": "Документооборот КОРП (1.4)",
       "slug": "DocMngCorp14_1_4",
@@ -2944,6 +2982,44 @@
       ]
     },
     {
+      "config_id": "DocMngCorp30_3_1",
+      "config_name": "Документооборот КОРП (3.1)",
+      "slug": "DocMngCorp30_3_1",
+      "latest": {
+        "config_id": "DocMngCorp30_3_1",
+        "config_name": "Документооборот КОРП (3.1)",
+        "source_config_id": "DocMngCorp30",
+        "version_branch": "3.1",
+        "version": "3.1.1.15",
+        "date": "2026-10-28",
+        "date_ru": "28.10.2026",
+        "source": "its.1c.ru news",
+        "month": "202610",
+        "source_kind": "its"
+      },
+      "year_ago_release": {
+        "config_id": "DocMngCorp30_3_1",
+        "config_name": "Документооборот КОРП (3.1)",
+        "source_config_id": "DocMngCorp30",
+        "version_branch": "3.1",
+        "version": "3.1.1.15",
+        "date": "2026-10-28",
+        "date_ru": "28.10.2026",
+        "source": "its.1c.ru news",
+        "month": "202610",
+        "source_kind": "its"
+      },
+      "period": {
+        "days": 365,
+        "cutoff": "2025-10-28",
+        "count": 1
+      },
+      "release_count": 1,
+      "sources": [
+        "its.1c.ru news"
+      ]
+    },
+    {
       "config_id": "DocMng14_1_4",
       "config_name": "Документооборот ПРОФ (1.4)",
       "slug": "DocMng14_1_4",
@@ -3129,6 +3205,44 @@
         "count": 6
       },
       "release_count": 11,
+      "sources": [
+        "its.1c.ru news"
+      ]
+    },
+    {
+      "config_id": "DocMngHolding3_3_1",
+      "config_name": "Документооборот Холдинга 3.0 (3.1)",
+      "slug": "DocMngHolding3_3_1",
+      "latest": {
+        "config_id": "DocMngHolding3_3_1",
+        "config_name": "Документооборот Холдинга 3.0 (3.1)",
+        "source_config_id": "DocMngHolding3",
+        "version_branch": "3.1",
+        "version": "3.1.1.15",
+        "date": "2026-10-28",
+        "date_ru": "28.10.2026",
+        "source": "its.1c.ru news",
+        "month": "202610",
+        "source_kind": "its"
+      },
+      "year_ago_release": {
+        "config_id": "DocMngHolding3_3_1",
+        "config_name": "Документооборот Холдинга 3.0 (3.1)",
+        "source_config_id": "DocMngHolding3",
+        "version_branch": "3.1",
+        "version": "3.1.1.15",
+        "date": "2026-10-28",
+        "date_ru": "28.10.2026",
+        "source": "its.1c.ru news",
+        "month": "202610",
+        "source_kind": "its"
+      },
+      "period": {
+        "days": 365,
+        "cutoff": "2025-10-28",
+        "count": 1
+      },
+      "release_count": 1,
       "sources": [
         "its.1c.ru news"
       ]
@@ -106654,6 +106768,18 @@
       "source_kind": "its"
     },
     {
+      "config_id": "DocMngHolding3_3_1",
+      "config_name": "Документооборот Холдинга 3.0 (3.1)",
+      "source_config_id": "DocMngHolding3",
+      "version_branch": "3.1",
+      "version": "3.1.1.15",
+      "date": "2026-10-28",
+      "date_ru": "28.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
+      "source_kind": "its"
+    },
+    {
       "config_id": "DocMngHolding3_3_0",
       "config_name": "Документооборот Холдинга 3.0",
       "source_config_id": "DocMngHolding3",
@@ -106915,6 +107041,18 @@
       "date_ru": "12.05.2016",
       "source": "its.1c.ru news",
       "month": "201605",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "DocMngCorp30_3_1",
+      "config_name": "Документооборот КОРП (3.1)",
+      "source_config_id": "DocMngCorp30",
+      "version_branch": "3.1",
+      "version": "3.1.1.15",
+      "date": "2026-10-28",
+      "date_ru": "28.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -112723,6 +112861,18 @@
       "date_ru": "09.09.2015",
       "source": "its.1c.ru news",
       "month": "201509",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "BudgetDocMng30_3_1",
+      "config_name": "Документооборот государственного учреждения 8 (3.1)",
+      "source_config_id": "BudgetDocMng30",
+      "version_branch": "3.1",
+      "version": "3.1.1.15",
+      "date": "2026-10-28",
+      "date_ru": "28.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:36:16",
+  "generated_at": "2026-10-31T06:25:35",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -1014,9 +1014,9 @@
         "config_name": "Управление производственным предприятием (1.3)",
         "source_config_id": "Enterprise13",
         "version_branch": "1.3",
-        "version": "1.3.286.2",
-        "date": "2026-10-23",
-        "date_ru": "23.10.2026",
+        "version": "1.3.287.1",
+        "date": "2026-10-30",
+        "date_ru": "30.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -1026,19 +1026,19 @@
         "config_name": "Управление производственным предприятием (1.3)",
         "source_config_id": "Enterprise13",
         "version_branch": "1.3",
-        "version": "1.3.257.1",
-        "date": "2025-10-17",
-        "date_ru": "17.10.2025",
+        "version": "1.3.258.1",
+        "date": "2025-10-30",
+        "date_ru": "30.10.2025",
         "source": "its.1c.ru news",
         "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-23",
+        "cutoff": "2025-10-30",
         "count": 42
       },
-      "release_count": 376,
+      "release_count": 377,
       "sources": [
         "its.1c.ru news"
       ]
@@ -1888,9 +1888,9 @@
         "config_name": "Бухгалтерия государственного учреждения (2.0)",
         "source_config_id": "StateAccounting20",
         "version_branch": "2.0",
-        "version": "2.0.111.61",
-        "date": "2026-10-16",
-        "date_ru": "16.10.2026",
+        "version": "2.0.111.70",
+        "date": "2026-10-30",
+        "date_ru": "30.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -1900,19 +1900,19 @@
         "config_name": "Бухгалтерия государственного учреждения (2.0)",
         "source_config_id": "StateAccounting20",
         "version_branch": "2.0",
-        "version": "2.0.105.82",
-        "date": "2025-10-08",
-        "date_ru": "08.10.2025",
+        "version": "2.0.106.57",
+        "date": "2025-10-30",
+        "date_ru": "30.10.2025",
         "source": "its.1c.ru news",
         "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-16",
+        "cutoff": "2025-10-30",
         "count": 21
       },
-      "release_count": 342,
+      "release_count": 343,
       "sources": [
         "its.1c.ru news"
       ]
@@ -1964,9 +1964,9 @@
         "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
         "source_config_id": "StateAccountingBase20",
         "version_branch": "2.0",
-        "version": "2.0.111.61",
-        "date": "2026-10-16",
-        "date_ru": "16.10.2026",
+        "version": "2.0.111.70",
+        "date": "2026-10-30",
+        "date_ru": "30.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -1976,19 +1976,19 @@
         "config_name": "Бухгалтерия государственного учреждения (2.0)",
         "source_config_id": "StateAccountingBase20",
         "version_branch": "2.0",
-        "version": "2.0.105.82",
-        "date": "2025-10-08",
-        "date_ru": "08.10.2025",
+        "version": "2.0.106.57",
+        "date": "2025-10-30",
+        "date_ru": "30.10.2025",
         "source": "its.1c.ru news",
         "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-16",
+        "cutoff": "2025-10-30",
         "count": 21
       },
-      "release_count": 227,
+      "release_count": 228,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2002,9 +2002,9 @@
         "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
         "source_config_id": "StateAccountingCorp",
         "version_branch": "2.0",
-        "version": "2.0.111.61",
-        "date": "2026-10-16",
-        "date_ru": "16.10.2026",
+        "version": "2.0.111.70",
+        "date": "2026-10-30",
+        "date_ru": "30.10.2026",
         "source": "its.1c.ru news",
         "month": "202610",
         "source_kind": "its"
@@ -2014,19 +2014,19 @@
         "config_name": "Бухгалтерия государственного учреждения (2.0)",
         "source_config_id": "StateAccountingCorp",
         "version_branch": "2.0",
-        "version": "2.0.105.82",
-        "date": "2025-10-08",
-        "date_ru": "08.10.2025",
+        "version": "2.0.106.57",
+        "date": "2025-10-30",
+        "date_ru": "30.10.2025",
         "source": "its.1c.ru news",
         "month": "202510",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-10-16",
+        "cutoff": "2025-10-30",
         "count": 21
       },
-      "release_count": 114,
+      "release_count": 115,
       "sources": [
         "its.1c.ru news"
       ]
@@ -38528,6 +38528,18 @@
       "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
       "source_config_id": "StateAccountingCorp",
       "version_branch": "2.0",
+      "version": "2.0.111.70",
+      "date": "2026-10-30",
+      "date_ru": "30.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "StateAccountingCorp_2_0",
+      "config_name": "Бухгалтерия государственного учреждения КОРП (2.0)",
+      "source_config_id": "StateAccountingCorp",
+      "version_branch": "2.0",
       "version": "2.0.111.61",
       "date": "2026-10-16",
       "date_ru": "16.10.2026",
@@ -41905,6 +41917,18 @@
       "date_ru": "14.08.2015",
       "source": "its.1c.ru news",
       "month": "201508",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "StateAccountingBase20_2_0",
+      "config_name": "Бухгалтерия государственного учреждения базовая (2.0)",
+      "source_config_id": "StateAccountingBase20",
+      "version_branch": "2.0",
+      "version": "2.0.111.70",
+      "date": "2026-10-30",
+      "date_ru": "30.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -46645,6 +46669,18 @@
       "date_ru": "14.08.2015",
       "source": "its.1c.ru news",
       "month": "201508",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "StateAccounting20_2_0",
+      "config_name": "Бухгалтерия государственного учреждения (2.0)",
+      "source_config_id": "StateAccounting20",
+      "version_branch": "2.0",
+      "version": "2.0.111.70",
+      "date": "2026-10-30",
+      "date_ru": "30.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {
@@ -102169,6 +102205,18 @@
       "date_ru": "31.08.2016",
       "source": "its.1c.ru news",
       "month": "201608",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Enterprise13_1_3",
+      "config_name": "Управление производственным предприятием (1.3)",
+      "source_config_id": "Enterprise13",
+      "version_branch": "1.3",
+      "version": "1.3.287.1",
+      "date": "2026-10-30",
+      "date_ru": "30.10.2026",
+      "source": "its.1c.ru news",
+      "month": "202610",
       "source_kind": "its"
     },
     {

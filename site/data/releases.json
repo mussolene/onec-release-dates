@@ -2788,6 +2788,18 @@
     "config_name": "Управление торговлей базовая (11.5)",
     "source_config_id": "TradeBase110",
     "version_branch": "11.5",
+    "version": "11.5.27.107",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "TradeBase110_11_5",
+    "config_name": "Управление торговлей базовая (11.5)",
+    "source_config_id": "TradeBase110",
+    "version_branch": "11.5",
     "version": "11.5.27.101",
     "date": "2026-10-16",
     "date_ru": "16.10.2026",
@@ -8193,6 +8205,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Trade110_11_5",
+    "config_name": "Управление торговлей (11.5)",
+    "source_config_id": "Trade110",
+    "version_branch": "11.5",
+    "version": "11.5.27.107",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -84520,6 +84544,18 @@
     "config_name": "1C:ERP WE (с русским кодом) (2.6)",
     "source_config_id": "ERPWERU",
     "version_branch": "2.6",
+    "version": "2.6.2.72",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ERPWERU_2_6",
+    "config_name": "1C:ERP WE (с русским кодом) (2.6)",
+    "source_config_id": "ERPWERU",
+    "version_branch": "2.6",
     "version": "2.6.2.68",
     "date": "2026-10-23",
     "date_ru": "23.10.2026",
@@ -86541,6 +86577,18 @@
     "date_ru": "18.04.2022",
     "source": "its.1c.ru news",
     "month": "202204",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ERPWEENG_2_6",
+    "config_name": "1C:ERP WE (English code) (2.6)",
+    "source_config_id": "ERPWEENG",
+    "version_branch": "2.6",
+    "version": "2.6.2.72",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -89985,6 +90033,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "EnterpriseERP20_2_5",
+    "config_name": "ERP Управление предприятием (2.5)",
+    "source_config_id": "EnterpriseERP20",
+    "version_branch": "2.5",
+    "version": "2.5.27.107",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -108699,6 +108759,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ARAutomation20_2_5",
+    "config_name": "Комплексная автоматизация (2.5)",
+    "source_config_id": "ARAutomation20",
+    "version_branch": "2.5",
+    "version": "2.5.27.107",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -131432,6 +131504,18 @@
     "config_name": "Бухгалтерия предприятия КОРП (3.0)",
     "source_config_id": "AccountingCorp30",
     "version_branch": "3.0",
+    "version": "3.0.210.11",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorp30_3_0",
+    "config_name": "Бухгалтерия предприятия КОРП (3.0)",
+    "source_config_id": "AccountingCorp30",
+    "version_branch": "3.0",
     "version": "3.0.210.8",
     "date": "2026-10-29",
     "date_ru": "29.10.2026",
@@ -137449,6 +137533,18 @@
     "date_ru": "24.01.2017",
     "source": "its.1c.ru news",
     "month": "201701",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingBase30_3_0",
+    "config_name": "Бухгалтерия предприятия базовая (3.0)",
+    "source_config_id": "AccountingBase30",
+    "version_branch": "3.0",
+    "version": "3.0.210.11",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -146605,6 +146701,18 @@
     "date_ru": "12.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Accounting30_3_0",
+    "config_name": "Бухгалтерия предприятия (3.0)",
+    "source_config_id": "Accounting30",
+    "version_branch": "3.0",
+    "version": "3.0.210.11",
+    "date": "2026-11-03",
+    "date_ru": "03.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {

@@ -63880,6 +63880,18 @@
     "config_name": "Библиотека электронных документов (1.9)",
     "source_config_id": "LED19",
     "version_branch": "1.9",
+    "version": "1.9.16.86",
+    "date": "2026-11-05",
+    "date_ru": "05.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "LED19_1_9",
+    "config_name": "Библиотека электронных документов (1.9)",
+    "source_config_id": "LED19",
+    "version_branch": "1.9",
     "version": "1.9.16.82",
     "date": "2026-10-09",
     "date_ru": "09.10.2026",
@@ -88641,6 +88653,18 @@
     "date_ru": "18.02.2022",
     "source": "its.1c.ru news",
     "month": "202202",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ERP_UH32_3_2",
+    "config_name": "ERP.Управление холдингом (3.2)",
+    "source_config_id": "ERP_UH32",
+    "version_branch": "3.2",
+    "version": "3.2.12.13",
+    "date": "2026-11-05",
+    "date_ru": "05.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -117164,6 +117188,18 @@
     "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
     "source_config_id": "AccountingNPOCorp",
     "version_branch": "3.0",
+    "version": "3.0.210.8",
+    "date": "2026-11-05",
+    "date_ru": "05.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingNPOCorp_3_0",
+    "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
+    "source_config_id": "AccountingNPOCorp",
+    "version_branch": "3.0",
     "version": "3.0.209.6",
     "date": "2026-10-23",
     "date_ru": "23.10.2026",
@@ -119773,6 +119809,18 @@
     "date_ru": "27.09.2019",
     "source": "its.1c.ru news",
     "month": "201909",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingNPO_3_0",
+    "config_name": "Бухгалтерия некоммерческой организации (3.0)",
+    "source_config_id": "AccountingNPO",
+    "version_branch": "3.0",
+    "version": "3.0.210.8",
+    "date": "2026-11-05",
+    "date_ru": "05.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {

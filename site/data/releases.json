@@ -18568,6 +18568,30 @@
     "config_name": "Зарплата и кадры государственного учреждения КОРП (3.1)",
     "source_config_id": "StateHRMCorp3",
     "version_branch": "3.1",
+    "version": "3.1.39.87",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateHRMCorp3_3_1",
+    "config_name": "Зарплата и кадры государственного учреждения КОРП (3.1)",
+    "source_config_id": "StateHRMCorp3",
+    "version_branch": "3.1",
+    "version": "3.1.38.151",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateHRMCorp3_3_1",
+    "config_name": "Зарплата и кадры государственного учреждения КОРП (3.1)",
+    "source_config_id": "StateHRMCorp3",
+    "version_branch": "3.1",
     "version": "3.1.39.53",
     "date": "2026-10-21",
     "date_ru": "21.10.2026",
@@ -22941,6 +22965,30 @@
     "date_ru": "30.06.2017",
     "source": "its.1c.ru news",
     "month": "201706",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateHRMBase_3_1",
+    "config_name": "Зарплата и кадры государственного учреждения базовая (3.1)",
+    "source_config_id": "StateHRMBase",
+    "version_branch": "3.1",
+    "version": "3.1.39.87",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateHRMBase_3_1",
+    "config_name": "Зарплата и кадры государственного учреждения базовая (3.1)",
+    "source_config_id": "StateHRMBase",
+    "version_branch": "3.1",
+    "version": "3.1.38.151",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -27657,6 +27705,30 @@
     "date_ru": "05.08.2016",
     "source": "its.1c.ru news",
     "month": "201608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateHRM30_3_1",
+    "config_name": "Зарплата и кадры государственного учреждения (3.1)",
+    "source_config_id": "StateHRM30",
+    "version_branch": "3.1",
+    "version": "3.1.39.87",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "StateHRM30_3_1",
+    "config_name": "Зарплата и кадры государственного учреждения (3.1)",
+    "source_config_id": "StateHRM30",
+    "version_branch": "3.1",
+    "version": "3.1.38.151",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -48340,6 +48412,18 @@
     "config_name": "Управление нашей фирмой Базовая (3.0)",
     "source_config_id": "SmallBusinessBase30",
     "version_branch": "3.0",
+    "version": "3.0.14.202",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SmallBusinessBase30_3_0",
+    "config_name": "Управление нашей фирмой Базовая (3.0)",
+    "source_config_id": "SmallBusinessBase30",
+    "version_branch": "3.0",
     "version": "3.0.14.187",
     "date": "2026-10-27",
     "date_ru": "27.10.2026",
@@ -51568,6 +51652,18 @@
     "config_name": "Управление нашей фирмой (3.0)",
     "source_config_id": "SmallBusiness30",
     "version_branch": "3.0",
+    "version": "3.0.14.202",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "SmallBusiness30_3_0",
+    "config_name": "Управление нашей фирмой (3.0)",
+    "source_config_id": "SmallBusiness30",
+    "version_branch": "3.0",
     "version": "3.0.14.187",
     "date": "2026-10-27",
     "date_ru": "27.10.2026",
@@ -54736,6 +54832,18 @@
     "config_name": "Розница базовая (3.0)",
     "source_config_id": "RetailBase30",
     "version_branch": "3.0",
+    "version": "3.0.14.202",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "RetailBase30_3_0",
+    "config_name": "Розница базовая (3.0)",
+    "source_config_id": "RetailBase30",
+    "version_branch": "3.0",
     "version": "3.0.14.187",
     "date": "2026-10-27",
     "date_ru": "27.10.2026",
@@ -57669,6 +57777,18 @@
     "date_ru": "16.12.2016",
     "source": "its.1c.ru news",
     "month": "201612",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Retail30_3_0",
+    "config_name": "Розница (3.0)",
+    "source_config_id": "Retail30",
+    "version_branch": "3.0",
+    "version": "3.0.14.202",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -66352,6 +66472,30 @@
     "config_name": "Зарплата и управление персоналом КОРП (3.1)",
     "source_config_id": "HRMCorp30",
     "version_branch": "3.1",
+    "version": "3.1.39.87",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "HRMCorp30_3_1",
+    "config_name": "Зарплата и управление персоналом КОРП (3.1)",
+    "source_config_id": "HRMCorp30",
+    "version_branch": "3.1",
+    "version": "3.1.38.151",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "HRMCorp30_3_1",
+    "config_name": "Зарплата и управление персоналом КОРП (3.1)",
+    "source_config_id": "HRMCorp30",
+    "version_branch": "3.1",
     "version": "3.1.39.53",
     "date": "2026-10-21",
     "date_ru": "21.10.2026",
@@ -71877,6 +72021,30 @@
     "date_ru": "19.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "HRMBase30_3_1",
+    "config_name": "Зарплата и Управление Персоналом базовая (3.1)",
+    "source_config_id": "HRMBase30",
+    "version_branch": "3.1",
+    "version": "3.1.39.87",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "HRMBase30_3_1",
+    "config_name": "Зарплата и Управление Персоналом базовая (3.1)",
+    "source_config_id": "HRMBase30",
+    "version_branch": "3.1",
+    "version": "3.1.38.151",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -77685,6 +77853,30 @@
     "date_ru": "19.10.2015",
     "source": "its.1c.ru news",
     "month": "201510",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "HRM30_3_1",
+    "config_name": "Зарплата и Управление Персоналом (3.1)",
+    "source_config_id": "HRM30",
+    "version_branch": "3.1",
+    "version": "3.1.39.87",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "HRM30_3_1",
+    "config_name": "Зарплата и Управление Персоналом (3.1)",
+    "source_config_id": "HRM30",
+    "version_branch": "3.1",
+    "version": "3.1.38.151",
+    "date": "2026-11-12",
+    "date_ru": "12.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {

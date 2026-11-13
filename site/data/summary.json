@@ -3314,11 +3314,11 @@
       "config_name": "Зарплата и кадры государственного учреждения (3.1)",
       "source_config_id": "StateHRM30",
       "version_branch": "3.1",
-      "version": "3.1.39.53",
-      "date": "2026-10-21",
-      "date_ru": "21.10.2026",
+      "version": "3.1.39.87",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3326,19 +3326,19 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "StateHRM30",
       "version_branch": "3.1",
-      "version": "3.1.35.48",
-      "date": "2025-10-03",
-      "date_ru": "03.10.2025",
+      "version": "3.1.35.73",
+      "date": "2025-10-28",
+      "date_ru": "28.10.2025",
       "source": "its.1c.ru news",
       "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-21",
+      "cutoff": "2025-11-12",
       "count": 34
     },
-    "release_count": 396,
+    "release_count": 398,
     "sources": [
       "its.1c.ru news"
     ]
@@ -3352,11 +3352,11 @@
       "config_name": "Зарплата и кадры государственного учреждения базовая (3.1)",
       "source_config_id": "StateHRMBase",
       "version_branch": "3.1",
-      "version": "3.1.39.53",
-      "date": "2026-10-21",
-      "date_ru": "21.10.2026",
+      "version": "3.1.39.87",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3364,19 +3364,19 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "StateHRMBase",
       "version_branch": "3.1",
-      "version": "3.1.35.48",
-      "date": "2025-10-03",
-      "date_ru": "03.10.2025",
+      "version": "3.1.35.73",
+      "date": "2025-10-28",
+      "date_ru": "28.10.2025",
       "source": "its.1c.ru news",
       "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-21",
+      "cutoff": "2025-11-12",
       "count": 34
     },
-    "release_count": 393,
+    "release_count": 395,
     "sources": [
       "its.1c.ru news"
     ]
@@ -3390,11 +3390,11 @@
       "config_name": "Зарплата и кадры государственного учреждения КОРП (3.1)",
       "source_config_id": "StateHRMCorp3",
       "version_branch": "3.1",
-      "version": "3.1.39.53",
-      "date": "2026-10-21",
-      "date_ru": "21.10.2026",
+      "version": "3.1.39.87",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3402,19 +3402,19 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "StateHRMCorp3",
       "version_branch": "3.1",
-      "version": "3.1.35.48",
-      "date": "2025-10-03",
-      "date_ru": "03.10.2025",
+      "version": "3.1.35.73",
+      "date": "2025-10-28",
+      "date_ru": "28.10.2025",
       "source": "its.1c.ru news",
       "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-21",
+      "cutoff": "2025-11-12",
       "count": 34
     },
-    "release_count": 365,
+    "release_count": 367,
     "sources": [
       "its.1c.ru news"
     ]
@@ -3504,11 +3504,11 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "HRM30",
       "version_branch": "3.1",
-      "version": "3.1.39.53",
-      "date": "2026-10-21",
-      "date_ru": "21.10.2026",
+      "version": "3.1.39.87",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3516,19 +3516,19 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "HRM30",
       "version_branch": "3.1",
-      "version": "3.1.35.48",
-      "date": "2025-10-03",
-      "date_ru": "03.10.2025",
+      "version": "3.1.35.73",
+      "date": "2025-10-28",
+      "date_ru": "28.10.2025",
       "source": "its.1c.ru news",
       "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-21",
+      "cutoff": "2025-11-12",
       "count": 34
     },
-    "release_count": 395,
+    "release_count": 397,
     "sources": [
       "its.1c.ru news"
     ]
@@ -3618,11 +3618,11 @@
       "config_name": "Зарплата и Управление Персоналом базовая (3.1)",
       "source_config_id": "HRMBase30",
       "version_branch": "3.1",
-      "version": "3.1.39.53",
-      "date": "2026-10-21",
-      "date_ru": "21.10.2026",
+      "version": "3.1.39.87",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3630,19 +3630,19 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "HRMBase30",
       "version_branch": "3.1",
-      "version": "3.1.35.48",
-      "date": "2025-10-03",
-      "date_ru": "03.10.2025",
+      "version": "3.1.35.73",
+      "date": "2025-10-28",
+      "date_ru": "28.10.2025",
       "source": "its.1c.ru news",
       "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-21",
+      "cutoff": "2025-11-12",
       "count": 34
     },
-    "release_count": 393,
+    "release_count": 395,
     "sources": [
       "its.1c.ru news"
     ]
@@ -3732,11 +3732,11 @@
       "config_name": "Зарплата и управление персоналом КОРП (3.1)",
       "source_config_id": "HRMCorp30",
       "version_branch": "3.1",
-      "version": "3.1.39.53",
-      "date": "2026-10-21",
-      "date_ru": "21.10.2026",
+      "version": "3.1.39.87",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -3744,19 +3744,19 @@
       "config_name": "Зарплата и Управление Персоналом (3.1)",
       "source_config_id": "HRMCorp30",
       "version_branch": "3.1",
-      "version": "3.1.35.48",
-      "date": "2025-10-03",
-      "date_ru": "03.10.2025",
+      "version": "3.1.35.73",
+      "date": "2025-10-28",
+      "date_ru": "28.10.2025",
       "source": "its.1c.ru news",
       "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-21",
+      "cutoff": "2025-11-12",
       "count": 34
     },
-    "release_count": 389,
+    "release_count": 391,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4530,11 +4530,11 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.14.187",
-      "date": "2026-10-27",
-      "date_ru": "27.10.2026",
+      "version": "3.0.14.202",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4542,19 +4542,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.12.185",
-      "date": "2025-10-13",
-      "date_ru": "13.10.2025",
+      "version": "3.0.12.199",
+      "date": "2025-11-06",
+      "date_ru": "06.11.2025",
       "source": "its.1c.ru news",
-      "month": "202510",
+      "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-27",
+      "cutoff": "2025-11-12",
       "count": 30
     },
-    "release_count": 97,
+    "release_count": 98,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4644,11 +4644,11 @@
       "config_name": "Розница базовая (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.14.187",
-      "date": "2026-10-27",
-      "date_ru": "27.10.2026",
+      "version": "3.0.14.202",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4656,19 +4656,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.12.185",
-      "date": "2025-10-13",
-      "date_ru": "13.10.2025",
+      "version": "3.0.12.199",
+      "date": "2025-11-06",
+      "date_ru": "06.11.2025",
       "source": "its.1c.ru news",
-      "month": "202510",
+      "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-27",
+      "cutoff": "2025-11-12",
       "count": 32
     },
-    "release_count": 99,
+    "release_count": 100,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4872,11 +4872,11 @@
       "config_name": "Управление нашей фирмой (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.14.187",
-      "date": "2026-10-27",
-      "date_ru": "27.10.2026",
+      "version": "3.0.14.202",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4884,19 +4884,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.12.185",
-      "date": "2025-10-13",
-      "date_ru": "13.10.2025",
+      "version": "3.0.12.199",
+      "date": "2025-11-06",
+      "date_ru": "06.11.2025",
       "source": "its.1c.ru news",
-      "month": "202510",
+      "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-27",
+      "cutoff": "2025-11-12",
       "count": 30
     },
-    "release_count": 97,
+    "release_count": 98,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4948,11 +4948,11 @@
       "config_name": "Управление нашей фирмой Базовая (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.14.187",
-      "date": "2026-10-27",
-      "date_ru": "27.10.2026",
+      "version": "3.0.14.202",
+      "date": "2026-11-12",
+      "date_ru": "12.11.2026",
       "source": "its.1c.ru news",
-      "month": "202610",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4960,19 +4960,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.12.185",
-      "date": "2025-10-13",
-      "date_ru": "13.10.2025",
+      "version": "3.0.12.199",
+      "date": "2025-11-06",
+      "date_ru": "06.11.2025",
       "source": "its.1c.ru news",
-      "month": "202510",
+      "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-10-27",
+      "cutoff": "2025-11-12",
       "count": 32
     },
-    "release_count": 99,
+    "release_count": 100,
     "sources": [
       "its.1c.ru news"
     ]

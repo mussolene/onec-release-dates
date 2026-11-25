@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T10:31:48",
+  "generated_at": "2026-11-25T09:21:53",
   "period": {
     "mode": "incremental_current_months",
     "days": 365
@@ -2078,9 +2078,9 @@
         "config_name": "Бухгалтерия некоммерческой организации (3.0)",
         "source_config_id": "AccountingNPO",
         "version_branch": "3.0",
-        "version": "3.0.211.8",
-        "date": "2026-11-17",
-        "date_ru": "17.11.2026",
+        "version": "3.0.212.5",
+        "date": "2026-11-24",
+        "date_ru": "24.11.2026",
         "source": "its.1c.ru news",
         "month": "202611",
         "source_kind": "its"
@@ -2099,10 +2099,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-11-17",
-        "count": 40
+        "cutoff": "2025-11-24",
+        "count": 41
       },
-      "release_count": 233,
+      "release_count": 234,
       "sources": [
         "its.1c.ru news"
       ]
@@ -2116,9 +2116,9 @@
         "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
         "source_config_id": "AccountingNPOCorp",
         "version_branch": "3.0",
-        "version": "3.0.211.8",
-        "date": "2026-11-17",
-        "date_ru": "17.11.2026",
+        "version": "3.0.212.5",
+        "date": "2026-11-24",
+        "date_ru": "24.11.2026",
         "source": "its.1c.ru news",
         "month": "202611",
         "source_kind": "its"
@@ -2137,10 +2137,10 @@
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-11-17",
-        "count": 40
+        "cutoff": "2025-11-24",
+        "count": 41
       },
-      "release_count": 220,
+      "release_count": 221,
       "sources": [
         "its.1c.ru news"
       ]
@@ -4814,11 +4814,11 @@
         "config_name": "Технологическая платформа (8.3)",
         "source_config_id": "Platform83",
         "version_branch": "8.3",
-        "version": "8.3.27.2342",
-        "date": "2026-08-27",
-        "date_ru": "27.08.2026",
+        "version": "8.3.27.2490",
+        "date": "2026-11-24",
+        "date_ru": "24.11.2026",
         "source": "its.1c.ru news",
-        "month": "202608",
+        "month": "202611",
         "source_kind": "its"
       },
       "year_ago_release": {
@@ -4826,19 +4826,19 @@
         "config_name": "Технологическая платформа (8.3)",
         "source_config_id": "Platform83",
         "version_branch": "8.3",
-        "version": "8.3.27.1688",
-        "date": "2025-08-13",
-        "date_ru": "13.08.2025",
+        "version": "8.3.27.1859",
+        "date": "2025-11-12",
+        "date_ru": "12.11.2025",
         "source": "its.1c.ru news",
-        "month": "202508",
+        "month": "202511",
         "source_kind": "its"
       },
       "period": {
         "days": 365,
-        "cutoff": "2025-08-27",
-        "count": 13
+        "cutoff": "2025-11-24",
+        "count": 11
       },
-      "release_count": 144,
+      "release_count": 145,
       "sources": [
         "its.1c.ru news"
       ]
@@ -66428,6 +66428,18 @@
       "config_name": "Технологическая платформа (8.3)",
       "source_config_id": "Platform83",
       "version_branch": "8.3",
+      "version": "8.3.27.2490",
+      "date": "2026-11-24",
+      "date_ru": "24.11.2026",
+      "source": "its.1c.ru news",
+      "month": "202611",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "Platform83_8_3",
+      "config_name": "Технологическая платформа (8.3)",
+      "source_config_id": "Platform83",
+      "version_branch": "8.3",
       "version": "8.3.27.2342",
       "date": "2026-08-27",
       "date_ru": "27.08.2026",
@@ -123252,6 +123264,18 @@
       "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
       "source_config_id": "AccountingNPOCorp",
       "version_branch": "3.0",
+      "version": "3.0.212.5",
+      "date": "2026-11-24",
+      "date_ru": "24.11.2026",
+      "source": "its.1c.ru news",
+      "month": "202611",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingNPOCorp_3_0",
+      "config_name": "Бухгалтерия некоммерческой организации КОРП (3.0)",
+      "source_config_id": "AccountingNPOCorp",
+      "version_branch": "3.0",
       "version": "3.0.211.8",
       "date": "2026-11-17",
       "date_ru": "17.11.2026",
@@ -125885,6 +125909,18 @@
       "date_ru": "27.09.2019",
       "source": "its.1c.ru news",
       "month": "201909",
+      "source_kind": "its"
+    },
+    {
+      "config_id": "AccountingNPO_3_0",
+      "config_name": "Бухгалтерия некоммерческой организации (3.0)",
+      "source_config_id": "AccountingNPO",
+      "version_branch": "3.0",
+      "version": "3.0.212.5",
+      "date": "2026-11-24",
+      "date_ru": "24.11.2026",
+      "source": "its.1c.ru news",
+      "month": "202611",
       "source_kind": "its"
     },
     {

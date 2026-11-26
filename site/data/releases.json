@@ -16132,6 +16132,18 @@
     "config_name": "Налогоплательщик (3.0)",
     "source_config_id": "Taxes",
     "version_branch": "3.0",
+    "version": "3.0.277.1",
+    "date": "2026-11-25",
+    "date_ru": "25.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Taxes_3_0",
+    "config_name": "Налогоплательщик (3.0)",
+    "source_config_id": "Taxes",
+    "version_branch": "3.0",
     "version": "3.0.276.1",
     "date": "2026-09-24",
     "date_ru": "24.09.2026",

@@ -4378,11 +4378,11 @@
       "config_name": "Налогоплательщик (3.0)",
       "source_config_id": "Taxes",
       "version_branch": "3.0",
-      "version": "3.0.276.1",
-      "date": "2026-09-24",
-      "date_ru": "24.09.2026",
+      "version": "3.0.277.1",
+      "date": "2026-11-25",
+      "date_ru": "25.11.2026",
       "source": "its.1c.ru news",
-      "month": "202609",
+      "month": "202611",
       "source_kind": "its"
     },
     "year_ago_release": {
@@ -4390,19 +4390,19 @@
       "config_name": "Налогоплательщик (3.0)",
       "source_config_id": "Taxes",
       "version_branch": "3.0",
-      "version": "3.0.263.1",
-      "date": "2025-09-18",
-      "date_ru": "18.09.2025",
+      "version": "3.0.264.1",
+      "date": "2025-10-31",
+      "date_ru": "31.10.2025",
       "source": "its.1c.ru news",
-      "month": "202509",
+      "month": "202510",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-09-24",
+      "cutoff": "2025-11-25",
       "count": 14
     },
-    "release_count": 186,
+    "release_count": 187,
     "sources": [
       "its.1c.ru news"
     ]

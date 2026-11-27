@@ -312,9 +312,9 @@
       "config_name": "Библиотека стандартных подсистем (3.1)",
       "source_config_id": "SSL31",
       "version_branch": "3.1",
-      "version": "3.1.12.381",
-      "date": "2026-11-13",
-      "date_ru": "13.11.2026",
+      "version": "3.1.12.395",
+      "date": "2026-11-26",
+      "date_ru": "26.11.2026",
       "source": "its.1c.ru news",
       "month": "202611",
       "source_kind": "its"
@@ -333,10 +333,10 @@
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-11-13",
-      "count": 21
+      "cutoff": "2025-11-26",
+      "count": 22
     },
-    "release_count": 263,
+    "release_count": 264,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4530,9 +4530,9 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.14.202",
-      "date": "2026-11-12",
-      "date_ru": "12.11.2026",
+      "version": "3.0.14.215",
+      "date": "2026-11-26",
+      "date_ru": "26.11.2026",
       "source": "its.1c.ru news",
       "month": "202611",
       "source_kind": "its"
@@ -4542,19 +4542,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "Retail30",
       "version_branch": "3.0",
-      "version": "3.0.12.199",
-      "date": "2025-11-06",
-      "date_ru": "06.11.2025",
+      "version": "3.0.12.211",
+      "date": "2025-11-24",
+      "date_ru": "24.11.2025",
       "source": "its.1c.ru news",
       "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-11-12",
+      "cutoff": "2025-11-26",
       "count": 30
     },
-    "release_count": 98,
+    "release_count": 99,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4644,9 +4644,9 @@
       "config_name": "Розница базовая (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.14.202",
-      "date": "2026-11-12",
-      "date_ru": "12.11.2026",
+      "version": "3.0.14.215",
+      "date": "2026-11-26",
+      "date_ru": "26.11.2026",
       "source": "its.1c.ru news",
       "month": "202611",
       "source_kind": "its"
@@ -4656,19 +4656,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "RetailBase30",
       "version_branch": "3.0",
-      "version": "3.0.12.199",
-      "date": "2025-11-06",
-      "date_ru": "06.11.2025",
+      "version": "3.0.12.211",
+      "date": "2025-11-24",
+      "date_ru": "24.11.2025",
       "source": "its.1c.ru news",
       "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-11-12",
+      "cutoff": "2025-11-26",
       "count": 32
     },
-    "release_count": 100,
+    "release_count": 101,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4872,9 +4872,9 @@
       "config_name": "Управление нашей фирмой (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.14.202",
-      "date": "2026-11-12",
-      "date_ru": "12.11.2026",
+      "version": "3.0.14.215",
+      "date": "2026-11-26",
+      "date_ru": "26.11.2026",
       "source": "its.1c.ru news",
       "month": "202611",
       "source_kind": "its"
@@ -4884,19 +4884,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "SmallBusiness30",
       "version_branch": "3.0",
-      "version": "3.0.12.199",
-      "date": "2025-11-06",
-      "date_ru": "06.11.2025",
+      "version": "3.0.12.211",
+      "date": "2025-11-24",
+      "date_ru": "24.11.2025",
       "source": "its.1c.ru news",
       "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-11-12",
+      "cutoff": "2025-11-26",
       "count": 30
     },
-    "release_count": 98,
+    "release_count": 99,
     "sources": [
       "its.1c.ru news"
     ]
@@ -4948,9 +4948,9 @@
       "config_name": "Управление нашей фирмой Базовая (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.14.202",
-      "date": "2026-11-12",
-      "date_ru": "12.11.2026",
+      "version": "3.0.14.215",
+      "date": "2026-11-26",
+      "date_ru": "26.11.2026",
       "source": "its.1c.ru news",
       "month": "202611",
       "source_kind": "its"
@@ -4960,19 +4960,19 @@
       "config_name": "Розница (3.0)",
       "source_config_id": "SmallBusinessBase30",
       "version_branch": "3.0",
-      "version": "3.0.12.199",
-      "date": "2025-11-06",
-      "date_ru": "06.11.2025",
+      "version": "3.0.12.211",
+      "date": "2025-11-24",
+      "date_ru": "24.11.2025",
       "source": "its.1c.ru news",
       "month": "202511",
       "source_kind": "its"
     },
     "period": {
       "days": 365,
-      "cutoff": "2025-11-12",
+      "cutoff": "2025-11-26",
       "count": 32
     },
-    "release_count": 100,
+    "release_count": 101,
     "sources": [
       "its.1c.ru news"
     ]

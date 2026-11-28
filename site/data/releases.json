@@ -2680,6 +2680,18 @@
     "config_name": "Управление торговлей базовая (11.6)",
     "source_config_id": "TradeBase110",
     "version_branch": "11.6",
+    "version": "11.6.3.39",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "TradeBase110_11_6",
+    "config_name": "Управление торговлей базовая (11.6)",
+    "source_config_id": "TradeBase110",
+    "version_branch": "11.6",
     "version": "11.6.2.76",
     "date": "2026-11-16",
     "date_ru": "16.11.2026",
@@ -2793,6 +2805,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "TradeBase110_11_5",
+    "config_name": "Управление торговлей базовая (11.5)",
+    "source_config_id": "TradeBase110",
+    "version_branch": "11.5",
+    "version": "11.5.27.117",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -8116,6 +8140,18 @@
     "config_name": "Управление торговлей (11.6)",
     "source_config_id": "Trade110",
     "version_branch": "11.6",
+    "version": "11.6.3.39",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Trade110_11_6",
+    "config_name": "Управление торговлей (11.6)",
+    "source_config_id": "Trade110",
+    "version_branch": "11.6",
     "version": "11.6.2.76",
     "date": "2026-11-16",
     "date_ru": "16.11.2026",
@@ -8241,6 +8277,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Trade110_11_5",
+    "config_name": "Управление торговлей (11.5)",
+    "source_config_id": "Trade110",
+    "version_branch": "11.5",
+    "version": "11.5.27.117",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -63520,6 +63568,18 @@
     "config_name": "Система проектирования прикладных решений (2.1)",
     "source_config_id": "Modeling",
     "version_branch": "2.1",
+    "version": "2.1.1.32",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "Modeling_2_1",
+    "config_name": "Система проектирования прикладных решений (2.1)",
+    "source_config_id": "Modeling",
+    "version_branch": "2.1",
     "version": "2.1.1.31",
     "date": "2026-09-09",
     "date_ru": "09.09.2026",
@@ -64161,6 +64221,18 @@
     "date_ru": "18.01.2021",
     "source": "its.1c.ru news",
     "month": "202101",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "LED19_1_9",
+    "config_name": "Библиотека электронных документов (1.9)",
+    "source_config_id": "LED19",
+    "version_branch": "1.9",
+    "version": "1.9.17.14",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -90352,6 +90424,18 @@
     "config_name": "ERP Управление предприятием (2.6)",
     "source_config_id": "EnterpriseERP20",
     "version_branch": "2.6",
+    "version": "2.6.3.39",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "EnterpriseERP20_2_6",
+    "config_name": "ERP Управление предприятием (2.6)",
+    "source_config_id": "EnterpriseERP20",
+    "version_branch": "2.6",
     "version": "2.6.2.76",
     "date": "2026-11-16",
     "date_ru": "16.11.2026",
@@ -90477,6 +90561,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "EnterpriseERP20_2_5",
+    "config_name": "ERP Управление предприятием (2.5)",
+    "source_config_id": "EnterpriseERP20",
+    "version_branch": "2.5",
+    "version": "2.5.27.117",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -109150,6 +109246,18 @@
     "config_name": "Комплексная автоматизация (2.6)",
     "source_config_id": "ARAutomation20",
     "version_branch": "2.6",
+    "version": "2.6.3.39",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ARAutomation20_2_6",
+    "config_name": "Комплексная автоматизация (2.6)",
+    "source_config_id": "ARAutomation20",
+    "version_branch": "2.6",
     "version": "2.6.2.76",
     "date": "2026-11-16",
     "date_ru": "16.11.2026",
@@ -109275,6 +109383,18 @@
     "date_ru": "14.08.2026",
     "source": "its.1c.ru news",
     "month": "202608",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "ARAutomation20_2_5",
+    "config_name": "Комплексная автоматизация (2.5)",
+    "source_config_id": "ARAutomation20",
+    "version_branch": "2.5",
+    "version": "2.5.27.117",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
@@ -128137,6 +128257,18 @@
     "date_ru": "06.08.2019",
     "source": "its.1c.ru news",
     "month": "201908",
+    "source_kind": "its"
+  },
+  {
+    "config_id": "AccountingCorpIFRS3_3_3",
+    "config_name": "Бухгалтерия КОРП МСФО (3.3)",
+    "source_config_id": "AccountingCorpIFRS3",
+    "version_branch": "3.3",
+    "version": "3.3.3.77",
+    "date": "2026-11-27",
+    "date_ru": "27.11.2026",
+    "source": "its.1c.ru news",
+    "month": "202611",
     "source_kind": "its"
   },
   {
